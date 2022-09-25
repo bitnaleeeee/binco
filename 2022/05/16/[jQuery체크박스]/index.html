@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>jQuery Agree checkbox | Hexo</title>
+    
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+    <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css" charset="utf-8">
+    
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="site">
+    <header class="site-header">
+        <h1 class="site-title"><a href="/">Hexo</a></h1>
+        <nav class="site-nav">
+            <ul class="nav">
+                
+                <li><a href="/archives">Archives</a></li>
+                
+                
+                <li><a href="/atom.xml" title="RSS Feed">rss</a></li>
+                
+                <li><a class="toggle-search" href="#search">search</a></li>
+            </ul>
+        </nav>
+        <div class="site-search" id="search">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        </div>
+        
+            <div class="site-header-background" style="background-image:url(http://reumia.github.io/hexo-theme-zzoman2015/images/background-zzoman2015.jpg)"></div>
+        
+    </header>
+    <div class="site-body">
+        <div class="global-width">
+    <article class="article" data-layout="post" data-slug="[jQuery체크박스]">
+        <div class="article-content">
+            
+            
+            <header class="article-header">
+                <div class="article-meta">
+                    <a href="/2022/05/16/%5BjQuery%EC%B2%B4%ED%81%AC%EB%B0%95%EC%8A%A4%5D/" class="article-date">
+  <time datetime="2022-05-16T11:08:38.000Z">2022-05-16</time>
+</a>
+                    
+                    
+                </div>
+                
+    <h1 class="article-title" itemprop="name">
+      <a href="/2022/05/16/%5BjQuery%EC%B2%B4%ED%81%AC%EB%B0%95%EC%8A%A4%5D/">jQuery Agree checkbox</a>
+    </h1>
+
+            </header>
+            
+            <div class="article-body">
+                <h3>jQuery전체동의 체크박스 만들기</h3>
+
+<p>jQuery를 이용하여 전체동의 체크박스UI를 아래와 같이 만들어 보았다.</p>
+<h2 id="구현"><a href="#구현" class="headerlink" title="구현"></a>구현</h2><script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+$(document).ready(function() {
+    let agreeBox = $('label').find('input[type=checkbox]');
+    let boxZero = agreeBox.eq(0);
+    boxZero.on('click', function () {
+        if (boxZero.prop('checked')) {
+            agreeBox.prop('checked', true);
+        }
+        else {
+            agreeBox.prop('checked', false);
+        }
+    })
+    agreeBox.on('click', function () {
+        let checkNum = 0;
+        for (let i = 1; i < $('label').length; i++) {
+            if (agreeBox.eq(i).prop('checked')) {
+                checkNum++;
+            }
+        }
+        console.log(checkNum);
+        if (checkNum === 3) {
+            boxZero.prop('checked', true)
+        }
+        else { boxZero.prop('checked', false) }
+    })
+});
+</script>
+<style>
+* {
+    margin: 0;
+    padding: 0
+}
+#checkWrap {
+    width: 120px
+}
+#checkWrap label {
+    display: block;
+    margin: 5px;
+    font-size: 14px
+}
+#checkWrap label input[type="checkbox"] {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle
+}
+#checkWrap label:first-child input[type="checkbox"] {
+    width: 30px;
+    height: 30px
+}
+</style>
+<div id="checkWrap">
+    <label for="cheeck01"><input type="checkbox" id="cheeck01" />전체 동의</label>
+    <label for="cheeck02"><input type="checkbox" id="cheeck02" />동의</label>
+    <label for="cheeck03"><input type="checkbox" id="cheeck03" />동의</label>
+    <label for="cheeck04"><input type="checkbox" id="cheeck04" />동의</label>
+</div>
+
+
+
+
+
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="property">onload</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> agreeBox = $(<span class="string">&#x27;label&#x27;</span>).<span class="title function_">find</span>(<span class="string">&#x27;input[type=checkbox]&#x27;</span>);</span><br><span class="line">      <span class="keyword">let</span> boxZero = agreeBox.<span class="title function_">eq</span>(<span class="number">0</span>);</span><br><span class="line">     </span><br><span class="line">      boxZero.<span class="title function_">on</span>(<span class="string">&#x27;click&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">         </span><br><span class="line">        <span class="keyword">if</span>(boxZero.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>)) &#123;</span><br><span class="line">         agreeBox.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>, <span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">          agreeBox.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>, <span class="literal">false</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">      </span><br><span class="line">      agreeBox.<span class="title function_">on</span>(<span class="string">&#x27;click&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">let</span> checkNum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; $(<span class="string">&#x27;label&#x27;</span>).<span class="property">length</span>; i++)&#123;</span><br><span class="line">          <span class="keyword">if</span>(agreeBox.<span class="title function_">eq</span>(i).<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>))&#123;</span><br><span class="line">           checkNum++;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(checkNum);</span><br><span class="line">        <span class="keyword">if</span>(checkNum===<span class="number">3</span>)&#123;</span><br><span class="line">          boxZero.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>, <span class="literal">true</span>)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;boxZero.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>, <span class="literal">false</span>)&#125;</span><br><span class="line">      &#125;)</span><br><span class="line">      </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2> 전체 동의 체크 박스 함수 만들기 </h2>
+
+<ol>
+<li>전체동의 체크 박스를 클릭하면 모두 체크되고, 해제시 모두 해제되는 함수를 생성한다.</li>
+<li>해당 체크박스의 체크 유무를 알려주는 함수 prop를 이용하여 전체동의 체크박스에 체크가 되어있을 경우, 나머지 모든 체크박스의 porp chekced 값을 true 준다. (모든 체크박스 체크됨)</li>
+<li>else, 전체동의 체크박스가 체크 되어 있지 않은 경우, 모든 체크박스 Prop의 checked 값을 false 로 주어 모두 해제 시킨다.</li>
+</ol>
+<h2> 동의 체크 박스에 따른 전체 동의 박스 체크 함수 만들기 </h2>
+
+<ol>
+<li>포문을 이용하여 각 체크박스의 인덱스1 (즉 전체동의를 제외한 모든 체크박스)를 돌아가며, 체크가 되어있는지 확인한다.</li>
+<li>체크가 되어있을 경우, 임의로 만든 checknum 변수에 값을 1씩 더해준다.</li>
+<li>값이 3이 되었을때 (모든 동의체크박스가 체크 되어있을때), prop 함수를 이용하여 checked 값 true 를 주어 전체동의 박스를 체크한다.</li>
+<li>else, 3의 값이 아닌 모든 경우, 전체동의 박스 체크를 해제한다. prop checked &#x3D; false</li>
+</ol>
+
+            </div>
+        </div>
+    </article>
+
+    
+    
+<nav class="article-nav">
+  
+    <a href="/2022/05/19/%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8%20%EB%A9%94%EB%89%B4%20%EB%A7%8C%EB%93%A4%EA%B8%B0/" id="article-nav-newer" class="article-nav-link-wrap prev">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Accodian Menu
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/21/select%20box%EB%A7%8C%EB%93%A4%EA%B8%B0/" id="article-nav-older" class="article-nav-link-wrap next">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">jQuery Select Box</div>
+    </a>
+  
+</nav>
+
+    
+
+    
+</div>
+    </div>
+    <footer class="site-footer">
+        <div class="global-width">
+            <ul class="site-widget">
+                
+                <li class="widget widget-tag">
+                    
+                </li>
+                
+                <li class="widget widget-category">
+                    
+                </li>
+                
+                <li class="widget widget-recent_posts">
+                    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-body">
+      <ul>
+        
+          <li>
+            <a href="/2022/09/17/%5BJavaScript%5D%08var,let,const%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC%20hoisting/">var,let,const의 차이점과 hoisting</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/08/2%EC%B0%A8%20project%20%ED%9A%8C%EA%B3%A0/">2차 project 회고</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/27/1%EC%B0%A8%20project%20%ED%9A%8C%EA%B3%A0/">1차 project 회고</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/28/%5BJavaScript%5D%08%EA%B0%9D%EC%B2%B4/">JavaScript 객체(object)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/20/%ED%8F%AC%EC%A7%80%EC%85%98/">CSS 레이아웃 display, position의 기본</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+                </li>
+                
+            </ul>
+        </div>
+        <div class="site-info">
+            <address>
+                &copy; 2014 <a href="http://example.com">Hexo</a> All Right Reserved. <br/>
+                Powered by <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="http://zzoman.com">ZZOMAN</a>
+            </address>
+        </div>
+    </footer>
+    
+    <script src="/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+    
+    <script src="/libs/fancybox/jquery.fancybox.js" type="text/javascript"></script>
+    
+    <script src="/js/site_init.js" type="text/javascript"></script>
+    
+</body>
+</html>
