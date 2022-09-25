@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <title>var,let,const의 차이점과 hoisting | 괴발개발</title>
+    <title>Tag: browser | 괴발개발</title>
     
     <link rel="alternative" href="/atom.xml" title="괴발개발" type="application/atom+xml">
     
@@ -42,61 +42,38 @@
         
     </header>
     <div class="site-body">
-        <div class="global-width">
-    <article class="article" data-layout="post" data-slug="[JavaScript]var,let,const의 차이점과 hoisting">
-        <div class="article-content">
+        <div class="alert alert-default">
+    tag : <strong class="text-capitalize">browser</strong>
+</div>
+
+
+    
+    <div class="global-width">
+        <section class="archives">
             
-            
-            <header class="article-header">
-                <div class="article-meta">
-                    <a href="/2022/09/17/%5BJavaScript%5D%08var,let,const%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC%20hoisting/" class="article-date">
-  <time datetime="2022-09-17T07:54:00.000Z">2022-09-17</time>
+                <article class="archive-article archive-type-post">
+    <div class="archive-article-inner" >
+        <header class="archive-article-header">
+            <a href="/2022/07/08/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EB%A0%8C%EB%8D%94%EB%A7%81/" class="archive-article-year">
+  <time datetime="2022-07-08T05:00:00.000Z">2022.</time>
+</a><!--
+            --><a href="/2022/07/08/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EB%A0%8C%EB%8D%94%EB%A7%81/" class="archive-article-date">
+  <time datetime="2022-07-08T05:00:00.000Z">07.08</time>
 </a>
-                    
-  <div class="article-category categories">
-    <a class="category-link" href="/categories/javascript/">javascript</a>
-  </div>
-
-                    
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hoisting/" rel="tag">hoisting</a></li></ul>
-
-                </div>
-                
-    <h1 class="article-title" itemprop="name">
-      <a href="/2022/09/17/%5BJavaScript%5D%08var,let,const%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC%20hoisting/">var,let,const의 차이점과 hoisting</a>
+            
+    <h1 class="archive-article-title" itemprop="name">
+      <a href="/2022/07/08/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EB%A0%8C%EB%8D%94%EB%A7%81/">우리가 보는 화면은 어떻게 만들어 졌을까?(1)Browser rendering</a>
     </h1>
 
-            </header>
+        </header>
+    </div>
+</article>
             
-            <div class="article-body">
-                <h2 id="변수-선언-var-let-const의-차이"><a href="#변수-선언-var-let-const의-차이" class="headerlink" title="변수 선언 var, let const의 차이"></a>변수 선언 var, let const의 차이</h2><p>변수를 선언할 때 var, let, const 로 할 수 있다. var 는 초창기 문법이고 ES6에서 let과 const가 추가 되었다. var의 경우 재선언, 재할당을 할 수 있으며 let은 재할당은 가능하나, 재선언은 불가능하다. const는 재선언, 재할당이 모두 불가능하다. 따라서 var의 경우 재선언이 가능하므로 변수명 중복 등 개발자 입장에서 error prone해지며 지양해야하는 코드라고 볼 수 있다.</p>
-<p>또한 var의 경우 block scope밖에서 접근이 가능하지만(함수 제외, if문과 for문 등에서 접근 가능하다.) let과 const는 block scope 밖에서 접근이 불가능하다. 이제 var, let const를 hoisitng과 연관지어 차이점을 알아보자.</p>
-<h2 id="hoistig이란"><a href="#hoistig이란" class="headerlink" title="hoistig이란?"></a>hoistig이란?</h2><p>hoisitng은 함수 선언식과 변수선언이 최상단에 끌어올려지는 것을 말한다. hoisitng는 JS 동작 그 자체이며, 자바스크립트 엔진은 함수선언문 &gt; 변수 선언 &gt; 코드실행 순으로 진행된다.</p>
-<h3 id="1-var"><a href="#1-var" class="headerlink" title="1. var"></a>1. var</h3><p>var로 선언한경우 hoisitng되는 동시에 초기화가 진행된다. 따라서 hoisitng은 되었지만, console.log로 확인해봤을때 undefined가 출력이 된다.</p>
-<h3 id="2-let-const"><a href="#2-let-const" class="headerlink" title="2. let, const"></a>2. let, const</h3><p>let과 const로 선언하는 경우 hoisitng은 되지만 ReferenceError가 나온다.</p>
-<h2 id="TDZ-Temporal-Death-Zone"><a href="#TDZ-Temporal-Death-Zone" class="headerlink" title="TDZ (Temporal Death Zone)"></a>TDZ (Temporal Death Zone)</h2><p>임시적으로 죽어있는 공간. 선언 전에 변수를 사용하는 것을 비허용하는 이 개념상의 공간에 const와 let은 들어간다. 여기서 변수 선언과 할당 초기화 개념의 차이점에 대해 알 필요가 있는데, hoisitng이 되는 것은 변수의 선언만이다. var를 포함한 let, const 모든 선언은 hoisting이 일어난다. 즉 할당전에 console로 출력을 하게 되면 ReferenceError가 나온다. 이는 const와 let 선언이 hoisitng 되어 TDZ에 들어갔음을 의미한다.</p>
-<h2 id="hoisintg과-var-let-const-개념-정리"><a href="#hoisintg과-var-let-const-개념-정리" class="headerlink" title="hoisintg과 var let const 개념 정리"></a>hoisintg과 var let const 개념 정리</h2><p>var let const 의 선언은 hoisitng된다. var의 경우 TDZ에 들어가지 않고 선언 부분만 끌어올려졌기 때문에(hoisting) 할당되기 전까지 undefiend가 출력된다. (hositing과 동시에 초기화 할당한다고 생각할 수도 있다.) 하지만, let const의 경우 hoisting되며 일시적으로 죽어있는 공간(TDZ)에 들어가있기에 할당 전에 접근하려고 할 경우, ReferenceError 로 해당 변수에 참조할 수 없다는 에러가 출력된다.</p>
+        </section>
+        
+    </div>
 
-            </div>
-        </div>
-    </article>
 
-    
-    
-<nav class="article-nav">
-  
-  
-    <a href="/2022/09/08/2%EC%B0%A8%20project%20%ED%9A%8C%EA%B3%A0/" id="article-nav-older" class="article-nav-link-wrap next">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">2차 project 회고</div>
-    </a>
-  
-</nav>
-
-    
-
-    
-</div>
     </div>
     <footer class="site-footer">
         <div class="global-width">
