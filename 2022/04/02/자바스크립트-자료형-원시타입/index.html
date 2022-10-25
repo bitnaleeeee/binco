@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>JavaScript - 자료형(원시 타입) | Binna.dev</title>
+    
+    <link rel="alternative" href="/rss2.xml" title="Binna.dev" type="application/atom+xml">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+    <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css" charset="utf-8">
+    
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body class="site">
+    <header class="site-header">
+        <h1 class="site-title"><a href="/">Binna.dev</a></h1>
+        <nav class="site-nav">
+            <ul class="nav">
+                
+                <li><a href="/archives">Archives</a></li>
+                
+                
+                <li><a href="/rss2.xml" title="RSS Feed">rss</a></li>
+                
+                <li><a class="toggle-search" href="#search">search</a></li>
+            </ul>
+        </nav>
+        <div class="site-search" id="search">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        </div>
+        
+            <div class="site-header-background" style="background-image:url(http://reumia.github.io/hexo-theme-zzoman2015/images/background-zzoman2015.jpg)"></div>
+        
+    </header>
+    <div class="site-body">
+        <div class="global-width">
+    <article class="article" data-layout="post" data-slug="자바스크립트-자료형-원시타입">
+        <div class="article-content">
+            
+            
+            <header class="article-header">
+                <div class="article-meta">
+                    <a href="/2022/04/02/%E1%84%8C%E1%85%A1%E1%84%87%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B8%E1%84%90%E1%85%B3-%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%92%E1%85%A7%E1%86%BC-%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%89%E1%85%B5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8/" class="article-date">
+  <time datetime="2022-04-02T09:24:00.000Z">2022-04-02</time>
+</a>
+                    
+  <div class="article-category categories">
+    <a class="category-link" href="/categories/javascript/">javascript</a>
+  </div>
+
+                    
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
+
+                </div>
+                
+    <h1 class="article-title" itemprop="name">
+      <a href="/2022/04/02/%E1%84%8C%E1%85%A1%E1%84%87%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B8%E1%84%90%E1%85%B3-%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%92%E1%85%A7%E1%86%BC-%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%89%E1%85%B5%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8/">JavaScript - 자료형(원시 타입)</a>
+    </h1>
+
+            </header>
+            
+            <div class="article-body">
+                <h2 id="자료형이란"><a href="#자료형이란" class="headerlink" title="자료형이란?"></a>자료형이란?</h2><h3 id="자료형은-데이터-값의-유형이다"><a href="#자료형은-데이터-값의-유형이다" class="headerlink" title="자료형은 데이터 값의 유형이다."></a>자료형은 데이터 값의 유형이다.</h3><p>원시타입과 객체(참조)타입으로 나눌 수 있다.</p>
+<h4 id="원시타입"><a href="#원시타입" class="headerlink" title="원시타입"></a>원시타입</h4><ul>
+<li>문자열(String)</li>
+<li>숫자(Number)</li>
+<li>논리형(Boolean)</li>
+<li>언디파인드(Undefined)</li>
+<li>널(Null)</li>
+</ul>
+<h4 id="객체-참조-타입"><a href="#객체-참조-타입" class="headerlink" title="객체(참조)타입"></a>객체(참조)타입</h4><ul>
+<li>객체(Object)</li>
+<li>배열(Array)</li>
+<li>함수(Function)</li>
+</ul>
+<p>여기서 객체(참조)타입과 객체(Object)의 차이에 대해 혼동하기 쉽다. 객체(참조)타입은 기본타입을 제외한 모든 자바스크립트의 객체를 가르키며, 객체(Object), 배열(Array), 함수(Function)도 객체(참조)타입 에 포함된다. 객체(Object)는 자바스크립트에서 표현되는 자료형의 값이며 객체(참조)타입중에 하나인 객체(Object)이다.</p>
+<h2 id="원시타입-1"><a href="#원시타입-1" class="headerlink" title="원시타입"></a>원시타입</h2><h3 id="문자-string"><a href="#문자-string" class="headerlink" title="문자(string)"></a>문자(string)</h3><p>우리가 실생활에서 쓰고 있는 글자를 문자열이라고 생각하면 된다. 변수에 담는 방식은 큰따옴표나 작은 따옴표로 감싸서 저장하시면 된다. 문자열에 따옴표를 포함하고 싶으면 다른 따옴표로 감싸주면 된다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;data&#x27;</span>; <span class="comment">// 문자열을 담을 때</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;&#x27;data&#x27;&quot;</span>; <span class="comment">// 작은 따옴표를 문자열에 추가하고 싶을때</span></span><br></pre></td></tr></table></figure>
+
+<p>참고로 따옴표를 문자열로 인식하고 싶을때는 역슬래쉬를 따옴표 앞에 붙여 사용하면 된다. 이 작업을 이스케이핑이라고 부른다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;&#x27;data&#x27;&quot;</span>; <span class="comment">// 작은 따옴표를 문자열로 인식하고 싶을때</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="숫자-number"><a href="#숫자-number" class="headerlink" title="숫자(number)"></a>숫자(number)</h3><p>우리가 알고있는 숫자라고 생각하면 된다. 자바스크립트는 모든 숫자를 64비트 부동소숫점 형태로 저장하기 때문에 하나의 타입만 존재하며 형태는 크게 정수형(10진수, 16진수), 실수형으로 나뉜다. </p>
+<ul>
+<li>정수형(10진수) : 평상시에 사용하는 10진수이며, 소숫점이 없다.</li>
+<li>정수형(16진수) : Ox로 시작하며 숫자 0<del>9와 문자 A</del>F를 사용해서 숫자를 표현한다. 보통 색상을 나타낼때 사용한다.(예 : 0xF00)</li>
+<li>실수형 : 소숫점을 갖는 숫자</li>
+</ul>
+<p>자바스크립트는 소숫점을 계산할때 한가지 오류가 있는데 확인하고 넘어가자<br>하단의 코드를 보면</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">0.1</span> + <span class="number">0.2</span>);</span><br></pre></td></tr></table></figure>
+
+<p>결과는 0.3 이 나올겉 같지만 0.30000000000000004 가 출력이 된다. 이것이 부동소수점 오류며 아래와 같은 방법으로 해결을 할 수 있다. 주의하도록 하자.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(((<span class="number">0.1</span> * <span class="number">10</span>) + (<span class="number">0.2</span> * <span class="number">10</span>)) / <span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="논리형-boolean"><a href="#논리형-boolean" class="headerlink" title="논리형(boolean)"></a>논리형(boolean)</h3><p>쉽게 설명해서 참, 거짓이라고 생각하면 된다.</p>
+<ul>
+<li>참 : true</li>
+<li>거짓 : false</li>
+</ul>
+<p>데이터 타입마다 true, false로 변환되는 값이 다르다.</p>
+<table>
+<thead>
+<tr>
+<th align="center">데이터 타입</th>
+<th align="center">true로 변환되는 값</th>
+<th align="center">false로 변환되는 값</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">불리언</td>
+<td align="center">true</td>
+<td align="center">flase</td>
+</tr>
+<tr>
+<td align="center">문자열</td>
+<td align="center">비어 있지 않은 모든 문자열</td>
+<td align="center">“”(빈 문자열)</td>
+</tr>
+<tr>
+<td align="center">숫자</td>
+<td align="center">0이 아닌 모든 숫자(무한대 포함)</td>
+<td align="center">0, NaN</td>
+</tr>
+<tr>
+<td align="center">객체</td>
+<td align="center">모든 객체</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center">Undefined</td>
+<td align="center">해당 없음</td>
+<td align="center">undefined</td>
+</tr>
+</tbody></table>
+<h3 id="언디파인드-undefined"><a href="#언디파인드-undefined" class="headerlink" title="언디파인드(undefined)"></a>언디파인드(undefined)</h3><p>언디파인드는 아무 값도 없는 상태이다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> val; <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="널-null"><a href="#널-null" class="headerlink" title="널(null)"></a>널(null)</h3><p>널은 아무것도 참조하고 있지 않다라는 의미이다. 여기서 언디파인드와 널이 조금 헷갈리는데, 언디파인드는 값 자체가 선언이 되지 않은거고 널은 임의로 빈 값으로 선언한 상태라고 보면 된다. 널은 객체를 담을 변수를 초기화할때 많이 사용한다.</p>
+<h4 id="각-자료형의-초기화"><a href="#각-자료형의-초기화" class="headerlink" title="각 자료형의 초기화"></a>각 자료형의 초기화</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">0</span>; <span class="comment">// 숫자 초기화</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;&#x27;</span>; <span class="comment">// 문자 초기화</span></span><br><span class="line"><span class="keyword">var</span> boolean = <span class="literal">false</span>; <span class="comment">// 논리형 초기화</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="literal">null</span>; <span class="comment">// 객체 초기화</span></span><br></pre></td></tr></table></figure>
+
+
+            </div>
+        </div>
+    </article>
+
+    
+    
+<nav class="article-nav">
+  
+    <a href="/2022/04/04/%E1%84%8C%E1%85%A1%E1%84%87%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B8%E1%84%90%E1%85%B3-%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD%E1%84%92%E1%85%A7%E1%86%BC-%E1%84%8E%E1%85%A1%E1%86%B7%E1%84%8C%E1%85%A9%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8/" id="article-nav-newer" class="article-nav-link-wrap prev">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          JavaScript - 자료형(참조 타입)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/01/%E1%84%8C%E1%85%A1%E1%84%87%E1%85%A1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B8%E1%84%90%E1%85%B3-%E1%84%87%E1%85%A7%E1%86%AB%E1%84%89%E1%85%AE/" id="article-nav-older" class="article-nav-link-wrap next">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">JavaScript - 변수</div>
+    </a>
+  
+</nav>
+
+    
+
+    
+</div>
+    </div>
+    <footer class="site-footer">
+        <div class="global-width">
+            <ul class="site-widget">
+                
+                <li class="widget widget-tag">
+                    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JSX/" rel="tag">JSX</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/This/" rel="tag">This</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/browser/" rel="tag">browser</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/callback/" rel="tag">callback</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/closure/" rel="tag">closure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fetch/" rel="tag">fetch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hoisting/" rel="tag">hoisting</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript-es5/" rel="tag">javascript, es5</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/network/" rel="tag">network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/network-port/" rel="tag">network, port</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/object/" rel="tag">object</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/teamproject/" rel="tag">teamproject</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/token/" rel="tag">token</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+                </li>
+                
+                <li class="widget widget-category">
+                    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS3/">CSS3</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React/">React</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jQuery/">jQuery</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/network/">network</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+                </li>
+                
+                <li class="widget widget-recent_posts">
+                    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-body">
+      <ul>
+        
+          <li>
+            <a href="/2022/10/18/%EA%B9%8A%EC%9D%80%EB%B3%B5%EC%82%AC%20%EC%96%95%EC%9D%80%EB%B3%B5%EC%82%AC/">JavaScript 얕은 복사, 깊은 복사</a>
+          </li>
+        
+          <li>
+            <a href="/2022/10/13/%5Breact%5D%EC%9B%90%ED%8B%B0%EB%93%9C%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9/">React - 로그인/회원가입 유효성 검사 및 API 호출 / 투두리스트 체크박스 수정,삭제 기능 UI배포</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/28/%EC%A0%84%EA%B0%9C%EC%97%B0%EC%82%B0%EC%9E%90/">JavaScript 전개연산자(Spread Operator)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/17/%5BJavaScript%5D%08var,let,const%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC%20hoisting/">hoisting 개념에 따른 각 변수 선언의 차이점</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/08/2%EC%B0%A8%20project%20%ED%9A%8C%EA%B3%A0/">2nd project WnB</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+                </li>
+                
+            </ul>
+        </div>
+        <div class="site-info">
+            <address>
+                &copy; 2014 <a href="http://example.com">Binna.dev</a> All Right Reserved. <br/>
+                Powered by <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>. Theme by <a target="_blank" rel="noopener" href="http://zzoman.com">ZZOMAN</a>
+            </address>
+        </div>
+    </footer>
+    
+    <script src="/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+    
+    <script src="/libs/fancybox/jquery.fancybox.js" type="text/javascript"></script>
+    
+    <script src="/js/site_init.js" type="text/javascript"></script>
+    
+</body>
+</html>
