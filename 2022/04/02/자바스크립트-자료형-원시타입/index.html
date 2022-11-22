@@ -84,12 +84,12 @@
 </ul>
 <p>여기서 객체(참조)타입과 객체(Object)의 차이에 대해 혼동하기 쉽다. 객체(참조)타입은 기본타입을 제외한 모든 자바스크립트의 객체를 가르키며, 객체(Object), 배열(Array), 함수(Function)도 객체(참조)타입 에 포함된다. 객체(Object)는 자바스크립트에서 표현되는 자료형의 값이며 객체(참조)타입중에 하나인 객체(Object)이다.</p>
 <h2 id="원시타입-1"><a href="#원시타입-1" class="headerlink" title="원시타입"></a>원시타입</h2><h3 id="문자-string"><a href="#문자-string" class="headerlink" title="문자(string)"></a>문자(string)</h3><p>우리가 실생활에서 쓰고 있는 글자를 문자열이라고 생각하면 된다. 변수에 담는 방식은 큰따옴표나 작은 따옴표로 감싸서 저장하시면 된다. 문자열에 따옴표를 포함하고 싶으면 다른 따옴표로 감싸주면 된다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;data&#x27;</span>; <span class="comment">// 문자열을 담을 때</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;&#x27;data&#x27;&quot;</span>; <span class="comment">// 작은 따옴표를 문자열에 추가하고 싶을때</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;data&quot;</span>; <span class="comment">// 문자열을 담을 때</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;&#x27;data&#x27;&quot;</span>; <span class="comment">// 작은 따옴표를 문자열에 추가하고 싶을때</span></span><br></pre></td></tr></table></figure>
 
 <p>참고로 따옴표를 문자열로 인식하고 싶을때는 역슬래쉬를 따옴표 앞에 붙여 사용하면 된다. 이 작업을 이스케이핑이라고 부른다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;&#x27;data&#x27;&quot;</span>; <span class="comment">// 작은 따옴표를 문자열로 인식하고 싶을때</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="숫자-number"><a href="#숫자-number" class="headerlink" title="숫자(number)"></a>숫자(number)</h3><p>우리가 알고있는 숫자라고 생각하면 된다. 자바스크립트는 모든 숫자를 64비트 부동소숫점 형태로 저장하기 때문에 하나의 타입만 존재하며 형태는 크게 정수형(10진수, 16진수), 실수형으로 나뉜다. </p>
+<h3 id="숫자-number"><a href="#숫자-number" class="headerlink" title="숫자(number)"></a>숫자(number)</h3><p>우리가 알고있는 숫자라고 생각하면 된다. 자바스크립트는 모든 숫자를 64비트 부동소숫점 형태로 저장하기 때문에 하나의 타입만 존재하며 형태는 크게 정수형(10진수, 16진수), 실수형으로 나뉜다.</p>
 <ul>
 <li>정수형(10진수) : 평상시에 사용하는 10진수이며, 소숫점이 없다.</li>
 <li>정수형(16진수) : Ox로 시작하며 숫자 0<del>9와 문자 A</del>F를 사용해서 숫자를 표현한다. 보통 색상을 나타낼때 사용한다.(예 : 0xF00)</li>
@@ -99,7 +99,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">0.1</span> + <span class="number">0.2</span>);</span><br></pre></td></tr></table></figure>
 
 <p>결과는 0.3 이 나올겉 같지만 0.30000000000000004 가 출력이 된다. 이것이 부동소수점 오류며 아래와 같은 방법으로 해결을 할 수 있다. 주의하도록 하자.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(((<span class="number">0.1</span> * <span class="number">10</span>) + (<span class="number">0.2</span> * <span class="number">10</span>)) / <span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>((<span class="number">0.1</span> * <span class="number">10</span> + <span class="number">0.2</span> * <span class="number">10</span>) / <span class="number">10</span>);</span><br></pre></td></tr></table></figure>
 
 <h3 id="논리형-boolean"><a href="#논리형-boolean" class="headerlink" title="논리형(boolean)"></a>논리형(boolean)</h3><p>쉽게 설명해서 참, 거짓이라고 생각하면 된다.</p>
 <ul>
@@ -145,8 +145,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> val; <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="널-null"><a href="#널-null" class="headerlink" title="널(null)"></a>널(null)</h3><p>널은 아무것도 참조하고 있지 않다라는 의미이다. 여기서 언디파인드와 널이 조금 헷갈리는데, 언디파인드는 값 자체가 선언이 되지 않은거고 널은 임의로 빈 값으로 선언한 상태라고 보면 된다. 널은 객체를 담을 변수를 초기화할때 많이 사용한다.</p>
-<h4 id="각-자료형의-초기화"><a href="#각-자료형의-초기화" class="headerlink" title="각 자료형의 초기화"></a>각 자료형의 초기화</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">0</span>; <span class="comment">// 숫자 초기화</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;&#x27;</span>; <span class="comment">// 문자 초기화</span></span><br><span class="line"><span class="keyword">var</span> boolean = <span class="literal">false</span>; <span class="comment">// 논리형 초기화</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="literal">null</span>; <span class="comment">// 객체 초기화</span></span><br></pre></td></tr></table></figure>
-
+<h4 id="각-자료형의-초기화"><a href="#각-자료형의-초기화" class="headerlink" title="각 자료형의 초기화"></a>각 자료형의 초기화</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">0</span>; <span class="comment">// 숫자 초기화</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;&quot;</span>; <span class="comment">// 문자 초기화</span></span><br><span class="line"><span class="keyword">var</span> boolean = <span class="literal">false</span>; <span class="comment">// 논리형 초기화</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="literal">null</span>; <span class="comment">// 객체 초기화</span></span><br></pre></td></tr></table></figure>
 
             </div>
         </div>
