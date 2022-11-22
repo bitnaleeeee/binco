@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <title>CSS3 layout display, position 정리 | Binna.dev</title>
+    <title>JavaScript 실행환경 | Binna.dev</title>
     
     <link rel="alternative" href="/rss2.xml" title="Binna.dev" type="application/atom+xml">
     
@@ -43,54 +43,44 @@
     </header>
     <div class="site-body">
         <div class="global-width">
-    <article class="article" data-layout="post" data-slug="포지션">
+    <article class="article" data-layout="post" data-slug="[JavaScript]실행환경">
         <div class="article-content">
             
             
             <header class="article-header">
                 <div class="article-meta">
-                    <a href="/2022/07/20/%ED%8F%AC%EC%A7%80%EC%85%98/" class="article-date">
-  <time datetime="2022-07-20T01:00:00.000Z">2022-07-20</time>
+                    <a href="/2022/11/22/%5BJavaScript%5D%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/" class="article-date">
+  <time datetime="2022-11-22T09:00:59.000Z">2022-11-22</time>
 </a>
                     
   <div class="article-category categories">
-    <a class="category-link" href="/categories/CSS3/">CSS3</a>
+    <a class="category-link" href="/categories/javascript/">javascript</a>
   </div>
 
                     
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/" rel="tag">node.js</a></li></ul>
+
                 </div>
                 
     <h1 class="article-title" itemprop="name">
-      <a href="/2022/07/20/%ED%8F%AC%EC%A7%80%EC%85%98/">CSS3 layout display, position 정리</a>
+      <a href="/2022/11/22/%5BJavaScript%5D%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/">JavaScript 실행환경</a>
     </h1>
 
             </header>
             
             <div class="article-body">
-                <h2 id="diplay"><a href="#diplay" class="headerlink" title="diplay"></a>diplay</h2><p>display는 요소를 block과 inline inlie-block중 어느 쪽으로 처리할지 결정하는 css 속성이다.</p>
-<h3 id="1-inline"><a href="#1-inline" class="headerlink" title="1. inline"></a>1. inline</h3><ol>
-<li>대표적으로 span 태그가 있다.</li>
-<li>콘텐츠 내용의 크기만큼 공간을 차지한다.</li>
-<li>inline 요소의 경우 태그 안에 콘텐츠가 없을 경우 화면에 나타나지 않으며, 컨텐츠 자체만을 꾸며주어 width로 크기를 설정할 수도 없다. 콘텐츠가 없어도 화면에 표시하고 크기를 설정하기 위해서는 display를 block으로 변경해 주어야한다.</li>
+                <h2 id="자바스크립트의-실행-환경"><a href="#자바스크립트의-실행-환경" class="headerlink" title="자바스크립트의 실행 환경"></a>자바스크립트의 실행 환경</h2><p>JavaScript는 독립적인 언어가 아니라 스크립트 언어로, 특정한 프로그램 안에서만 동작을 할 수 있다. 자바스크립트를 실행하는 환경은 브라우저환경에서 실행하는 방법과 Node.js에서 실행하는 방법, 코드 에디터는 VS code를 이용하여 브라우저나, Node.js 환경에서 실행하는 방법이 있다.</p>
+<h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><p> 모든 브라우저는 자바스크립트를 해석하고 실행할 수 있는 엔진을 내장하고 있다. 대표적으로 구글의 V8이 있다. 인터넷 익스플로어를 제외한 대부분의 모던 브라우저는 ES6를 지원한다. 지원비율은 96% ~ 99%로 육박하지만 인터넷 익스플로어나 구형 브라우저는 대부분 ES6를 지원하고 있지 않다. </p>
+<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>Node.js는 브라우저의 자바스크립트 엔진에서만 동작하던 자바스크립트를 브라우저 이외의 환경에서도 동작할 수 있도록 자바스크립트 엔진을 브라우저에서 독립시킨 자바스크립트 실행 환경이다.<br>client개발을 위한 용도로만 국한되어 JavaScript를 크롬(Chrome)같은 브라우저에서만 쓰는 것이 아닌 브라우저 밖. 즉, 내 컴퓨터에서 다양한 용도로 확장하기위해 만들어진 것이 바로 node.js 이다.<br>Node.js 의 등장으로 자바스크립트는 브라우저를 벗어나 앱개발에서도 사용 할 수 있는 범용 언어가 되었다. 또한 백엔드에서 자바스크립트를 이용하여 서버를 개발할수 있다는 점은 프-백 간 서로의 코드를 읽고  이해할 수 있다는 점에서 큰 장점이라 할 수 있다.</p>
+<h2 id="리액트의-런타임-환경"><a href="#리액트의-런타임-환경" class="headerlink" title="리액트의 런타임 환경"></a>리액트의 런타임 환경</h2><p>JavaScript의 런타임 환경을 공부하면서 리액트의 런타임 환경은 무엇일까? 라는 궁금증이 생겼다. 내가 헷갈렸던 부분은, 리액트의 경우 패키지 매니저가 구동되는 프로세스는 노드 환경에서 돌아가고 렌더링 결과물은 브라우저 환경에서 확인을 하고 있는데 리액트가 실행될 때 두가지 런타임 환경을 모두 거치는 것인지, 어떤 런타임 환경에서 실행이 되는 것인지 궁금했다.</p>
+<p>구글링이나 책에도 자료가 나와있지 않아 결국 개발자 커뮤니티에 물어봤고 그에 대한 답변으로 내가 이해한 내용은 아래와 같다. </p>
+<ol>
+<li>브라우저에서 프론트엔드 서버 측으로 페이지 GET 요청 </li>
+<li>프론트엔드 서버에서 html, js 번들을 응답</li>
+<li>js 번들 다운로드 완료 후 실행 → react 실행</li>
 </ol>
-<h3 id="2-inline-block"><a href="#2-inline-block" class="headerlink" title="2. inline-block"></a>2. inline-block</h3><ol>
-<li>콘텐츠 내용의 크기만큼 공간을 차지한다.</li>
-<li>콘텐츠가 없어도 표시 가능하며, width 로 크기 조정 또한 가능하다.</li>
-<li>즉 inline적 요소와 block요소를 모두 가지고 있다.</li>
-</ol>
-<h3 id="3-block"><a href="#3-block" class="headerlink" title="3. block"></a>3. block</h3><ol>
-<li>대표적으로 div 태그가 있다.</li>
-<li>한 줄의 공간 모두를 차지한다.</li>
-<li>태그안에 컨텐츠가 없어도 화면에 나타낼 수 있으며, width로 크기를 설정할 수 있다.</li>
-</ol>
-<h2 id="position"><a href="#position" class="headerlink" title="position"></a>position</h2><p>position은 기본값으로 static을 가지고 있다. 이는 html에 정의된 순서대로 브라우저상에 자연스럽게 보여지는 것을 의미한다.(제일 왼쪽, 제일 상단에서 시작)<br>따라서 요소의 위치를 바꾸기 위해서는 position의 default값을 바꾸어 주어야 한다.</p>
-<h3 id="1-relative"><a href="#1-relative" class="headerlink" title="1. relative"></a>1. relative</h3><p>원래 (static)에 있어야 하는 자리에서, 상대적으로 옮겨간다.</p>
-<h3 id="2-absolute"><a href="#2-absolute" class="headerlink" title="2. absolute"></a>2. absolute</h3><p>부모 태그의 위치에서 옮겨간다. 이때 부모 태그는 position 속성은 relative여야 하며, 부모 태그의 position 속성이 relative가 아닌 경우 relative 속성이 있는 가장 가까운 상위 태그를 찾아 그 위치를 기준으로 옮겨간다.</p>
-<h3 id="3-fixed"><a href="#3-fixed" class="headerlink" title="3. fixed"></a>3. fixed</h3><p>window 안에서 옮겨간다. 웹페이지 안에서 브라우저가 기준이 된다.</p>
-<h3 id="4-sticky"><a href="#4-sticky" class="headerlink" title="4. sticky"></a>4. sticky</h3><p>원래 있어야 하는 자리에서 있으면서(static), 스크롤을 하여도 없어지지 않고 그대로 자리에 붙어있는다. position의 속성을 위 태그들로 변경한 후 top, bottom, left, right value를 이용하여 요소의 위치를 변경할 수 있다.</p>
-<blockquote>
-<p>참고<br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/CSS/display">MDN</a> &gt; <a target="_blank" rel="noopener" href="http://www.tcpschool.com/css/css_position_display">TCP</a> &gt; <a target="_blank" rel="noopener" href="https://www.daleseo.com/css-position/">DalsSeo</a></p>
-</blockquote>
+<p>위와 같은 시나리오에 따라 일반적인 클라이언트 사이드 렌더링(CSR)이 이루어 진다.<br>하지만 ReactDOMServer와 같은 API의 존재로 알 수 있듯이 서버 측에서도 실행이 가능하다. 보통은 서버 사이드 렌더링(SSR)이 필요할때 사용하게 되는데, 첫 응답으로 비어 있는 html이 아니라 렌더링이 완료된 html 파일을 응답으로 돌려주기 위해 주로 사용한다. (renderToString)</p>
+<p>결국 기본적인 개발환경에서는 브라우저 환경을 띄우기 위한 목적으로 노드 런타임의 도움을 받지만 이미 배포된 리액트 프로젝트는 노드 환경 도움없이 렌더링 동작이 가능한 점을 생각해보면 기본적으로 리액트의 런타임 환경은 브라우저라고 보는게 맞는 것 같다. </p>
 
             </div>
         </div>
@@ -100,19 +90,10 @@
     
 <nav class="article-nav">
   
-    <a href="/2022/07/28/%5BJavaScript%5D%08%EA%B0%9D%EC%B2%B4/" id="article-nav-newer" class="article-nav-link-wrap prev">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          JavaScript 객체(Object)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/07/19/%EC%8B%9C%EB%A9%98%ED%8B%B1/" id="article-nav-older" class="article-nav-link-wrap next">
+    <a href="/2022/10/18/%EA%B9%8A%EC%9D%80%EB%B3%B5%EC%82%AC%20%EC%96%95%EC%9D%80%EB%B3%B5%EC%82%AC/" id="article-nav-older" class="article-nav-link-wrap next">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Semantic web/tag 사용을 지향해야 하는 이유</div>
+      <div class="article-nav-title">JavaScript 얕은 복사, 깊은 복사</div>
     </a>
   
 </nav>

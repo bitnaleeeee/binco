@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <title>CSS3 layout display, position 정리 | Binna.dev</title>
+    <title>Tag: node.js | Binna.dev</title>
     
     <link rel="alternative" href="/rss2.xml" title="Binna.dev" type="application/atom+xml">
     
@@ -42,85 +42,38 @@
         
     </header>
     <div class="site-body">
-        <div class="global-width">
-    <article class="article" data-layout="post" data-slug="포지션">
-        <div class="article-content">
-            
-            
-            <header class="article-header">
-                <div class="article-meta">
-                    <a href="/2022/07/20/%ED%8F%AC%EC%A7%80%EC%85%98/" class="article-date">
-  <time datetime="2022-07-20T01:00:00.000Z">2022-07-20</time>
-</a>
-                    
-  <div class="article-category categories">
-    <a class="category-link" href="/categories/CSS3/">CSS3</a>
-  </div>
+        <div class="alert alert-default">
+    tag : <strong class="text-capitalize">node.js</strong>
+</div>
 
-                    
-                </div>
-                
-    <h1 class="article-title" itemprop="name">
-      <a href="/2022/07/20/%ED%8F%AC%EC%A7%80%EC%85%98/">CSS3 layout display, position 정리</a>
+
+    
+    <div class="global-width">
+        <section class="archives">
+            
+                <article class="archive-article archive-type-post">
+    <div class="archive-article-inner" >
+        <header class="archive-article-header">
+            <a href="/2022/11/22/%5BJavaScript%5D%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/" class="archive-article-year">
+  <time datetime="2022-11-22T09:00:59.000Z">2022.</time>
+</a><!--
+            --><a href="/2022/11/22/%5BJavaScript%5D%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/" class="archive-article-date">
+  <time datetime="2022-11-22T09:00:59.000Z">11.22</time>
+</a>
+            
+    <h1 class="archive-article-title" itemprop="name">
+      <a href="/2022/11/22/%5BJavaScript%5D%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/">JavaScript 실행환경</a>
     </h1>
 
-            </header>
+        </header>
+    </div>
+</article>
             
-            <div class="article-body">
-                <h2 id="diplay"><a href="#diplay" class="headerlink" title="diplay"></a>diplay</h2><p>display는 요소를 block과 inline inlie-block중 어느 쪽으로 처리할지 결정하는 css 속성이다.</p>
-<h3 id="1-inline"><a href="#1-inline" class="headerlink" title="1. inline"></a>1. inline</h3><ol>
-<li>대표적으로 span 태그가 있다.</li>
-<li>콘텐츠 내용의 크기만큼 공간을 차지한다.</li>
-<li>inline 요소의 경우 태그 안에 콘텐츠가 없을 경우 화면에 나타나지 않으며, 컨텐츠 자체만을 꾸며주어 width로 크기를 설정할 수도 없다. 콘텐츠가 없어도 화면에 표시하고 크기를 설정하기 위해서는 display를 block으로 변경해 주어야한다.</li>
-</ol>
-<h3 id="2-inline-block"><a href="#2-inline-block" class="headerlink" title="2. inline-block"></a>2. inline-block</h3><ol>
-<li>콘텐츠 내용의 크기만큼 공간을 차지한다.</li>
-<li>콘텐츠가 없어도 표시 가능하며, width 로 크기 조정 또한 가능하다.</li>
-<li>즉 inline적 요소와 block요소를 모두 가지고 있다.</li>
-</ol>
-<h3 id="3-block"><a href="#3-block" class="headerlink" title="3. block"></a>3. block</h3><ol>
-<li>대표적으로 div 태그가 있다.</li>
-<li>한 줄의 공간 모두를 차지한다.</li>
-<li>태그안에 컨텐츠가 없어도 화면에 나타낼 수 있으며, width로 크기를 설정할 수 있다.</li>
-</ol>
-<h2 id="position"><a href="#position" class="headerlink" title="position"></a>position</h2><p>position은 기본값으로 static을 가지고 있다. 이는 html에 정의된 순서대로 브라우저상에 자연스럽게 보여지는 것을 의미한다.(제일 왼쪽, 제일 상단에서 시작)<br>따라서 요소의 위치를 바꾸기 위해서는 position의 default값을 바꾸어 주어야 한다.</p>
-<h3 id="1-relative"><a href="#1-relative" class="headerlink" title="1. relative"></a>1. relative</h3><p>원래 (static)에 있어야 하는 자리에서, 상대적으로 옮겨간다.</p>
-<h3 id="2-absolute"><a href="#2-absolute" class="headerlink" title="2. absolute"></a>2. absolute</h3><p>부모 태그의 위치에서 옮겨간다. 이때 부모 태그는 position 속성은 relative여야 하며, 부모 태그의 position 속성이 relative가 아닌 경우 relative 속성이 있는 가장 가까운 상위 태그를 찾아 그 위치를 기준으로 옮겨간다.</p>
-<h3 id="3-fixed"><a href="#3-fixed" class="headerlink" title="3. fixed"></a>3. fixed</h3><p>window 안에서 옮겨간다. 웹페이지 안에서 브라우저가 기준이 된다.</p>
-<h3 id="4-sticky"><a href="#4-sticky" class="headerlink" title="4. sticky"></a>4. sticky</h3><p>원래 있어야 하는 자리에서 있으면서(static), 스크롤을 하여도 없어지지 않고 그대로 자리에 붙어있는다. position의 속성을 위 태그들로 변경한 후 top, bottom, left, right value를 이용하여 요소의 위치를 변경할 수 있다.</p>
-<blockquote>
-<p>참고<br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/CSS/display">MDN</a> &gt; <a target="_blank" rel="noopener" href="http://www.tcpschool.com/css/css_position_display">TCP</a> &gt; <a target="_blank" rel="noopener" href="https://www.daleseo.com/css-position/">DalsSeo</a></p>
-</blockquote>
-
-            </div>
-        </div>
-    </article>
-
-    
-    
-<nav class="article-nav">
-  
-    <a href="/2022/07/28/%5BJavaScript%5D%08%EA%B0%9D%EC%B2%B4/" id="article-nav-newer" class="article-nav-link-wrap prev">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+        </section>
         
-          JavaScript 객체(Object)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2022/07/19/%EC%8B%9C%EB%A9%98%ED%8B%B1/" id="article-nav-older" class="article-nav-link-wrap next">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Semantic web/tag 사용을 지향해야 하는 이유</div>
-    </a>
-  
-</nav>
+    </div>
 
-    
 
-    
-</div>
     </div>
     <footer class="site-footer">
         <div class="global-width">

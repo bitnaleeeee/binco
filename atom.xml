@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-18T09:10:42.906Z</updated>
+  <updated>2022-11-22T09:57:51.663Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript 실행환경</title>
+    <link href="http://example.com/2022/11/22/[JavaScript]%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/"/>
+    <id>http://example.com/2022/11/22/[JavaScript]%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/</id>
+    <published>2022-11-22T09:00:59.000Z</published>
+    <updated>2022-11-22T09:57:51.663Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="자바스크립트의-실행-환경"><a href="#자바스크립트의-실행-환경" class="headerlink" title="자바스크립트의 실행 환경"></a>자바스크립트의 실행 환경</h2><p>JavaScript는 독립적인 언어가 아니라 스크립트 언어로, 특정한 프로그램 안에서만 동작을 할 수 있다. 자바스크립트를 실행하는 환경은 브라우저환경에서 실행하는 방법과 Node.js에서 실행하는 방법, 코드 에디터는 VS code를 이용하여 브라우저나, Node.js 환경에서 실행하는 방법이 있다.</p><h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><p> 모든 브라우저는 자바스크립트를 해석하고 실행할 수 있는 엔진을 내장하고 있다. 대표적으로 구글의 V8이 있다. 인터넷 익스플로어를 제외한 대부분의 모던 브라우저는 ES6를 지원한다. 지원비율은 96% ~ 99%로 육박하지만 인터넷 익스플로어나 구형 브라우저는 대부분 ES6를 지원하고 있지 않다. </p><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>Node.js는 브라우저의 자바스크립트 엔진에서만 동작하던 자바스크립트를 브라우저 이외의 환경에서도 동작할 수 있도록 자바스크립트 엔진을 브라우저에서 독립시킨 자바스크립트 실행 환경이다.<br>client개발을 위한 용도로만 국한되어 JavaScript를 크롬(Chrome)같은 브라우저에서만 쓰는 것이 아닌 브라우저 밖. 즉, 내 컴퓨터에서 다양한 용도로 확장하기위해 만들어진 것이 바로 node.js 이다.<br>Node.js 의 등장으로 자바스크립트는 브라우저를 벗어나 앱개발에서도 사용 할 수 있는 범용 언어가 되었다. 또한 백엔드에서 자바스크립트를 이용하여 서버를 개발할수 있다는 점은 프-백 간 서로의 코드를 읽고  이해할 수 있다는 점에서 큰 장점이라 할 수 있다.</p><h2 id="리액트의-런타임-환경"><a href="#리액트의-런타임-환경" class="headerlink" title="리액트의 런타임 환경"></a>리액트의 런타임 환경</h2><p>JavaScript의 런타임 환경을 공부하면서 리액트의 런타임 환경은 무엇일까? 라는 궁금증이 생겼다. 내가 헷갈렸던 부분은, 리액트의 경우 패키지 매니저가 구동되는 프로세스는 노드 환경에서 돌아가고 렌더링 결과물은 브라우저 환경에서 확인을 하고 있는데 리액트가 실행될 때 두가지 런타임 환경을 모두 거치는 것인지, 어떤 런타임 환경에서 실행이 되는 것인지 궁금했다.</p><p>구글링이나 책에도 자료가 나와있지 않아 결국 개발자 커뮤니티에 물어봤고 그에 대한 답변으로 내가 이해한 내용은 아래와 같다. </p><ol><li>브라우저에서 프론트엔드 서버 측으로 페이지 GET 요청 </li><li>프론트엔드 서버에서 html, js 번들을 응답</li><li>js 번들 다운로드 완료 후 실행 → react 실행</li></ol><p>위와 같은 시나리오에 따라 일반적인 클라이언트 사이드 렌더링(CSR)이 이루어 진다.<br>하지만 ReactDOMServer와 같은 API의 존재로 알 수 있듯이 서버 측에서도 실행이 가능하다. 보통은 서버 사이드 렌더링(SSR)이 필요할때 사용하게 되는데, 첫 응답으로 비어 있는 html이 아니라 렌더링이 완료된 html 파일을 응답으로 돌려주기 위해 주로 사용한다. (renderToString)</p><p>결국 기본적인 개발환경에서는 브라우저 환경을 띄우기 위한 목적으로 노드 런타임의 도움을 받지만 이미 배포된 리액트 프로젝트는 노드 환경 도움없이 렌더링 동작이 가능한 점을 생각해보면 기본적으로 리액트의 런타임 환경은 브라우저라고 보는게 맞는 것 같다. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;자바스크립트의-실행-환경&quot;&gt;&lt;a href=&quot;#자바스크립트의-실행-환경&quot; class=&quot;headerlink&quot; title=&quot;자바스크립트의 실행 환경&quot;&gt;&lt;/a&gt;자바스크립트의 실행 환경&lt;/h2&gt;&lt;p&gt;JavaScript는 독립적인 언어가 아니라 스</summary>
+      
+    
+    
+    
+    <category term="javascript" scheme="http://example.com/categories/javascript/"/>
+    
+    
+    <category term="node.js" scheme="http://example.com/tags/node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript 얕은 복사, 깊은 복사</title>
@@ -470,30 +494,6 @@ p &gt; img {
     
     
     <category term="network" scheme="http://example.com/tags/network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 자바스크립트 This</title>
-    <link href="http://example.com/2022/06/12/[JavaScript]%08this/"/>
-    <id>http://example.com/2022/06/12/[JavaScript]%08this/</id>
-    <published>2022-06-12T03:00:59.000Z</published>
-    <updated>2022-10-18T09:25:15.447Z</updated>
-    
-    <content type="html"><![CDATA[<p>this는 함수가 호출되면 함수 내부로 암묵적으로 전달 되며, 함수를 호출한 방식에 의해 this에 바인딩할 객체가 동적으로 결정된다. 다시 말해, 함수를 선언할 때 this에 바인딩할 객체가 정적으로 결정되는 것이 아니고, 함수를 호출할 때 함수가 어떻게 호출되었는지에 따라 this에 바인딩할 객체가 동적으로 결정된다.</p><h2 id="this가-만들어지는-경우"><a href="#this가-만들어지는-경우" class="headerlink" title="this가 만들어지는 경우"></a>this가 만들어지는 경우</h2><ul><li>일반 함수에서의 this</li><li>중첩 함수에서의 this</li><li>이벤트 리스너에서의 this</li><li>메서드에서의 this</li><li>메서드 내부의 중첩 함수의 this</li></ul><h3 id="일반-함수에서의-this"><a href="#일반-함수에서의-this" class="headerlink" title="일반 함수에서의 this"></a>일반 함수에서의 this</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function func() &#123;</span><br><span class="line">  console.log(this); // window</span><br><span class="line">&#125;</span><br><span class="line">func();</span><br></pre></td></tr></table></figure><p>일반 함수 내부에서는 this는 전역객체인 window가 된다.</p><h3 id="중첩-함수에서의-this"><a href="#중첩-함수에서의-this" class="headerlink" title="중첩 함수에서의 this"></a>중첩 함수에서의 this</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">func</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">func2</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>); <span class="comment">// window</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="title function_">func2</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">func</span>();</span><br></pre></td></tr></table></figure><p>일반 중첩 함수에서의 this 도 window 가 된다.</p><h3 id="이벤트-리스너에서의-this"><a href="#이벤트-리스너에서의-this" class="headerlink" title="이벤트 리스너에서의 this"></a>이벤트 리스너에서의 this</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">document.addEventListener(&#x27;click&#x27;, function() &#123;</span><br><span class="line">    console.log(this); // #document</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>이벤트 리스너에서의 this는 이벤트를 발생시킨 객체가 된다.</p><h3 id="메서드에서의-this"><a href="#메서드에서의-this" class="headerlink" title="메서드에서의 this"></a>메서드에서의 this</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">func</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>); <span class="comment">// &#123;func: ƒ&#125;;</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">obj.<span class="title function_">func</span>();</span><br></pre></td></tr></table></figure><p>메서드에서의 this는 메서드를 호출한 객체가 된다.</p><h3 id="메서드-내부의-중첩-함수의-this"><a href="#메서드-내부의-중첩-함수의-this" class="headerlink" title="메서드 내부의 중첩 함수의 this"></a>메서드 내부의 중첩 함수의 this</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">func</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">func2</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>); <span class="comment">// window</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">func2</span>();</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">obj.<span class="title function_">func</span>();</span><br></pre></td></tr></table></figure><p>메서드의 this와는 다르게 window를 가리킨다. 메서드의 내부함수는 결국 중첩함수이기 때문에 window를 바라본다. 이를 방지하기 위해선 아래 방법으로 해결할 수 있다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">func</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> that = <span class="variable language_">this</span>;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">func2</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(that); <span class="comment">// &#123;func: ƒ&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">func2</span>();</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">obj.<span class="title function_">func</span>();</span><br></pre></td></tr></table></figure><p>메서드를 포함한 객체를 참조하도록 부모함수의 this를 내부함수가 접근 가능한 변수에 저장하면 된다. 보통 관례상 this 값을 저장하는 변수의 이름을 that 이라고 선언한다.</p><p>자바스크립트는 위와 같은 바인딩의 한계를 극복하려고 this 바인딩을 명시적으로 할 수 있도록 call과 apply 메서드를 제공한다. 제이쿼리 등 자바스크립트 라이버리들의 경우 bind 메서드를 통해, 사용자가 원하는 객체를 this에 바인딩 하는 기능을 제공하고 있다.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;this는 함수가 호출되면 함수 내부로 암묵적으로 전달 되며, 함수를 호출한 방식에 의해 this에 바인딩할 객체가 동적으로 결정된다. 다시 말해, 함수를 선언할 때 this에 바인딩할 객체가 정적으로 결정되는 것이 아니고, 함수를 호출할 때 함</summary>
-      
-    
-    
-    
-    <category term="javascript" scheme="http://example.com/categories/javascript/"/>
-    
-    
-    <category term="This" scheme="http://example.com/tags/This/"/>
     
   </entry>
   
