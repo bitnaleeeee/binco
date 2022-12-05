@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-22T09:57:51.663Z</updated>
+  <updated>2022-12-05T15:32:41.455Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JavaScript 실행환경</title>
-    <link href="http://example.com/2022/11/22/[JavaScript]%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/"/>
-    <id>http://example.com/2022/11/22/[JavaScript]%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/</id>
-    <published>2022-11-22T09:00:59.000Z</published>
-    <updated>2022-11-22T09:57:51.663Z</updated>
+    <title>리액트 프로젝트를 gh-pages 배포하는 방법</title>
+    <link href="http://example.com/2022/12/06/[JavaScript]%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/"/>
+    <id>http://example.com/2022/12/06/[JavaScript]%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</id>
+    <published>2022-12-06T09:00:59.000Z</published>
+    <updated>2022-12-05T15:32:41.455Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="리액트-프로젝트를-gh-pages-배포하는-방법"><a href="#리액트-프로젝트를-gh-pages-배포하는-방법" class="headerlink" title="리액트 프로젝트를 gh-pages 배포하는 방법"></a>리액트 프로젝트를 gh-pages 배포하는 방법</h2><br><p>GitHub 레포지토리에 작성한 코드를 무료로 배포하는 방법을 알아보겠다.</p><br><h3 id="gh-pages-설치하기"><a href="#gh-pages-설치하기" class="headerlink" title="gh-pages 설치하기"></a>gh-pages 설치하기</h3><p>먼저 아래 명령어로 설치를 해준다</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gh-pages --save-dev</span><br></pre></td></tr></table></figure><h3 id="package-json-파일-수정하기"><a href="#package-json-파일-수정하기" class="headerlink" title="package.json 파일 수정하기"></a>package.json 파일 수정하기</h3><br><p>package.json 파일에 아래와 같이 코드와 배포할 홈페이지 주소를 추가해준다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;predeploy&quot;: &quot;npm run build&quot;,</span><br><span class="line">&quot;deploy&quot;: &quot;gh-pages -d build&quot;</span><br></pre></td></tr></table></figure><p><img src="/../images/gitpages.png" alt="packagejson파일"></p><h3 id="배포하기"><a href="#배포하기" class="headerlink" title="배포하기"></a>배포하기</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy</span><br></pre></td></tr></table></figure><p>배포 명령어를 입력 후 해당 github - settings - pages를 들어가면 gh-pages 브랜치가 새로 생긴다. </p><p><img src="/../images/build.png" alt="packagejson파일"></p><p>위와 같이 Source 의 branch를 gh-pages로 위와 같이 설정해주면 무료로 웹 호스팅을 할 수 있다.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;리액트-프로젝트를-gh-pages-배포하는-방법&quot;&gt;&lt;a href=&quot;#리액트-프로젝트를-gh-pages-배포하는-방법&quot; class=&quot;headerlink&quot; title=&quot;리액트 프로젝트를 gh-pages 배포하는 방법&quot;&gt;&lt;/a&gt;리액트 프로젝트</summary>
+      
+    
+    
+    
+    <category term="github" scheme="http://example.com/categories/github/"/>
+    
+    
+    <category term="github" scheme="http://example.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github Pages - 깃허브로 사이트 배포하기 ( Github Deploy )</title>
+    <link href="http://example.com/2022/12/05/[JavaScript]%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/"/>
+    <id>http://example.com/2022/12/05/[JavaScript]%EC%8B%A4%ED%96%89%ED%99%98%EA%B2%BD/</id>
+    <published>2022-12-05T09:00:59.000Z</published>
+    <updated>2022-12-05T14:48:37.616Z</updated>
     
     <content type="html"><![CDATA[<h2 id="자바스크립트의-실행-환경"><a href="#자바스크립트의-실행-환경" class="headerlink" title="자바스크립트의 실행 환경"></a>자바스크립트의 실행 환경</h2><p>JavaScript는 독립적인 언어가 아니라 스크립트 언어로, 특정한 프로그램 안에서만 동작을 할 수 있다. 자바스크립트를 실행하는 환경은 브라우저환경에서 실행하는 방법과 Node.js에서 실행하는 방법, 코드 에디터는 VS code를 이용하여 브라우저나, Node.js 환경에서 실행하는 방법이 있다.</p><h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><p> 모든 브라우저는 자바스크립트를 해석하고 실행할 수 있는 엔진을 내장하고 있다. 대표적으로 구글의 V8이 있다. 인터넷 익스플로어를 제외한 대부분의 모던 브라우저는 ES6를 지원한다. 지원비율은 96% ~ 99%로 육박하지만 인터넷 익스플로어나 구형 브라우저는 대부분 ES6를 지원하고 있지 않다. </p><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>Node.js는 브라우저의 자바스크립트 엔진에서만 동작하던 자바스크립트를 브라우저 이외의 환경에서도 동작할 수 있도록 자바스크립트 엔진을 브라우저에서 독립시킨 자바스크립트 실행 환경이다.<br>client개발을 위한 용도로만 국한되어 JavaScript를 크롬(Chrome)같은 브라우저에서만 쓰는 것이 아닌 브라우저 밖. 즉, 내 컴퓨터에서 다양한 용도로 확장하기위해 만들어진 것이 바로 node.js 이다.<br>Node.js 의 등장으로 자바스크립트는 브라우저를 벗어나 앱개발에서도 사용 할 수 있는 범용 언어가 되었다. 또한 백엔드에서 자바스크립트를 이용하여 서버를 개발할수 있다는 점은 프-백 간 서로의 코드를 읽고  이해할 수 있다는 점에서 큰 장점이라 할 수 있다.</p><h2 id="리액트의-런타임-환경"><a href="#리액트의-런타임-환경" class="headerlink" title="리액트의 런타임 환경"></a>리액트의 런타임 환경</h2><p>JavaScript의 런타임 환경을 공부하면서 리액트의 런타임 환경은 무엇일까? 라는 궁금증이 생겼다. 내가 헷갈렸던 부분은, 리액트의 경우 패키지 매니저가 구동되는 프로세스는 노드 환경에서 돌아가고 렌더링 결과물은 브라우저 환경에서 확인을 하고 있는데 리액트가 실행될 때 두가지 런타임 환경을 모두 거치는 것인지, 어떤 런타임 환경에서 실행이 되는 것인지 궁금했다.</p><p>구글링이나 책에도 자료가 나와있지 않아 결국 개발자 커뮤니티에 물어봤고 그에 대한 답변으로 내가 이해한 내용은 아래와 같다. </p><ol><li>브라우저에서 프론트엔드 서버 측으로 페이지 GET 요청 </li><li>프론트엔드 서버에서 html, js 번들을 응답</li><li>js 번들 다운로드 완료 후 실행 → react 실행</li></ol><p>위와 같은 시나리오에 따라 일반적인 클라이언트 사이드 렌더링(CSR)이 이루어 진다.<br>하지만 ReactDOMServer와 같은 API의 존재로 알 수 있듯이 서버 측에서도 실행이 가능하다. 보통은 서버 사이드 렌더링(SSR)이 필요할때 사용하게 되는데, 첫 응답으로 비어 있는 html이 아니라 렌더링이 완료된 html 파일을 응답으로 돌려주기 위해 주로 사용한다. (renderToString)</p><p>결국 기본적인 개발환경에서는 브라우저 환경을 띄우기 위한 목적으로 노드 런타임의 도움을 받지만 이미 배포된 리액트 프로젝트는 노드 환경 도움없이 렌더링 동작이 가능한 점을 생각해보면 기본적으로 리액트의 런타임 환경은 브라우저라고 보는게 맞는 것 같다. </p>]]></content>
     
@@ -33,10 +57,10 @@
     
     
     
-    <category term="javascript" scheme="http://example.com/categories/javascript/"/>
+    <category term="github" scheme="http://example.com/categories/github/"/>
     
     
-    <category term="node.js" scheme="http://example.com/tags/node-js/"/>
+    <category term="github" scheme="http://example.com/tags/github/"/>
     
   </entry>
   
@@ -254,8 +278,8 @@ p &gt; img {
   
   <entry>
     <title>JavaScript 객체(Object)</title>
-    <link href="http://example.com/2022/07/28/[JavaScript]%08%EA%B0%9D%EC%B2%B4/"/>
-    <id>http://example.com/2022/07/28/[JavaScript]%08%EA%B0%9D%EC%B2%B4/</id>
+    <link href="http://example.com/2022/07/28/[JavaScript]%20%EA%B0%9D%EC%B2%B4/"/>
+    <id>http://example.com/2022/07/28/[JavaScript]%20%EA%B0%9D%EC%B2%B4/</id>
     <published>2022-07-28T03:00:59.000Z</published>
     <updated>2022-10-18T09:18:47.733Z</updated>
     
@@ -470,30 +494,6 @@ p &gt; img {
     
     <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript - GET과 POST 차이</title>
-    <link href="http://example.com/2022/06/14/%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3-get%E1%84%80%E1%85%AA%20post/"/>
-    <id>http://example.com/2022/06/14/%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3-get%E1%84%80%E1%85%AA%20post/</id>
-    <published>2022-06-14T07:10:00.000Z</published>
-    <updated>2022-10-25T09:17:52.506Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><ul><li>웹상에서 클라이언트와 서버 간에 데이터를 주고 받을 수 있는 프로토콜</li><li>HTTP 메서드에는 2가지 방식이 있는데, 그것이 GET 방식과 POST 방식</li></ul><span id="more"></span><h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h2><p>URL에 파라미터를 포함시켜 요청하는 방식이다. 예를들어 <code>https://recordboy.github.io/login?id=user&amp;pw=1234</code> 라는 페이지가 있다고 치자, <code>?</code> 마크를 통해 URL의 끝을 알리고, <code>id</code>라는 키(key)에 대해선 <code>user</code>라는 값(value)를, <code>pw</code>라는 키(key)에 대해서는 <code>1234</code>라는 값(value)을 전송한 것을 볼 수 있다. 여러개의 키와 값을 보낼 때는 <code>&amp;</code>를 사용하여 이어준다. 이처럼 데이터가 노출되기 때문에 보안에 취약하며, 개인정보가 포함되지 않는 상황에서 캐싱을 하여 페이지 로딩 속도를 높일 때 사용된다.</p><h3 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h3><ul><li>URL에 파라미터를 포함시켜 요청한다. </li><li>데이터를 Header(헤더)에 포함하여 전송한다.</li><li>URL에 파라미터가 노출되어 보안에 취약하다.</li><li>캐싱할 수 있다.</li><li>GET 방식은 글자수 제한이 있지만, 256자 라는 말은 사실이 아니다.<blockquote><p>익스 9의 경우 2083자&#x2F;최대 5120자를 지원<br>사파리는 40만자를 넘기면 브라우저가 크러쉬<br>파이어폭스&#x2F;오페라는 길이 제한이 없고 50만자를 넘겨도 별다른 이상 없음<br>크롬의 경우 4만자를 기준</p></blockquote></li></ul><h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a>POST</h2><p>POST는 제출하다라는 뜻으로 BODY에 데이터를 넣어 전송하며 길이의 제한이 없다. 따라서 GET과 다르게 대용량 데이터를 전송할 수 있으며, BODY에 전송되어 내용이 눈에 보이지 않아 보안적으로 안전하다고 할 수 있다. 하지만 POST요청도 크롬 개발자 도구같은 툴로 요청내용을 확인할 수 있기 때문에 민감한 데이터는 반드시 암호화 하여 전달해야 한다.<br>그리고 POST로 요청을 보낼 때는 요청 헤더의 <code>Content-Type</code>에 요청 데이터의 타입을 명시해야 한다. 종류는 여러가지가 있지만 몇가지 나열해보면</p><ul><li><code>application/x-www-form-urlencoded</code><ul><li>GET방식과 마찬가지로 BODY에 <code>key</code>와 <code>value</code>쌍으로 데이터를 넣는다. 똑같이 구분자 &amp;를 쓴다.</li></ul></li><li><code>text/plain</code><ul><li>BODY에 단순 텍스트를 넣는다.</li></ul></li><li><code>multipart/form-data</code><ul><li>파일전송을 할때 많이 쓰는데 BODY의 데이터를 바이너리 데이터로 넣는다는걸 알려준다.</li></ul></li></ul><h3 id="특징-1"><a href="#특징-1" class="headerlink" title="특징"></a>특징</h3><ul><li>BODY에 데이터를 넣어 전송하며 길이의 제한이 없어 대용량 데이터를 전송할 수 있다.</li><li>BODY에 데이터가 들어가기 때문에 GET보다는 보안상 유리하지만 민감한 데이터는 꼭 암호화를 해줘야 한다.</li><li>요청 헤더의 <code>Content-Type</code>에 요청 데이터의 타입을 명시해야 한다.</li></ul><h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><blockquote><p><a href="https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post">GET과 POST의 차이</a><br><a href="https://mangkyu.tistory.com/17">[Web] GET과 POST의 비교 및 차이</a><br><a href="https://uiandwe.tistory.com/1133">get 방식의 글자 256자 제한은 잘못된 상식</a><br><a href="https://mommoo.tistory.com/60">GET방식 과 POST방식</a></p></blockquote>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;HTTP&quot;&gt;&lt;a href=&quot;#HTTP&quot; class=&quot;headerlink&quot; title=&quot;HTTP&quot;&gt;&lt;/a&gt;HTTP&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;웹상에서 클라이언트와 서버 간에 데이터를 주고 받을 수 있는 프로토콜&lt;/li&gt;
-&lt;li&gt;HTTP 메서드에는 2가지 방식이 있는데, 그것이 GET 방식과 POST 방식&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="network" scheme="http://example.com/categories/network/"/>
-    
-    
-    <category term="network" scheme="http://example.com/tags/network/"/>
     
   </entry>
   
