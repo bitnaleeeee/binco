@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-05T15:38:16.200Z</updated>
+  <updated>2022-12-06T11:16:29.702Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>리액트 프로젝트를 gh-pages로 배포하는 방법</title>
-    <link href="http://example.com/2022/12/06/[JavaScript]%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/"/>
-    <id>http://example.com/2022/12/06/[JavaScript]%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</id>
+    <title>AWS EC2 생성하여 서버 배포하기</title>
+    <link href="http://example.com/2022/12/06/[JavaScript]BE%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/"/>
+    <id>http://example.com/2022/12/06/[JavaScript]BE%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</id>
     <published>2022-12-06T09:00:59.000Z</published>
-    <updated>2022-12-05T15:38:16.200Z</updated>
+    <updated>2022-12-06T11:16:29.702Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="AWS-EC2-생성하여-서버-배포하는-방법"><a href="#AWS-EC2-생성하여-서버-배포하는-방법" class="headerlink" title="AWS EC2 생성하여 서버 배포하는 방법"></a>AWS EC2 생성하여 서버 배포하는 방법</h2><p>개인 프로젝트를 진행하면서 실제 서비스는 어떻게 구동되는지 궁금했고, 직접 프론트엔드부터 백엔드까지 구현해보기로 마음먹었다.<br>아래는 백엔드 서버를 AWS EC2를 통해 배포하는 방법에 대해 간략히 설명하겠다.<br><br></p><h3 id="AWS-EC2-선택-이유"><a href="#AWS-EC2-선택-이유" class="headerlink" title="AWS-EC2 선택 이유"></a>AWS-EC2 선택 이유</h3><p>실제 서버를 배포할 서비스를 찾고있던 중 무료 이용이 가능한 히로쿠 서버가 22년 11월부터 유료로 전환된다고 하여 다른 서비스를 찾게 되었다.<br>같은 부트캠프 출신 백엔드 개발자가 이 서비스를 추천해주었는데, 관련해서 정보를 찾아보니 아래와 같은 특징이 있었다.</p><h4 id="AWS-EC2-특징"><a href="#AWS-EC2-특징" class="headerlink" title="AWS-EC2 특징"></a>AWS-EC2 특징</h4><blockquote><p>AWS-EC2<br>를 사용하면 On-demand로 원하는 시간에 원하는 사양의 가상 서버를 신속하게 만들어서 매우 유연하게 사용할 수 있다. EC2를 사용하면 단순히 가상 컴퓨터를 대여받아 빠른 제품 출시와 비용 절감을 할 수 있어 나와 같은 FE 개발자가 사용하기에 접근성 및 비용절감 측면에서 용이했다.</p></blockquote><br><h3 id="EC2-Instance-생성하기"><a href="#EC2-Instance-생성하기" class="headerlink" title="EC2 Instance 생성하기"></a>EC2 Instance 생성하기</h3><p><img src="/../images/aws1.png" alt="aws1파일"><br>EC2 Instances 페이지로 이동 후 Launch Instances 을 클릭하여 EC2 Instance의 이름을 작성하고 Ubuntu를 선택 하였다.</p><br><p><img src="/../images/aws2.png" alt="aws2파일"><br><code>Instance Type</code> 은 t2.micro를 선택하고 새키페어생성을 눌러 아래와 같이 선택 후 원하는 키 페어 이름을 입력한다.<br><br><br><img src="/../images/aws3.png" alt="aws3파일"><br>네트워크 편집 버튼을 누른 후 위와 같이 설정해 주고 퍼블릭IP는 활성화를 선택해준다.</p><p><img src="/../images/aws4.png" alt="aws4파일"><br>이후 Launch Instance 를 클릭하여 EC2 Instance를 실행해주었을때 위와 같이 인스턴스 상태에 실행중이라고 뜬다면 성공이다.</p><h3 id="SSH를-이용한-EC2-Instance-접속"><a href="#SSH를-이용한-EC2-Instance-접속" class="headerlink" title="SSH를 이용한 EC2 Instance 접속"></a>SSH를 이용한 EC2 Instance 접속</h3><p>pem 파일이 위치한 디렉토리로 이동합니다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// EC2 Instance Type이 Ubuntu인 경우</span></span><br><span class="line">ssh -i 파일명.<span class="property">pem</span> ubuntu@<span class="title class_">EC2</span>-<span class="title class_">PublicIP</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//EC2 Instance Type이 Linux인 경우</span></span><br><span class="line">ssh -i 파일명.<span class="property">pem</span> ec2-user@<span class="title class_">EC2</span>-<span class="title class_">PublicIP</span></span><br></pre></td></tr></table></figure><p>실행하겠냐는 문구가 나오면 yes를 입력한다. 그러면  pem 파일의 권한 0644는 너무 많이 오픈되어있다. 라는 경고 문구가 나오는데 다음과 같은 명령어를 입력하여 권한을 수정해야 한다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">400</span> 파일명.<span class="property">pem</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>다시 pem 파일이 위치한 디렉토리로 이동하여 실행해주면 아래와 같이 정상적으로나온다.</p><p><img src="/../images/aws5.png" alt="aws5파일"></p><h2 id="Ubuntu-Node-js-설치및-npm-환경구축"><a href="#Ubuntu-Node-js-설치및-npm-환경구축" class="headerlink" title="Ubuntu  Node.js 설치및 npm 환경구축"></a>Ubuntu  Node.js 설치및 npm 환경구축</h2><p>노드를 설치하기에 앞서 설치에 필요한 커맨드라인툴을 설치해야 한다. 아래 명령어를 입력하여 우분투에 <code>CURL</code>를 설치한다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install -y curl</span><br></pre></td></tr></table></figure><p>아래 명령어를 순서대로 입력하여 api패키지 매니저를 이용해 <code>node.js</code> 를 먼저 다운 받은 후 <code>npm</code>를 다운 받는다.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update</span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install nodejs</span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install npm</span><br></pre></td></tr></table></figure><p>위 명령어로 <code>npm</code> 환경을 구축한 후 후에 <code>git clone</code> 으로 해당 서버 API를 다운받은 후 <code>npm i</code> 하고 <code>npm start</code>하면 프론트엔드도 성공적으로 서버를 배포할 수 있다. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;AWS-EC2-생성하여-서버-배포하는-방법&quot;&gt;&lt;a href=&quot;#AWS-EC2-생성하여-서버-배포하는-방법&quot; class=&quot;headerlink&quot; title=&quot;AWS EC2 생성하여 서버 배포하는 방법&quot;&gt;&lt;/a&gt;AWS EC2 생성하여 서버 배</summary>
+      
+    
+    
+    
+    <category term="AWS" scheme="http://example.com/categories/AWS/"/>
+    
+    
+    <category term="AWS" scheme="http://example.com/tags/AWS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>리액트 프로젝트를 gh-pages로 배포하는 방법</title>
+    <link href="http://example.com/2022/12/05/[JavaScript]FE%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/"/>
+    <id>http://example.com/2022/12/05/[JavaScript]FE%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</id>
+    <published>2022-12-05T09:00:59.000Z</published>
+    <updated>2022-12-06T10:42:52.756Z</updated>
     
     <content type="html"><![CDATA[<h2 id="리액트-프로젝트를-gh-pages-배포하는-방법"><a href="#리액트-프로젝트를-gh-pages-배포하는-방법" class="headerlink" title="리액트 프로젝트를 gh-pages 배포하는 방법"></a>리액트 프로젝트를 gh-pages 배포하는 방법</h2><br><p>GitHub 레포지토리에 작성한 코드를 무료로 배포하는 방법을 알아보겠다.</p><br><h3 id="gh-pages-설치하기"><a href="#gh-pages-설치하기" class="headerlink" title="gh-pages 설치하기"></a>gh-pages 설치하기</h3><p>먼저 아래 명령어로 설치를 해준다</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gh-pages --save-dev</span><br></pre></td></tr></table></figure><h3 id="package-json-파일-수정하기"><a href="#package-json-파일-수정하기" class="headerlink" title="package.json 파일 수정하기"></a>package.json 파일 수정하기</h3><br><p>package.json 파일에 아래와 같이 코드와 배포할 홈페이지 주소를 추가해준다.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;predeploy&quot;: &quot;npm run build&quot;,</span><br><span class="line">&quot;deploy&quot;: &quot;gh-pages -d build&quot;</span><br></pre></td></tr></table></figure><p><img src="/../images/gitpages.png" alt="packagejson파일"></p><h3 id="배포하기"><a href="#배포하기" class="headerlink" title="배포하기"></a>배포하기</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy</span><br></pre></td></tr></table></figure><p>배포 명령어를 입력 후 해당 github - settings - pages를 들어가면 gh-pages 브랜치가 새로 생긴다. </p><p><img src="/../images/build.png" alt="packagejson파일"></p><p>위와 같이 Source 의 branch를 gh-pages로 위와 같이 설정해주면 무료로 웹 호스팅을 할 수 있다.</p>]]></content>
     
@@ -468,32 +492,6 @@ p &gt; img {
     
     
     <category term="network, port" scheme="http://example.com/tags/network-port/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jQuery todolist UI</title>
-    <link href="http://example.com/2022/06/28/TODOLIST/"/>
-    <id>http://example.com/2022/06/28/TODOLIST/</id>
-    <published>2022-06-28T01:34:00.000Z</published>
-    <updated>2022-10-18T09:46:22.832Z</updated>
-    
-    <content type="html"><![CDATA[<h3>TO DO LIST 만들기</h3><h1 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h1><ol><li>버튼을 클릭했을 때 작성한 내용이 할일로 추가 된다.</li><li>엔터키를 눌렀을 때 버튼을 클릭한 것과 동일한 효과 적용</li><li>작성된 리스트를 더블 클릭하면 밑줄이 그어진 후 서서히 삭제된다.</li><li>입력창에 마우스 클릭 시 공란이 되게 한다.</li></ol><h2 id="구현"><a href="#구현" class="headerlink" title="구현"></a>구현</h2><style>.sample .container {  padding: 20px;  width: 300px;  margin: 0 auto;  margin-top: 40px;  background: white;  border-radius: 5px;}.sample form {  display: inline-block;}.sample input {  padding: 4px 15px 4px 5px;}.sample #button {  display: inline-block;  background-color: #fc999b;  color: #ffffff;  border-radius: 5px;  text-align: center;  margin-top: 2px;  padding: 5px 15px;}.sample #button:hover {  cursor: pointer;  opacity: .8;}.sample ol {  padding-left: 20px;}.sample ol li {  padding: 5px;  color: #000;}.sample ol li:nth-child(even) {  background: #dfdfdf;}.sample .strike {  text-decoration: line-through;}.sample li:hover {  cursor: pointer;}</style><div class="sample">  <div class="container">  <h2>Simple To Do List</h2>  <p><em>Click and drag to reorder, double click to cross an item off.</em></p>  <!-- <form name="toDoList"> -->  <input type="text" name="ListItem" />  <!-- </form> -->  <div id="button">Add</div>  <br />  <ol></ol>  </div><div><script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script>$(document).ready(function () {  $('#button').click(function () {    let toAdd = $('input[name=ListItem]').val(); $('.sample ol').append('<li>' + toAdd + '</li>');  });   $('input[name=ListItem]').keypress(function (e) {    if (e.keyCode == 13) {      $('#button').click();        }  });   $(document).on('dblclick', 'li', function () {    $(this).toggleClass('strike').fadeOut('slow');    return false;  }); $('input').focus(function () { $(this).val(''); });   $('.sample ol').sortable();});</script><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  $(<span class="string">&quot;#button&quot;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> toadd = $(<span class="string">&quot;input[name=ListItem]&quot;</span>).<span class="title function_">val</span>();</span><br><span class="line">    $(<span class="string">&quot;ol&quot;</span>).<span class="title function_">append</span>(<span class="string">&quot;&lt;li&gt;&quot;</span> + toAdd + <span class="string">&quot;&lt;/li&gt;&quot;</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">  $(<span class="string">&quot;input[name=ListItem]&quot;</span>).<span class="title function_">keyup</span>(<span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (e.<span class="property">keyCode</span> == <span class="number">13</span>) &#123;</span><br><span class="line">      $(<span class="string">&quot;#button&quot;</span>).<span class="title function_">click</span>();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  $(<span class="variable language_">document</span>).<span class="title function_">on</span>(<span class="string">&quot;dblclick&quot;</span>, <span class="string">&quot;li&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="variable language_">this</span>).<span class="title function_">toggleClass</span>(<span class="string">&quot;strike&quot;</span>).<span class="title function_">fadeOut</span>(<span class="string">&quot;slow&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  $(<span class="string">&quot;input&quot;</span>).<span class="title function_">focus</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="variable language_">this</span>).<span class="title function_">val</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">  $(<span class="string">&quot;ol&quot;</span>).<span class="title function_">sortable</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="해설"><a href="#해설" class="headerlink" title="해설"></a>해설</h2><ol><li>ul 안에 li 요소가 추가된 경우 li를 선택하여 이벤트 코드를 작성할 경우 코드 이후에 작성된 li는 이벤트를 실행시키지 못하는 경우가 있으므로, 이런 경우 document를 선택하고 발생할 이벤트, 선택자를 작성해주면 해당 이벤트를 실행시킬 수 있다.</li><li>li에 (더블)클릭 이벤트를 작성해 줄 경우, 부모 태그 요소에도 이벤트가 적용되어 중복 실행될 수 있으므로 버블링을 방지하기 위해 return false를 작성해준다.</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3&gt;TO DO LIST 만들기&lt;/h3&gt;
-
-&lt;h1 id=&quot;조건&quot;&gt;&lt;a href=&quot;#조건&quot; class=&quot;headerlink&quot; title=&quot;조건&quot;&gt;&lt;/a&gt;조건&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;버튼을 클릭했을 때 작성한 내용이 할일로 추가 된다.&lt;/li&gt;
-&lt;li&gt;</summary>
-      
-    
-    
-    
-    <category term="jQuery" scheme="http://example.com/categories/jQuery/"/>
-    
     
   </entry>
   
