@@ -84,16 +84,16 @@
 <h3 id="SSH를-이용한-EC2-Instance-접속"><a href="#SSH를-이용한-EC2-Instance-접속" class="headerlink" title="SSH를 이용한 EC2 Instance 접속"></a>SSH를 이용한 EC2 Instance 접속</h3><p>먼저 pem 파일이 위치한 디렉토리로 이동한다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// EC2 Instance Type이 Ubuntu인 경우</span></span><br><span class="line">ssh -i 파일명.<span class="property">pem</span> ubuntu@<span class="title class_">EC2</span>-<span class="title class_">PublicIP</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//EC2 Instance Type이 Linux인 경우</span></span><br><span class="line">ssh -i 파일명.<span class="property">pem</span> ec2-user@<span class="title class_">EC2</span>-<span class="title class_">PublicIP</span></span><br></pre></td></tr></table></figure>
 <p>실행하겠냐는 문구가 나오면 yes를 입력한다. 그러면  pem 파일의 권한 0644는 너무 많이 오픈되어있다. 라는 경고 문구가 나오는데 다음과 같은 명령어를 입력하여 권한을 수정해야 한다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">400</span> 파일명.<span class="property">pem</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">400</span> 파일명.<span class="property">pem</span></span><br></pre></td></tr></table></figure>
 <p>다시 pem 파일이 위치한 디렉토리로 이동하여 실행해주면 아래와 같이 정상적으로나온다.</p>
 <p><img src="/../images/aws5.png" alt="aws5파일"></p>
 <h2 id="Ubuntu-Node-js-설치및-npm-환경구축"><a href="#Ubuntu-Node-js-설치및-npm-환경구축" class="headerlink" title="Ubuntu  Node.js 설치및 npm 환경구축"></a>Ubuntu  Node.js 설치및 npm 환경구축</h2><p>노드를 설치하기에 앞서 설치에 필요한 커맨드라인툴을 설치해야 한다. 아래 명령어를 입력하여 우분투에 <code>CURL</code>를 설치한다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install -y curl</span><br></pre></td></tr></table></figure>
 
 <p>아래 명령어를 순서대로 입력하여 api패키지 매니저를 이용해 <code>node.js</code> 를 먼저 다운 받은 후 <code>npm</code>를 다운 받는다.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install nodejs</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install npm</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install npm</span><br></pre></td></tr></table></figure>
 <p>위 명령어로 <code>npm</code> 환경을 구축한 후 후에 <code>git clone</code> 으로 해당 서버 API를 다운받은 후 <code>npm i</code> 하고 <code>npm start</code>하면 프론트엔드도 성공적으로 서버를 배포할 수 있다. </p>
 
             </div>
