@@ -2,18 +2,55 @@
 title: Bitna Lee
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
-comments: false
+excerpt: 
+comments: true
 ---
 
-<!-- 저는 광고과 졸업 후 인사행정 업무를 하며 마지막으로 이직했던 IT회사에서 개발자라는 직군을 처음 알게 되었습니다. 인사업무를 하며 보다 전문성 있는 일을 하고 싶다는 열망이 있었습니다. 최측근에서 개발자분들이 업무를 하는 모습을 보며 저 또한 자연스레 관심이 생기게 되었습니다. 저는 개발자라는 직군은 끊임없이 문제에 대해 고민하고 개선해나가는 모습이 제일 끌렸습니다. 노력하면 할수록 그 성과가 나타나며 풀리지 않던 문제가 해결되었을 때의 성취감과 함께 가지고 있는 지식을 서로 공유하고 자유로운 피드백을 주고 받으며 같이 성장해나가는 공유문화 또한 크게 와 닿았습니다. 퇴근 후 개인시간을 활용하여 유튜브 생활코딩 등으로 개발에 대해 학습할 수 있었고 작성한 코드대로 무언가 만들어 낼 수 있다는 점이 가장 매력적으로 다가왔습니다. 개발자는 도전, 성장, 발전 이라는 키워드를 아우르는  직업이라고 생각이 들었고 제가 개발자라는 직군에 도전하게 된 계기가 되었습니다. 단순 유튜브 강의에서만 그치지 않고 보다 전문적인 지식을 쌓고자 코드잇으로 디지털강의수강 및  퇴사 후 부트캠프에 들어가 본격적으로 개발에 대한 이론적 지식을 쌓으며 개발자라는 직군에 도전하게 되었습니다.  -->
+<style>
+.about .cnt .title {
+    position: relative;
+    padding-left: 45px;
+}
+.about .cnt .title .icon {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 35px;
+}
+</style>
 
+<div class="about">
+    <div class="cnt">
+        <div class="title">
+            <img src="../assets/img/icon-lego.png" class="icon" alt="" />
+            <h2>개발에 중독되기</h2>
+        </div>
+        전문성 있는 일을 하고 싶다는 열망에 개발직군을 알게되었고 <strong>아이디어를 구현하는 매력</strong>에 푹 빠져 프론트엔드 개발자에 도전하게 되었습니다.
+        많은 시행착오를 거쳐 내것으로 만든 레고같은 코드들로 결과물을 완성할 때 성취감은 이루 말할 수 없었습니다.
+        또한 구현한 결과물의 동작 원리를 심도있게 공부할 때 깨우치는 순간이 너무 행복하며 개발에 대한 애착 및 도전에 큰 원동력이 되고 있습니다.
+    </div>
+    <div class="cnt">
+        <div class="title">
+            <img src="../assets/img/icon-sponge.png" class="icon" alt="" />
+            <h2>흡수하고 공유하기</h2>
+        </div>
+        새로운 기술에 거부감이 없고 끊임없이 탐구하여 제것으로 만드는 것을 좋아합니다.
+        이렇게 배운 지식을 팀원들과 서로 공유하는 개발문화 또한 저에게는 큰 매력으로 다가왔습니다.
+        <strong>스펀지같은 흡수력</strong>으로 급변하는 프론트엔드 기술분야에 적응하며 제가 가지고있는 장점을 동료와 나누는 것에 목표를 가지고 있습니다.
+    </div>
+    <div class="cnt">
+        <div class="title">
+            <img src="../assets/img/icon-pen.png" class="icon" alt="" />
+            <h2>성장하며 기록하기</h2>
+        </div>
+        부트캠프 및 프로젝트를 진행하면서 알게된 지식은 틈틈히 정리하여 기록하는 습관을 가지고 있습니다.
+        사소한것도 정리하고 문서화 하는 매일의 노력이 큰 변화를 만든다고 믿습니다.
+        <strong>어제보다 나은 내가 되는 것을 목표</strong>로 하고 끊임없이 공부하며 기록하는 개발자를 추구합니다.
+    </div>
+</div>
 
+<br />
 
-
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
-
-**may u needs ✨**
-
+**저에 대해 더 궁금한게 있으시면 아래로 연락주세요 ✨**
 - {{ site.author.email }}
 - github.com/{{ site.author.github }}

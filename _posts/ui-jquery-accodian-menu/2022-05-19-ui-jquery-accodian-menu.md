@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery hamburger menu UI
+title: jQuery Accodian Menu UI
 date: 2022-05-28 12:50:38
 modified: 2022-05-28 12:50:38
 tag: [javascript, jquery]
@@ -11,173 +11,15 @@ tag: [javascript, jquery]
 2. que를 클릭했을때 on class 적용, 다른 que나 해당 que 클릭시 on class 해제
 3. 하나의 anw 만 slide 애니메이트 적용
 
-<!-- ## 구현
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('.que').on('click', function(){
-$(this).next().stop().slideToggle(300);
-        $(this).toggleClass('on').siblings().removeClass('on');
-        $(this).next().siblings('.anw').slideUp(300);
-     })  
-});
+## 구현
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KKeEqpd" data-user="bitnaleeeee" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/bitnaleeeee/pen/KKeEqpd">
+  jQuery Accodian Menu UI</a> by day.binna (<a href="https://codepen.io/bitnaleeeee">@bitnaleeeee</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-</script>
-<style>
-   *{
-  box-sizing: border-box; 
-}
-  
-.que:first-child{
-    border-top: 1px solid black;
-  }
-  
-.que{
-  position: relative;
-  padding: 17px 0;
-  cursor: pointer;
-  font-size: 14px;
-  border-bottom: 1px solid #dddddd;
-  
-}
-  
-.que::before{
-  display: inline-block;
-  content: 'Q';
-  font-size: 14px;
-  color: #006633;
-  margin-right: 5px;
-}
-
-.que.on>span{
-  font-weight: bold;
-  color: #006633; 
-}
-  
-.anw {
-  display: none;
-    overflow: hidden;
-  font-size: 14px;
-  background-color: #f4f4f2;
-  padding: 27px 0;
-}
-  
-.anw::before {
-  display: inline-block;
-  content: 'A';
-  font-size: 14px;
-  font-weight: bold;
-  color: #666;
-  margin-right: 5px;
-}
-</style>
-
-<div id="Accordion_wrap">
-      <div class="que">
-      <span>This is first question.</span>
-      </div>
-      <div class="anw">
-      <span>This is first answer.</span>
-      </div>
-      <div class="que">
-      <span>This is second question.</span>
-      </div>
-      <div class="anw">
-      <span>This is second answer.</span>
-      </div>
-      <div class="que">
-      <span>This is third question.</span>
-      </div>
-      <div class="anw">
-      <span>This is third answer.</span>
-      </div>
-</div> -->
-
-```html
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<div id="Accordion_wrap">
-  <div class="que">
-  <span>This is first question.</span>
-  </div>
-  <div class="anw">
-  <span>This is first answer.</span>
-  </div>
-  <div class="que">
-  <span>This is second question.</span>
-  </div>
-  <div class="anw">
-  <span>This is second answer.</span>
-  </div>
-  <div class="que">
-  <span>This is third question.</span>
-  </div>
-  <div class="anw">
-  <span>This is third answer.</span>
-  </div>
-</div>
-```
-
-```css
-*{
-  box-sizing: border-box; 
-}
-  
-.que:first-child{
-    border-top: 1px solid black;
-  }
-  
-.que{
-  position: relative;
-  padding: 17px 0;
-  cursor: pointer;
-  font-size: 14px;
-  border-bottom: 1px solid #dddddd;
-  
-}
-  
-.que::before{
-  display: inline-block;
-  content: 'Q';
-  font-size: 14px;
-  color: #006633;
-  margin-right: 5px;
-}
-
-.que.on>span{
-  font-weight: bold;
-  color: #006633; 
-}
-  
-.anw {
-  display: none;
-    overflow: hidden;
-  font-size: 14px;
-  background-color: #f4f4f2;
-  padding: 27px 0;
-}
-  
-.anw::before {
-  display: inline-block;
-  content: 'A';
-  font-size: 14px;
-  font-weight: bold;
-  color: #666;
-  margin-right: 5px;
-}
-```
-
-```javascript
-window.onload = function () {
-  $(".que").on("click", function () {
-    $(this).next().stop().slideToggle(300);
-    $(this).toggleClass("on").siblings().removeClass("on");
-    $(this).next().siblings(".anw").slideUp(300);
-  });
-};
-```
-
-## 해설
-
+## 설명
 1. next()함수는 바로 다음 요소를 선택하여 준다.
 2. stop함수는 적용된 애니메이트를 멈춰주는 역할을 한다. 여기서 stop을 사용해야 하는 이유는, slideToggle함수가 적용된 후 해당 함수를 멈춘 후 다음 요소의 애니메이트를 적용시키기 위해서다.
 3. siblings() 에 요소 이름을 넣어주면, 해당 요소 이름을 가지고 있는 형제요소를 선택하여 준다. 만약 ()안에 anw를 넣어주지 않으면, 모든 anw, que형제요소를 slideup 한다.
