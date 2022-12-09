@@ -6,7 +6,7 @@ modified: 2022-10-13 16:31:00
 tag: [react, javascript]
 ---
 
-- #### 배포 링크 : [https://bitnaleeeee.github.io/wanted-pre-onboarding-fe-7/](https://bitnaleeeee.github.io/wanted-pre-onboarding-fe-7/)
+#### 배포 링크 : [https://bitnaleeeee.github.io/wanted-pre-onboarding-fe-7/](https://bitnaleeeee.github.io/wanted-pre-onboarding-fe-7/)
 
 ### STACK
 

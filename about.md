@@ -52,5 +52,6 @@ comments: true
 <br />
 
 **저에 대해 더 궁금한게 있으시면 아래로 연락주세요 ✨**
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- **Mail** {{ site.author.email }}
+- **GitHub** github.com/{{ site.author.github }}
+- **Phone** 010-4719-1607

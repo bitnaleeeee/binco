@@ -532,7 +532,10 @@
 .contact-us-info {
   text-align: center;
   a {
-    opacity: 0.8;
+    display: inline-block;
+    margin: 0 0.5rem;
+    width: 1.5rem;
+    opacity: 0.4;
   }
   p {
     margin-top: 1rem;
