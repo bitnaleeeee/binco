@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 타입 변환
+title: 타입 변환과 단축평가
 date: 2022-12-10 14:00:08
 modified: 2022-12-10 14:00:08
 tag: [javascript]
