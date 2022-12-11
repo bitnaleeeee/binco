@@ -102,7 +102,7 @@ var value = elem.vaule; // tyreError 객체 속성값이 없다.
 var elem = null;
 var value = elme && elem.vaule; // tyreError 객체 속성값이 없다.
 ```
-앞 elme이 `null` 값으로 `false`이므로 타입 변환 없이 그대로 `null`을 출력할 수 있다.
+앞 elme이 `null` 값으로 `false`이므로 타입 변환 없이 그대로 `null`을 출력할 수 있다. 이를 활용하여 예를 들어  `map`함수로 데이터를 넣어 값을 출력하는데 사용할 수 있다.
 
 아래는 ES11 부터 도입된 옵셔널 체이닝과 null 병학 연산자이다
 
