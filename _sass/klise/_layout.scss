@@ -364,6 +364,19 @@
           border: 1px solid #e0e0e0;
         }
       }
+      
+      @media all and (max-width: 500px) {
+        & > dl {
+          padding: 0;
+          width: 100%;
+        }
+      }
+      // @include media-query($on-mobile) {
+      //   & > dl {
+      //     padding: 0;
+      //     width: 100%;
+      //   }
+      // }
     }
   }
 

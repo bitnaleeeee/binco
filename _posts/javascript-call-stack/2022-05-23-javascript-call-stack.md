@@ -82,8 +82,8 @@ func();
 엔진에서 이 코드를 실행할 때, `func()`에 의해서 `func`함수가 호출된다. 여기서 다시 `func`함수를 호출하고 반복적으로 함수를 호출하게 된다. 그러면 매번 실행할 때마다 호출스택에 `func()`가 쌓이며 최대 허용치를 넘으면 위처럼 에러를 발생시킨다.
 
 ## References
-> [Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec)  
-> [자바스크립트 개발자라면 알아야 할 33가지 개념 #1 콜스택 (번역)](https://velog.io/@jakeseo_me/2019-03-15-2303-작성됨-rmjta5a3xh)  
-> [자료구조 : 자료구조란? (Data Structure)](https://andrew0409.tistory.com/148)  
-> [자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
+[Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec)  
+[자바스크립트 개발자라면 알아야 할 33가지 개념 #1 콜스택 (번역)](https://velog.io/@jakeseo_me/2019-03-15-2303-작성됨-rmjta5a3xh)  
+[자료구조 : 자료구조란? (Data Structure)](https://andrew0409.tistory.com/148)  
+[자바스크립트의 동작원리: 엔진, 런타임, 호출 스택](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/)
 
