@@ -42,7 +42,7 @@ hoisitng은 함수 선언식과 변수선언이 최상단에 끌어올려지는 
 ## TDZ (Temporal Death Zone)
 임시적으로 죽어있는 공간. 선언 전에 변수를 사용하는 것을 비허용하는 이 개념상의 공간에 const와 let은 들어간다. 여기서 변수 선언과 할당 초기화 개념의 차이점에 대해 알 필요가 있는데, hoisitng이 되는 것은 변수의 선언만이다. var를 포함한 let, const 모든 선언은 hoisting이 일어난다. 즉 할당전에 console로 출력을 하게 되면 ReferenceError가 나온다. 이는 const와 let 선언이 hoisitng 되어 TDZ에 들어갔음을 의미한다.
 
->`var`, `let`, `const` 의 선언은 모두 hoisitng 된다. var의 경우 선언과 동시에 초기화가 진행되기 때문에 TDZ에 들어가지 않고 선언 부분만 끌어올려져 때문에(hoisting) 할당되기 전까지 `undefiend`가 출력된다. 하지만, `let`, `const`의 경우 초기화는 변수에 값을 할당할때에 발생하기 때문에 `hoisting` 되었을때 값을 참조하면 ReferenceError가 출력된다. 즉, 일시적으로 죽어있는 공간(TDZ)에 들어가있기에 할당 전에 접근하려고 할 경우 ReferenceError 로 해당 변수에 참조할 수 없다는 에러가 출력된다.
+* `var`, `let`, `const` 의 선언은 모두 hoisitng 된다. var의 경우 선언과 동시에 초기화가 진행되기 때문에 TDZ에 들어가지 않고 선언 부분만 끌어올려져 때문에(hoisting) 할당되기 전까지 `undefiend`가 출력된다. 하지만, `let`, `const`의 경우 초기화는 변수에 값을 할당할때에 발생하기 때문에 `hoisting` 되었을때 값을 참조하면 ReferenceError가 출력된다. 즉, 일시적으로 죽어있는 공간(TDZ)에 들어가있기에 할당 전에 접근하려고 할 경우 ReferenceError 로 해당 변수에 참조할 수 없다는 에러가 출력된다.
 
 
 
