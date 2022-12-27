@@ -412,9 +412,8 @@
           left: 50%;
           z-index: -1;
           transform: translateX(-50%);
-          width: 2px;
+          border: 2px dashed #ececec;
           height: 15rem;
-          background-color: #ececec;
         }
       }
       dd {
