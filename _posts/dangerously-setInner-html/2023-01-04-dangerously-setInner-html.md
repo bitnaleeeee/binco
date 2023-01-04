@@ -3,7 +3,7 @@ layout: post
 title: React - dangerouslySetInnerHTML
 date: 2023-1-3 15:00:59
 modified: 2022-1-3 15:00:59
-tag: [React, HTML]
+tag: [React, HTML, XSS]
 ---
 
 ## dangerouslySetInnerHTML
@@ -56,8 +56,8 @@ $ npm install dompurify
 ```javascript
 const sanitizer = dompurify.sanitize;
 ```
-<br>
 ```javascript
+//JSX 부분
   <span className="bundle_badge">
           {jobItem.keywords.map((items, idx) => {
             return (
@@ -70,4 +70,4 @@ const sanitizer = dompurify.sanitize;
           })}
         </span>
 ```
-JS 부분에 `sanitizer`로 선언해준 뒤 해당 변수명으로 `__html`부분을 감싸주면 된다.
+위와 같이 선언해준 변수명으로  `__html` 전체 부분을 감싸주면 된다.
