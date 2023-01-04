@@ -17,10 +17,10 @@ tag: [javascript, es5]
 ## 예제
 
 ```javascript
-var arr = [1, 3, 5, 6, 7, 9];
+let arr = [1, 3, 5, 6, 7, 9];
 
 // 배열 요소중에서 짝수가 있으면 메서드 수행을 중단하고 true를 리턴
-var val = arr.some(function (item, index, array) {
+let val = arr.some(function (item, index, array) {
     return item % 2 === 0;
 });
 

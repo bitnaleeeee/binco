@@ -14,7 +14,7 @@ tag: [javascript]
 
 ```javascript
 function func() {
-  var foo = "data";
+  let foo = "data";
   return function () {
     return foo;
   };
@@ -24,7 +24,7 @@ function func() {
 func라는 함수를 선언하고 foo변수에 'data'문자열을 추가한 뒤 foo변수를 리턴하는 익명함수를 선언하였다.
 
 ```javascript
-var closure = func();
+let closure = func();
 console.log(closure());
 // 'data'
 ```
@@ -33,14 +33,14 @@ func함수의 리턴값을 closure변수에 할당한 뒤 closure를 실행한 �
 
 ```javascript
 function count() {
-  var num = 0;
+  let num = 0;
   return function () {
     num++;
     return num;
   };
 }
 
-var closure = count();
+let closure = count();
 console.log(closure());
 console.log(closure());
 console.log(closure());
@@ -55,19 +55,19 @@ count함수의 지역변수인 num값이 소멸되지 않고 계속 카운트되
 
 ### 변수의 은닉화
 
-자바스크립트에서는 인스턴스를 생성할때 Private Variables에 대한 접근 권한 문제가 있다.
+자바스크립트에서는 인스턴스를 생성할때 Private letiables에 대한 접근 권한 문제가 있다.
 
 ```javascript
 function Create(name) {
   this._name = name;
 }
 
-var obj = new Create("민수");
+let obj = new Create("민수");
 console.log(obj._name);
 // 민수
 ```
 
-위에서 생성된 obj객체의 *name프로퍼티는 변수명 앞에 *를 포함하였기 때문에 Private Variables로 쓰고싶다는 의도를 알 수 있다. 하지만 \_name프로퍼티는 동적으로 변경될 수 있다.
+위에서 생성된 obj객체의 *name프로퍼티는 변수명 앞에 *를 포함하였기 때문에 Private letiables로 쓰고싶다는 의도를 알 수 있다. 하지만 \_name프로퍼티는 동적으로 변경될 수 있다.
 
 ```javascript
 obj._name = "인성";
@@ -79,13 +79,13 @@ console.log(obj._name);
 
 ```javascript
 function create(name) {
-  var _name = name;
+  let _name = name;
   return function () {
     console.log(_name);
   };
 }
 
-var hello = create("민수");
+let hello = create("민수");
 hello();
 // 민수
 ```
@@ -98,15 +98,15 @@ hello();
 
 ```javascript
 function func(name) {
-  var txt = name;
+  let txt = name;
   return function () {
     return txt;
   };
 }
 
-var closure01 = func("민수");
-var closure02 = func("인성");
-var closure03 = func("한나");
+let closure01 = func("민수");
+let closure02 = func("인성");
+let closure03 = func("한나");
 
 console.log(closure01()); // 민수
 console.log(closure02()); // 인성
@@ -126,7 +126,7 @@ function Func(input) {
   };
 }
 
-var obj = new Func("민수");
+let obj = new Func("민수");
 console.log(obj.get());
 ```
 
@@ -144,7 +144,7 @@ Func.prototype.set = function (rename) {
   this.name = rename;
 };
 
-var obj = new Func("민수");
+let obj = new Func("민수");
 console.log(obj.get());
 ```
 

@@ -8,7 +8,7 @@ tag: [javascript]
 
 노드 생성
 ```javascript
-var input = document.createElement('input');
+let input = document.createElement('input');
 ```
 
 생성된 노드 속성 추가
@@ -18,7 +18,7 @@ input.setAttribute('type', 'text');
 
 텍스트 노드 추가
 ```javascript
-var txt = document.createTextNode('hello');
+let txt = document.createTextNode('hello');
 ```
 
 부모 노드에 생성된 노드 추가
@@ -65,7 +65,7 @@ var txt = document.createTextNode('hello');
 window.onload = function () {
 
     // 노드 선언
-    var btn = document.getElementById('btn'),
+    let btn = document.getElementById('btn'),
         tbl = document.getElementById('tbl'),
         tblTr = tbl.getElementsByTagName('tr');
 
@@ -76,9 +76,9 @@ window.onload = function () {
 
     // 테이블 추가
     function tblAdd() {
-        var tr = document.createElement('tr');
-        for (var i = 0; i < 5; i++) {
-            var td = document.createElement('td');
+        let tr = document.createElement('tr');
+        for (let i = 0; i < 5; i++) {
+            let td = document.createElement('td');
             tr.appendChild(td);
         };
         tbl.appendChild(tr);
@@ -87,9 +87,9 @@ window.onload = function () {
 
     // 테이블 번호 추가
     function numAdd() {
-        var num = 0;
-        for (var i = 0; i < tblTr.length; i++) {
-            for (var j = 0; j < tblTr[i].getElementsByTagName('td').length; j++) {
+        let num = 0;
+        for (let i = 0; i < tblTr.length; i++) {
+            for (let j = 0; j < tblTr[i].getElementsByTagName('td').length; j++) {
                 num++;
                 tblTr[i].getElementsByTagName('td')[j % 5].innerHTML = num;
             };
@@ -130,7 +130,7 @@ window.onload = function () {
 window.onload = function () {
 
     // 노드 선언
-    var btn = document.getElementById('btn'),
+    let btn = document.getElementById('btn'),
         tbl = document.getElementById('tbl'),
         tblTr = tbl.getElementsByTagName('tr');
 
@@ -141,9 +141,9 @@ window.onload = function () {
 
     // 테이블 추가
     function tblAdd() {
-        var tr = document.createElement('tr');
-        for (var i = 0; i < 5; i++) {
-            var td = document.createElement('td');
+        let tr = document.createElement('tr');
+        for (let i = 0; i < 5; i++) {
+            let td = document.createElement('td');
             tr.appendChild(td);
         };
         tbl.appendChild(tr);
@@ -152,9 +152,9 @@ window.onload = function () {
 
     // 테이블 번호 추가
     function numAdd() {
-        var num = 0;
-        for (var i = 0; i < tblTr.length; i++) {
-            for (var j = 0; j < tblTr[i].getElementsByTagName('td').length; j++) {
+        let num = 0;
+        for (let i = 0; i < tblTr.length; i++) {
+            for (let j = 0; j < tblTr[i].getElementsByTagName('td').length; j++) {
                 num++;
                 tblTr[i].getElementsByTagName('td')[j % 5].innerHTML = num;
             }

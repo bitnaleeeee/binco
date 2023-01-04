@@ -9,7 +9,7 @@ tag: [javascript]
 `switch`키워드 오른쪽 `()`안의 값과 `case`키워드 오른쪽의 값을 비교하여 `true`일시 콜론 오른쪽 구문을 실행하게 된다.
 
 ```javascript
-var a = 0;
+let a = 0;
 switch (1) {
     case 1: console.log('ok');
     break;

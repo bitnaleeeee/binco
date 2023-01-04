@@ -35,14 +35,14 @@ tag: [javascript]
 우리가 실생활에서 쓰고 있는 글자를 문자열이라고 생각하면 된다. 변수에 담는 방식은 큰따옴표나 작은 따옴표로 감싸서 저장하시면 된다. 문자열에 따옴표를 포함하고 싶으면 다른 따옴표로 감싸주면 된다.
 
 ```javascript
-var str = "data"; // 문자열을 담을 때
-var str = "'data'"; // 작은 따옴표를 문자열에 추가하고 싶을때
+let str = "data"; // 문자열을 담을 때
+let str = "'data'"; // 작은 따옴표를 문자열에 추가하고 싶을때
 ```
 
 참고로 따옴표를 문자열로 인식하고 싶을때는 역슬래쉬를 따옴표 앞에 붙여 사용하면 된다. 이 작업을 이스케이핑이라고 부른다.
 
 ```javascript
-var str = "'data'"; // 작은 따옴표를 문자열로 인식하고 싶을때
+let str = "'data'"; // 작은 따옴표를 문자열로 인식하고 싶을때
 ```
 
 ### 숫자(number)
@@ -88,7 +88,7 @@ console.log((0.1 * 10 + 0.2 * 10) / 10);
 언디파인드는 아무 값도 없는 상태이다.
 
 ```javascript
-var val; // undefined
+let val; // undefined
 ```
 
 ### 널(null)
@@ -98,8 +98,8 @@ var val; // undefined
 #### 각 자료형의 초기화
 
 ```javascript
-var num = 0; // 숫자 초기화
-var str = ""; // 문자 초기화
-var boolean = false; // 논리형 초기화
-var obj = null; // 객체 초기화
+let num = 0; // 숫자 초기화
+let str = ""; // 문자 초기화
+let boolean = false; // 논리형 초기화
+let obj = null; // 객체 초기화
 ```

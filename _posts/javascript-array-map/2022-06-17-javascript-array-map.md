@@ -17,11 +17,11 @@ tag: [javascript, es5]
 ## 예제
 
 ```javascript
-var arr = ['a', 'b', 'c'];
+let arr = ['a', 'b', 'c'];
 
 //배열의 모든 요소에 NEW라는 문자열을 더하기
 //메서드 수행 후 리턴값은 새로운 배열
-var newArr = arr.map(function (item, index, array) {
+let newArr = arr.map(function (item, index, array) {
     return item + 'NEW';
 });
 
@@ -51,7 +51,7 @@ console.log(newArr);
 
 ```javascript
 // ajax를 통해 가져온 데이터라고 가정
-var data = [
+let data = [
     {
         name: 'a',
         phone: '010-1000-2000'
@@ -68,7 +68,7 @@ var data = [
 
 // Array.map 메서드를 사용하여 배열 요소의 데이터를 html로 변경
 function makeDom() {
-    var dom = data.map(function (item, index) {
+    let dom = data.map(function (item, index) {
         return '<tr><td>' + item.name + '</td><td>' + item.phone + '</td></tr>';
     });
     return dom;
@@ -76,13 +76,13 @@ function makeDom() {
 
 // 배열을 하나의 값으로 만든 후 테이블에 html 추가
 function addTbl(dom) {
-    var tblList = dom.join('');
+    let tblList = dom.join('');
     document.getElementById('tbl').getElementsByTagName('tbody')[0].innerHTML = tblList;
 }
 
 // 위 로직을 실행
 function render() {
-    var list = makeDom();
+    let list = makeDom();
     addTbl(list);
 }
 ```
@@ -100,7 +100,7 @@ function render() {
 
 <script>
 // ajax를 통해 가져온 데이터라고 가정
-var data = [
+let data = [
     {
         name: 'a',
         phone: '010-1000-2000'
@@ -117,7 +117,7 @@ var data = [
 
 // Array.map 메서드를 사용하여 배열 요소의 데이터를 html로 변경
 function makeDom() {
-    var dom = data.map(function (item, index) {
+    let dom = data.map(function (item, index) {
         return '<tr><td>' + item.name + '</td><td>' + item.phone + '</td></tr>';
     });
     return dom;
@@ -125,13 +125,13 @@ function makeDom() {
 
 // 배열을 하나의 값으로 만든 후 테이블에 html 추가
 function addTbl(dom) {
-    var tblList = dom.join('');
+    let tblList = dom.join('');
     document.getElementById('tbl').getElementsByTagName('tbody')[0].innerHTML = tblList;
 }
 
 // 위 로직을 실행
 function render() {
-    var list = makeDom();
+    let list = makeDom();
     addTbl(list);
 }
 </script> -->

@@ -36,9 +36,9 @@ console.log(countCharacter('AbaCedEA', 'E'));
 
 ```javascript
 function countCharacter(AbaCedEA, E) {
-  var count = 0;
+  let count = 0;
 
-  for (var i = 0; i < word.length; i++) {
+  for (let i = 0; i < word.length; i++) {
     if (word[i].toUpperCase() === ch.toUpperCase()) {
       count++;
       return count;
@@ -52,9 +52,9 @@ console.log(countCharacter("AbaCedEA", "E"));
 
 ```javascript
 function countCharacter(AbaCedEA, E) {
-  var count = 0;
+  let count = 0;
 
-  for (var i = 0; i < word.length; i++) {
+  for (let i = 0; i < word.length; i++) {
     if (word[i].toUpperCase() === ch.toUpperCase()) {
       count++;
     }

@@ -93,14 +93,14 @@ false && anything
 이러한 단축평가를 활용하여 코드를 작성할때 에러가 나지 않고, 값을 부여할 수 있다
 
 ```javascript
-var elem = null;
-var value = elem.vaule; // tyreError 객체 속성값이 없다.
+let elem = null;
+let value = elem.vaule; // tyreError 객체 속성값이 없다.
 ```
 
 하지만, 단축평가를 사용하면
 ```javascript
-var elem = null;
-var value = elme && elem.vaule; // tyreError 객체 속성값이 없다.
+let elem = null;
+let value = elme && elem.vaule; // tyreError 객체 속성값이 없다.
 ```
 앞 elme이 `null` 값으로 `false`이므로 타입 변환 없이 그대로 `null`을 출력할 수 있다. 이를 활용하여 예를 들어  `map`함수로 데이터를 넣어 값을 출력하는데 사용할 수 있다.
 
@@ -108,16 +108,16 @@ var value = elme && elem.vaule; // tyreError 객체 속성값이 없다.
 
 ### 옵셔녈 체이닝
 ```javascript
-var elme = null;
+let elme = null;
 
-var value = elem?.value;
+let value = elem?.value;
 console.log(value); // undefined
 ```
 >옵셔널 체리닝 연산자는 좌항의 피연산자가 `null` 혹은 `undefined`인 경우 `undefined`를 반환하고 그렇지 않으면 우항의 연산자를 이어간다.
 
 ### null 병합 연산자
 ```javascript
-var foo = null ?? 'hi';
+let foo = null ?? 'hi';
 
 console.log(foo); // 'hi'
 ```

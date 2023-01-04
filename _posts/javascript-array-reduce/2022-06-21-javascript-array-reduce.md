@@ -18,10 +18,10 @@ tag: [javascript, es5]
 ## 예제
 
 ```javascript
-var arr = [1, 2, 3, 4, 5];
+let arr = [1, 2, 3, 4, 5];
 
 // 각 콜백 마다 리턴값을 previousItem로 넘겨받아 어떤 작업을 수행
-var val = arr.reduce(function(previousItem, currentItem, index, array) {
+let val = arr.reduce(function(previousItem, currentItem, index, array) {
 
     // 콜백의 리턴 값을 받아 현재의 값과 더하려 다시 리턴
     return previousItem + currentItem;

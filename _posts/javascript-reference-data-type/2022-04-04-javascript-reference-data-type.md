@@ -13,7 +13,7 @@ tag: [javascript]
 자바스크립트에서 객체는 단순하게 표현하면 속성명(Key), 값(value) 형태의 속성(property)을 저장하는 그릇이라고 생각하면 된다. 즉 여러 값을 표현하는 묶음을 만들때 사용된다. 간단한 객체를 만들어 보겠다.
 
 ```javascript
-var person = {
+let person = {
     name: '철수',
     age: '20'
 }
@@ -30,7 +30,7 @@ console.log(person.name); // 철수
 배열은 변수에 여러가지의 값을 한번에 담을 수 있는 그릇이라고 볼 수 있다. 위에 언급한 객체와 비슷해 보일 수 있지만 배열의 속성명은 각 프로퍼티의 인덱스 값이다. 선언방식은 `[](대괄호)`로 하고 객체와 마찬가지로 이는 배열 리터럴이다. 
 
 ```javascript
-var person = ['철수', '20'];
+let person = ['철수', '20'];
 ```
 
 객체와는 다르게 배열의 속성명은 인덱스 값이라고 했다. 그러므로 person의 첫번째 값인 '철수'의 속성명(Key)은 배열의 첫번째 인덱스인 0이고, 두번째 값(value)인 '20'의 속성명은 1이 되는 것이다. 배열의 프로퍼티에 접근하려면 대괄포 표기법을 이용하면 된다.
@@ -60,7 +60,7 @@ function 함수이름(파라미터) {
 ### 원시타입은 값 자체를 복사한다.
 
 ```javascript
-var num1 = 10,
+let num1 = 10,
     num2 = num1;
 console.log(num2); // 10
     num1 = 20;
@@ -72,10 +72,10 @@ console.log(num2); // 10
 ### 참조타입은 참조(주소)값을 복사한다.
 
 ```javascript
-var obj1 = {
+let obj1 = {
     val: 10
 }
-var obj2 = obj1;
+let obj2 = obj1;
 console.log(obj2.val); // 10
 obj1.val = 20;
 console.log(obj2.val); // 20

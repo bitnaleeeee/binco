@@ -15,7 +15,7 @@ while (조건) {
 ```
 
 ```javascript
-var i = 0;
+let i = 0;
 while (i < 3) {
     console.log(i);
     i++;
@@ -35,7 +35,7 @@ do {
 
 처음 구문을 실행하여 `0`이 출력되고, `i`는 3이 아니므로 로직이 실행이 안된다.
 ```javascript
-var i = 0;
+let i = 0;
 do {
     console.log(i);
 } while (i == 3);

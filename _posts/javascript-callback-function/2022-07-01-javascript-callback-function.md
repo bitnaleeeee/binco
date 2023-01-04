@@ -9,7 +9,7 @@ tag: [javascript]
 # 비동기처리와 콜백함수
 ### 1. 자바스크립트는 동기적인가 비동기적인가?
 1)자바스크립트는 동기적이다.
-호이스팅이 된 이후부터 코드가 작성된 순서대로 하나씩 동기적으로 실행한다. \*호이스팅(Hoisting)이란? 자바스크립트에서 코드를 처리할 때 먼저 var 변수 등의 선언이나 function declaration을 최상단으로 띄운 후 코드를 읽는다. 이로 인해 var 변수의 경우 중복 선언 가능 등의 문제점이 야기 되자 ES6에서 let 이 추가되었다.
+호이스팅이 된 이후부터 코드가 작성된 순서대로 하나씩 동기적으로 실행한다. \*호이스팅(Hoisting)이란? 자바스크립트에서 코드를 처리할 때 먼저 let 변수 등의 선언이나 function declaration을 최상단으로 띄운 후 코드를 읽는다. 이로 인해 let 변수의 경우 중복 선언 가능 등의 문제점이 야기 되자 ES6에서 let 이 추가되었다.
 
 ```javascript
 console.log("1");
@@ -43,7 +43,7 @@ setTimeout(() => console.log("2"), 1000);
 
 ```javascript
 function getData() {
-  var tableData;
+  let tableData;
   $.get("https://domain.com/products/1", function (response) {
     tableData = response;
   });

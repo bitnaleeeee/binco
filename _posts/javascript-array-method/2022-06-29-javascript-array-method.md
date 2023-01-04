@@ -12,11 +12,11 @@ tag: [javascript]
 배열을 하나로 합칠 때 사용한다. 인자로 들어온 배열의 순서대로 합쳐진다.
 
 ```javascript
-var arr1 = [1, 2, 3];
-var arr2 = [4, 5, 6];
-var arr3 = [7, 8, 9];
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [7, 8, 9];
 
-var wrap = arr1.concat(arr2, arr2, arr3);
+let wrap = arr1.concat(arr2, arr2, arr3);
 
 console.log(wrap);
 // (12) [1, 2, 3, 4, 5, 6, 4, 5, 6, 7, 8, 9]
@@ -29,7 +29,7 @@ console.log(arr1);
 주어진 함수를 배열 요소 각각에 대해 실행한다.
 
 ```javascript
-var arr = ['a', 'b', 'c'];
+let arr = ['a', 'b', 'c'];
 
 arr.forEach(function (element) {
     console.log(element);
@@ -43,14 +43,14 @@ arr.forEach(function (element) {
 배열을 반복하고, 콜백함수가 리턴한 값으로 새 배열을 반환한다.
 
 ```javascript
-var users = [
+let users = [
     { name: '철수', age: 20 },
     { name: '영희', age: 25 },
     { name: '민수', age: 23 },
     { name: '주연', age: 27 }
 ];
 
-var usersName = users.map(function (element) {
+let usersName = users.map(function (element) {
     return element.name;
     // 각 요소의 nama 값만 반환
 });
@@ -63,14 +63,14 @@ console.log(usersName);
 배열을 반복하고, 콜백함수의 리턴값이 true인 요소로만 구성된 새 배열을 반환한다. 아래 예제는 age가 23 초과인 요소만 반환하였다.
 
 ```javascript
-var users = [
+let users = [
     { name: '철수', age: 20 },
     { name: '영희', age: 25 },
     { name: '민수', age: 23 },
     { name: '주연', age: 27 }
 ];
 
-var usersOld = users.filter(function (element) {
+let usersOld = users.filter(function (element) {
     return element.age > 23;
 });
 
@@ -86,7 +86,7 @@ console.log(usersOld);
 배열을 반복하고, 콜백함수의 리턴값이 true인 요소로만 구성된 새 배열을 반환한다. 아래 예제는 age가 23 초과인 요소만 반환하였다.
 
 ```javascript
-var arr = [5, 2, 1, 3, 10, 4];
+let arr = [5, 2, 1, 3, 10, 4];
 
 arr.sort(function(a, b) {
     return a - b;
@@ -107,7 +107,7 @@ console.log(arr);
 인자로 전달된 요소와 매치되는 첫번째 요소의 인덱스를 반환한다. 일치하는 요소가 없으면 -1을 반환한다.
 
 ```javascript
-var arr = ['a', 'b', 'c', 'd'];
+let arr = ['a', 'b', 'c', 'd'];
 
 console.log(arr.indexOf('c')); // 2
 console.log(arr.indexOf('e')); // -1
@@ -117,7 +117,7 @@ console.log(arr.indexOf('e')); // -1
 함수의 리턴값이 false가 될 때 까지 배열 요소 각각에 대해 함수를 실행한다.
 
 ```javascript
-var arr = [1, 2, 3, 4, 5];
+let arr = [1, 2, 3, 4, 5];
 
 arr.every(function(element) {
     console.log(element);

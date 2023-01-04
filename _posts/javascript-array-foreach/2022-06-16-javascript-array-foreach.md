@@ -17,7 +17,7 @@ tag: [javascript, es5]
 ## 예제
 
 ```javascript
-var arr = ["a", "b", "c"];
+let arr = ["a", "b", "c"];
 
 arr.forEach(function (item) {
   console.log(item);
@@ -29,7 +29,7 @@ arr.forEach(function (item) {
 ```
 
 ```javascript
-var arr = ["a", "b", "c"];
+let arr = ["a", "b", "c"];
 
 // 배열의 모든 요소에 EDIT라는 문자열을 더하기
 arr.forEach(function (item, index, array) {

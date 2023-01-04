@@ -17,10 +17,10 @@ tag: [javascript, es5]
 ## 예제
 
 ```javascript
-var arr = [1, 3, 5, 6, 7, 9, 11];
+let arr = [1, 3, 5, 6, 7, 9, 11];
 
 // 배열 요소중에서 모두 7보다 작은 요소만 모아 배열로 리턴
-var val = arr.filter(function (item, index, array) {
+let val = arr.filter(function (item, index, array) {
     return item < 7;
 });
 

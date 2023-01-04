@@ -14,7 +14,7 @@ tag: [javascript]
 
 ```javascript
 // 전역 스코프
-var foo = 1;
+let foo = 1;
 console.log(foo); // 1
 
 function func() {
@@ -32,7 +32,7 @@ function func() {
 function func() {
 
     // 지역 스코프
-    var foo = 1;
+    let foo = 1;
     console.log(foo); // 1
 }
 
@@ -42,7 +42,7 @@ console.log(foo); // Uncaught ReferenceError: foo is not defined
 
 ### 객체 지역 스코프
 ```javascript
-var obj = {
+let obj = {
     foo: 1
 };
 console.log(obj.boo); // 1
