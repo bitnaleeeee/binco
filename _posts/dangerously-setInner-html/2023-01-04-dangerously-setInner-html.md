@@ -1,8 +1,8 @@
 ---
 layout: post
 title: React - dangerouslySetInnerHTML
-date: 2023-1-4 15:00:59
-modified: 2022-1-4 15:00:59
+date: 2023-1-3 15:00:59
+modified: 2022-1-3 15:00:59
 tag: [React, HTML]
 ---
 
