@@ -8,16 +8,10 @@ tag: [React, HTML]
 
 ## dangerouslySetInnerHTML
 
-`dangerouslySetInnerHTML`은 브라우저에 DOM에서 `innterHTML`을 사용하기 위한 React의 대체 방법이다. 일반적으로 코드에서 HTMl을 설정하는 것은 XSS 공격에 쉽게 노출될 수 있기 때문에 위험하다는 것을 상기시키기 위해 `dangerouslySetInnerHTML`을 작성하고 `__html`키로 객체를 전달해주어야 한다.
-
-<br>
+`dangerouslySetInnerHTML`은 브라우저에 DOM에서 `innterHTML`을 사용하기 위한 React의 대체 방법이다. 일반적으로 코드에서 HTML을 설정하는 것은 XSS 공격에 쉽게 노출될 수 있기 때문에 위험하다는 것을 상기시키기 위해 `dangerouslySetInnerHTML`을 작성하고 `__html`키로 객체를 전달해주어야 한다.
 
 ### XSS 공격이란?
 CRoss Site Scripting의 약자로 함께 웹 상에서 가장 기초적인 취약점 공격 방법중 하나이다. 권한이 없는 사용자가 악의적인 용도로 웹 사이트에 스크립트를 삽입하는 공격 기법으로, 공격에 성공하게 될 경우 사이트에 접속한 사용자는 삽입된 코드를 실행하게 되어 의도치 않은 행동을 수행시키거나 쿠키나 세션 토큰 등의 민감한 정보를 탈취당할 수 있다. 
-
-### AWS-EC2 선택 이유
-실제 서버를 배포할 서비스를 찾고있던 중 무료 이용이 가능한 히로쿠 서버가 22년 11월부터 유료로 전환된다고 하여 다른 서비스를 찾게 되었다.
-같은 부트캠프 출신 백엔드 개발자가 이 서비스를 추천해주었는데, 관련해서 정보를 찾아보니 아래와 같은 특징이 있었다.
 
 아래는 내 코드의 예시이다. 
 
@@ -58,10 +52,11 @@ const highLight = (str) => {
 $ npm install dompurify
 ```
 
+2.코드 예시
 ```javascript
 const sanitizer = dompurify.sanitize;
 ```
-
+<br>
 ```javascript
   <span className="bundle_badge">
           {jobItem.keywords.map((items, idx) => {
