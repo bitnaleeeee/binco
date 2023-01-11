@@ -233,7 +233,8 @@ lodash 모듈의 cloneDeep() 메서드를 이용하여 객체의 깊은 복사�
 & npm i lodash
 ```
 
-```javascriptconst lodash = require("lodash");
+```javascript
+const lodash = require("lodash");
 
 const obj = {
   a: 1,
@@ -255,9 +256,8 @@ console.log(obj.b.c === newObj.b.c); // false
 간단히 객체의 깊은 복사를 구현할 수 있다. 실제로 웹 개발을 하다보면 lodash 모듈은 흔히 사용되며, 가장 손쉽게 객체의 깊은 복사를 해결하는 방법이라 할 수 있다.
 
 ## References
-
-> [[Java Script] 얕은 복사와 깊은 복사](https://velog.io/@nomadhash/Java-Script-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC%EC%99%80-%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%AC-1dus9z79)
-
-> [JavaScript로 Deep Copy 하는 여러 방법](https://chaewonkong.github.io/posts/js-deep-copy.html)
-
-> [Javascript:Shallow and Deep Copy :: 마이구미](https://mygumi.tistory.com/m/322)
+[자바스크립트 객체 복사하기](https://junwoo45.github.io/2019-09-23-deep_clone/)  
+[Javascript 깊은 복사의 함정](https://velog.io/@ashnamuh/Javascript-깊은-복사의-함정)  
+[[Java Script] 얕은 복사와 깊은 복사](https://velog.io/@nomadhash/Java-Script-깊은-복사와-얕은-복사-1dus9z79)  
+[JavaScript로 Deep Copy 하는 여러 방법](https://chaewonkong.github.io/posts/js-deep-copy.html)  
+[Javascript:Shallow and Deep Copy :: 마이구미](https://mygumi.tistory.com/322)
