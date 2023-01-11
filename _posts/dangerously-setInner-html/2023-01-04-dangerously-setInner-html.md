@@ -29,17 +29,17 @@ const highLight = (str) => {
 
 ```javascript
 //JSX 부분
-  <span className="bundle_badge">
-          {jobItem.keywords.map((items, idx) => {
-            return (
-              <a
-                href="#none"
-                key={idx}
-                dangerouslySetInnerHTML={{ __html: highLight(items) }}
-              />
-            );
-          })}
-        </span>
+<span className="bundle_badge">
+  {jobItem.keywords.map((items, idx) => {
+    return (
+      <a
+        href="#none"
+        key={idx}
+        dangerouslySetInnerHTML={{ __html: highLight(items) }}
+      />
+    );
+  })}
+</span>
 ```
 `__html` 키로 객체를 전달해 주면 UI상에서 `HTML`요소를 보여줄 수 있다. 그때 반드시 위처럼 `dangerouslySetInnerHTML`를 표기해서 위험한 코드인 것을 알리도록 작성할 것을 리액트 메뉴얼에선 권장하고 있다.
 
@@ -58,16 +58,16 @@ const sanitizer = dompurify.sanitize;
 ```
 ```javascript
 //JSX 부분
-  <span className="bundle_badge">
-          {jobItem.keywords.map((items, idx) => {
-            return (
-              <a
-                href="#none"
-                key={idx}
-                dangerouslySetInnerHTML={{ __html: sanitizer(highLight(items)) }}
-              />
-            );
-          })}
-        </span>
+<span className="bundle_badge">
+  {jobItem.keywords.map((items, idx) => {
+    return (
+      <a
+        href="#none"
+        key={idx}
+        dangerouslySetInnerHTML={{ __html: sanitizer(highLight(items)) }}
+      />
+    );
+  })}
+</span>
 ```
 위와 같이 선언해준 변수명으로  `__html` 전체 부분을 감싸주면 된다.
