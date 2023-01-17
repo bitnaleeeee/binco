@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue - 할 일 관리 앱 
+title: Vue.js - 할 일 관리 앱 
 date: 2023-1-16 18:00:59
 modified: 2023-1-16 18:00:59
 tag: [Vue, JavaScript]
