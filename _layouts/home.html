@@ -1,0 +1,31 @@
+---
+layout: default
+home: true
+---
+
+<h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+{%- for post in site.posts limit: site.number_of_posts -%}
+<article class="post-item">
+  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+  <h4 class="post-item-title">
+    <a href="{{ post.url }}">{{ post.title | escape }}</a>
+  </h4>
+</article>
+{%- endfor -%}
+
+<!-- <h3 class="contact-us-title" aria-label="Contact Us">Contact Us</h3>
+<article class="contact-us-info">
+  
+  <a href="mailto:"bitnaleeeee@gmail.com">
+    <img src="../assets/img/icon-mail.png" alt="" />
+  </a>
+  <a href="tel:010-4719-1607">
+    <img src="../assets/img/icon-phone.png" alt="" />
+  </a>
+  <a href="https://github.com/bitnaleeeee" target="_blank">
+    <img src="../assets/img/icon-github.png" alt="" />
+  </a>
+  <a href="https://codepen.io/bitnaleeeee" target="_blank">
+    <img src="../assets/img/icon-codepen.png" alt="" />
+  </a>
+</article> -->
