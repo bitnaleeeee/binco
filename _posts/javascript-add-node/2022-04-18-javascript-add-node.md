@@ -14,7 +14,7 @@ let input = document.createElement('input');
 생성된 노드 속성 추가
 ```javascript
 input.setAttribute('type', 'text');
-```
+``` 
 
 텍스트 노드 추가
 ```javascript
