@@ -44,6 +44,7 @@ figure {
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
   color: $text-base-color;
   background-color: $white;
