@@ -22,7 +22,7 @@ let txt = document.createTextNode('hello');
 ```
  
 부모 노드에 생성된 노드 추가
-```javascript
+```javascript 
 부모노드.appendChild(input);
 ```
 
