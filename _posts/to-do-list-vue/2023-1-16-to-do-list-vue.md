@@ -83,5 +83,52 @@ this.$emit('이벤트명');
 ```javascript
 <ex-component v-on:이벤트명="상위 컴포넌트의 매서드명"></ex-component>
 ```
-`v-on` 속성을 이용한 이벤트 수신이 가능하다.
+`v-on` 속성을 이용한 이벤트 수신이 가능하다. 하위 컴포넌트의 이벤트를 받아서 상위 컴포넌트 내에 매서드를 호출시킨다.
+
+아래는 할일 앱의 작성 예시 코드이다.
+
+아래는 할일 앱을 구현할때 작성한 코드이다
+
+```javascript
+
+<script>
+
+    export default {
+      data() {
+        return {
+          newTodoItem: ''
+        }
+      },
+      methods: {
+        addTodo() {
+          if (this.newTodoItem !== "") {            
+            let value = this.newTodoItem && this.newTodoItem.trim();
+            this.$emit('addTodo', value);
+            this.clearInput();
+          }
+        },
+       clearInput() {
+          this.newTodoItem = "";
+        }  
+      }
+    
+    }
+</script>
+```
+하위컴포넌트에서 `emit()`으로 `addTodo`이벤트를 호출하였다.
+
+그리고 상위컴포넌트에서 아래와 같이
+```javascript
+  <TodoInput v-on:addTodo="addTodo"></TodoInput>
+```
+발생시킨 이벤트를 받아 아래 상위컴포넌트 `addTodo`매서드를 시킬 수 있다.
+
+```javascript
+  methods: {    
+    addTodo(todoItem) {
+      localStorage.setItem(todoItem, todoItem);
+      this.todoItems.push(todoItem);
+    },
+```
+
 
