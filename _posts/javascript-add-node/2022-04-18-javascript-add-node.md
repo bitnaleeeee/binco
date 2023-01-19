@@ -16,7 +16,7 @@ let input = document.createElement('input');
 input.setAttribute('type', 'text');
 ``` 
 
-텍스트 노드 추가
+텍스트 노드 추가 
 ```javascript 
 let txt = document.createTextNode('hello');
 ```
