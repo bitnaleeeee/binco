@@ -17,7 +17,7 @@ input.setAttribute('type', 'text');
 ``` 
 
 텍스트 노드 추가
-```javascript
+```javascript 
 let txt = document.createTextNode('hello');
 ```
  
