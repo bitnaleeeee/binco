@@ -38,7 +38,6 @@ f.write(markdown_text)
 f.close()
 ```
 
-
 ## GitHub Acriotns 생성하기
 Acrionts 클릭 > set up a workflow yourself 클릭 > main.yml 작성화면에서 아래와 같이 코드를 참고하여 수정해 주면 된다.
 
