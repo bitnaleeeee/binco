@@ -19,8 +19,8 @@ $ npm i @fortawesome/fontawesome-svg-core
 2. 무료로 제공되는 Solid, Regular, Brands 3가지 아이콘 패키지 설치
 ```javascript
 $ npm i @fortawesome/free-solid-svg-icons 
-@fortawesome/free-regular-svg-icons 
-@fortawesome/free-brands-svg-icons
+$ npm i @fortawesome/free-regular-svg-icons 
+$ npm i @fortawesome/free-brands-svg-icons
 ```
 3. 리액트로 `import` 해올 수 있도록 설치
 
