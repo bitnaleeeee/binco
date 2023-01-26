@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - fontawsome 사용 방법
+title: React - FontAwesome 사용 방법
 date: 2023-1-25 18:00:59
 modified: 2023-1-25 18:00:59
 tag: [React]
