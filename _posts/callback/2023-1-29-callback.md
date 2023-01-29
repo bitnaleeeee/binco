@@ -1,8 +1,8 @@
 ---
 layout: post
 title: JavaScript - 콜백지옥과 프로미스
-date: 2023-1-29 18:00:59
-modified: 2023-1-29 18:00:59
+date: 2023-1-28 18:00:59
+modified: 2023-1-28 18:00:59
 tag: [JavaScript, CallBack, Promise]
 ---
 
