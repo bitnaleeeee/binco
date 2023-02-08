@@ -3,7 +3,7 @@ layout: post
 title: 시맨틱 마크업
 date: 2023-2-7 20:00:59
 modified: 2023-2-7 20:00:59
-tag: [html, css]
+tag: [html, css, Semantic-Tag]
 ---
 
 
