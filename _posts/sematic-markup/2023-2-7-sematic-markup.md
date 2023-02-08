@@ -18,10 +18,6 @@ tag: [html, css, Semantic-Tag]
 
 > `<header>`, `<main>`, `<footer>`, `<aside>`, `<article>`, `<section>`
 
-
-마크업시 헷갈릴 수 있는 태그사용에 대해 간략히 알아보자.
-
-
 ### `<aritcle>`과 `<section>` 
 
 `<article>` 은 `<section>`의 모음이라 할 수 있다. 즉, `<article>` 은 독립적으로 보여질 수 있는 문서를 묶는 단위이며, `<section>`은 문서 내에서 관련된 주제로 묶은 본문1, 본문2 와 같은 영역이라고 생각하면 쉽다.
