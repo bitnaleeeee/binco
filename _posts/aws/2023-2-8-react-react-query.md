@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - React query로 상태관리하기
+title: React - React query 상태관리
 date: 2023-02-08 18:00:59
 modified: 2023-02-08 18:00:59
 tag: [React, CRUD, React-query]
