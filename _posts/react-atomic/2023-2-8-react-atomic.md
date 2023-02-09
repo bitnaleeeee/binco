@@ -10,14 +10,14 @@ tag: [React, Atomic, SPA]
 Atomic Design은 `Vue.js`, `React` 등 `SPA` 로 개발시 최근 떠오르고 있는 디자인 기법 중 하나이다. 
 
 Atomic Design은 아래와 같이 크게 5가지로 구성되어 있다.
-#
+
 * Atom (원자)
 * Molecule (분자)
 * Organism (유기체)
 * Template (템플릿)
 * Page (페이지)
 
-#
+
 
 ## Atom (원자)
 Atom은 디자인 할 수 있는 요소 중 가장 작은 구성 단위이다. `input`, `button`, `Container` `icon`, `text`, `font style` 등이 해당 된다. 
