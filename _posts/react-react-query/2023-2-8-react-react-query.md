@@ -18,7 +18,7 @@ tag: [React, CRUD, React-query]
 
 ## `React-query`
 `React-query`는 상태관리 영역 중, 서버의 상태 관리에 초점을 맞추고 있는 라이브러리이다. Server State는 말 그대로 CRUD를 통해 서버와 데이터 싱크를 맞추는 부분이라고 할 수 있다. `React-query`는 서버 상태 가져오기, 캐싱, 동기화 및 업데이트를 보다 쉽게 다룰 수 있도록 해준다.
-### `CRUD` ?
+### `CRUD`
 Create(생성), Read(읽기 또는 인출), Update(갱신), Delelte(삭제)의 약자로 사용자 인터페이스가 갖추어야 할 기본적인 기능이라고 할 수 있으며 주로 클라이언트와 서버가 데이터를 통신할때에 활용되는 개념이다. 
 > 데이터 생성(Crate), 데이터 읽기(Read), 데이터 갱신(Update), 데이터 삭제(Delte) > C.R.U.D
 
