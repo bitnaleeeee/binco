@@ -24,7 +24,7 @@ Create(생성), Read(읽기 또는 인출), Update(갱신), Delelte(삭제)의 �
 
 ### `React-query` 시작하기
 ```javascript
-$ npm install @tanstack/react-query
+$ npm install @tanstack/react-queryㄱ
 $ npm install @tanstack/react-query-devtools
 ```
 아래와 같이 `import` 시켜준 후 사용하면 된다.
