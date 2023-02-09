@@ -10,7 +10,7 @@ image: "/back-end-build/aws1.png"
 ## AWS EC2 생성하여 서버 배포하는 방법
 개인 프로젝트를 진행하면서 실제 서비스는 어떻게 구동되는지 궁금했고, 직접 프론트엔드부터 백엔드까지 구현해보기로 마음먹었다. 
 아래는 백엔드 서버를 AWS EC2를 통해 배포하는 방법에 대해 간략히 설명하겠다. 
-<br> 
+<br>
 
 ### AWS-EC2 선택 이유
 실제 서버를 배포할 서비스를 찾고있던 중 무료 이용이 가능한 히로쿠 서버가 22년 11월부터 유료로 전환된다고 하여 다른 서비스를 찾게 되었다.
@@ -21,7 +21,8 @@ image: "/back-end-build/aws1.png"
 
 <br>
 
-###  EC2 Instance 생성하기  
+###  EC2 Instance 생성하기 
+
 
 ![aws1파일](/assets/img/posts/back-end-build-img01.png)
 EC2 Instances 페이지로 이동 후 Launch Instances 을 클릭하여 EC2 Instance의 이름을 작성하고 Ubuntu를 선택 하였다.
