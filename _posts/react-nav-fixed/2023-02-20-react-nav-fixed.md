@@ -43,6 +43,6 @@ useEffect(() => {
 화면이 초기 렌더링 되었을때 화면 스크롤 이벤트를 감지하고 `scrollFixed`함수를 실행시키는 함수가 실행되고, `useEffect`는 화면이 동작할때마다 연속해서 실행되기 때문에 해당 동작을 무한 반복하지 않도록 끝내는 함수를 `return`에 작성해 주었다.
 
 ```javaScript
-<div className={{scrollActive ? "fixed" : "fixed off"}>
+<div className={scrollActive ? "fixed" : "fixed off"}>
 ```
 JSX 부분에 `scrollActive`의 값이 `true`일때 `fixed` 클래스를 적용하고 `false`일때 `fixed off`클래스를 주는 구문을 작성하여 특정 스크롤 높이에서 네비게이션 바가 고정되도록 작성하였다.
