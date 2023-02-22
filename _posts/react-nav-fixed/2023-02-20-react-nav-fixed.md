@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - React Navbar fixed=
+title: React - React Navbar fixed
 date: 2023-02-20 18:00:59
 modified: 2023-02-20 18:00:59
 tag: [React, JavaScript, SCSS]
