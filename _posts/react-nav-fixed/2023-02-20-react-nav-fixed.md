@@ -7,7 +7,6 @@ tag: [React, JavaScript, SCSS]
 ---
 
 React 의 `useState` 와 `useEffect`를 이용하여 화면 스크롤이 일정 부분 아래로 내려갔을때 상단의 네비게이션을 고정시키는 함수를 아래와 같이 작성해보았다.
-
 ## scrollY 값에 따라 Boolean 값 부여하기
 
 ```javascript
