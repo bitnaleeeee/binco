@@ -94,3 +94,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postfiles
+  
+# Feed
+feed:
+  post_limit: 50
