@@ -97,4 +97,4 @@ plugins:
   
 # Feed
 feed:
-  post_limit: 50
+  posts_limit: 999
