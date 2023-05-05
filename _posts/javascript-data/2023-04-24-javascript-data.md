@@ -41,4 +41,4 @@ tag: [javascript]
 
 ## References
 
-자바스크립트DeepDive
+자바스크립트 DeepDive
