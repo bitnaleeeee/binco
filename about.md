@@ -19,7 +19,7 @@ comments: true
 }
 </style>
 
-<!-- <div class="about">
+<div class="about">
     <div class="cnt">
         <div class="title">
             <img src="../assets/img/icon-lego.png" class="icon" alt="" />
@@ -47,13 +47,13 @@ comments: true
         사소한것도 정리하고 문서화 하는 매일의 노력이 큰 변화를 만든다고 믿습니다.
         <strong>어제보다 나은 내가 되는 것을 목표</strong>로 하고 끊임없이 공부하며 기록하는 개발자를 추구합니다.
     </div>
-</div> -->
-<!-- **저에 대해 더 궁금한게 있으시면 아래로 연락주세요 ✨** -->
+</div>
 
-어제보다 성장하는 자신을 목표로 매일 공부한 과정을 기록하고 있습니다.
+<!-- 어제보다 성장하는 자신을 목표로 매일 공부한 과정을 기록하고 있습니다. -->
+**저에 대해 더 궁금한게 있으시면 아래로 연락주세요 ✨**
 
 **may u needs ✨**
 
-<!-- - **Phone** 010-4719-1607 -->
+- **Phone** 010-4719-1607
 - **Mail** {{ site.author.email }}
 - **GitHub** github.com/{{ site.author.github }}
