@@ -14,7 +14,7 @@ tag: [React, Sprite, CSS]
 
 # 사용법
 
-아래는 내가 사용한 코드의 에시이다.
+아래는 내가 스프라이트 기법을 사용할때 작성한 코드 예시이다.
 
 ```javascript
           .todaytemper {
