@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - 스프라이트 기법
+title: CSS - 스프라이트 기법
 date: 2023-6-11 18:00:59
 modified: 22023-6-11 18:00:59
 tag: [React, Sprite, CSS, HTML]
