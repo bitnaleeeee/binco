@@ -67,5 +67,4 @@ JSON의 간단한 스펙과 안정성과 가독성, 파싱도 XML보다 매우 �
 ## References
 
 [XML구조](http://www.tcpschool.com/xml/xml_basic_structure)
-
 [JSON구조](http://www.tcpschool.com/json/json_basic_structure)
