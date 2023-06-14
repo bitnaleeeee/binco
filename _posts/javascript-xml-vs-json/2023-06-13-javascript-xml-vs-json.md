@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JSON의 등장과 XML
+title: JavaScript - JSON의 등장과 XML
 date: 2023-06-13 12:00:59
 modified: 2023-06-13 12:00:59
 tag: [javascript, XML, json, html, data]
