@@ -290,6 +290,7 @@
     }
 
     &.project {
+      text-align: left;
       & > dl {
         text-align: left;
         dt img {
@@ -413,7 +414,7 @@
           left: 50%;
           z-index: -1;
           transform: translateX(-50%);
-          border: 2px dashed #ececec;
+          border-left: 5px dotted #ececec;
           height: 15rem;
         }
       }
