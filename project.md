@@ -256,7 +256,7 @@ comments: true
           <a href="https://github.com/bitnaleeeee/wanted-pre-onboarding-frontend.git" target="_blank">GitHub</a>
         </div>
         <div class="img">
-          <img src="/assets/img/project-todo.gif" alt="원티드 프론트엔드코스 사전과제 영상" />
+          <img src="/assets/img/project-todo.png" alt="원티드 프론트엔드코스 사전과제 영상" />
         </div>
         <div class="info">원티드 프론트엔드코스 과정 선발 과제입니다. 로그인하여 토큰이 발급되면 TODO 페이지로 리다이렉트합니다. 글쓰기/수정/삭제 및 할일 상태를 서버와 POST 방식으로 통신을 구현하였습니다. 또한 로그인 유효성 검사/토큰 세션 저장 등 여러가지 로직을 경험할 수 있었습니다.</div>
         <dl class="service">

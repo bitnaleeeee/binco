@@ -219,18 +219,18 @@ $subColor: #E07FD0;
 
   .author-bio {
     margin: 0 auto;
-    opacity: 0.8;
 
     a {
       display: inline-block;
-      margin-top: 1rem;
-      border-radius: 13px;
-      width: 60px;
-      height: 26px;
-      font-size: 13px;
-      line-height: 26px;
+      margin-top: 1.5em;
+      border-radius: 15px;
+      width: 70px;
+      height: 30px;
+      font-size: 15px;
+      line-height: 30px;
       text-decoration: none;
       background: linear-gradient(45deg, $mainColor, $subColor);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       color: #fff;
     }
   }
