@@ -1,5 +1,5 @@
 ---
-title: Bitna Lee
+title: About
 permalink: /about/
 layout: page
 excerpt: 
