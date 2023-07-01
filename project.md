@@ -182,12 +182,10 @@ comments: true
         <div class="info">커머스 사이트 Aesop을 모티브로 제작한 클론코딩 프로젝트 입니다. 첫 프로젝트인 만큼 서버에서 넘어오는 데이터를 어떻게 UI에 뿌려줄지 고민하며 겪은 시행착오 과정이 큰 경험이 되었습니다. 또한 팀원들과 협업하면서 효율적인 업무를 위한 커뮤니케이션의 중요성을 다시끔 깨달았습니다.</div>
         <dl class="service">
           <dt><strong>주요 기능</strong></dt>
-          <dd>State, Props, Usefarams를 사용하여 UI구현</dd>
           <dd>로그인폼 유효성 검사 함수에 따른 화면 구현</dd>
           <dd>이메일 정보를 호출하여 DB에 없다면 메세지 출력과 회원가입으로 이동</dd>
           <dd>이메일 정보 일치시 패스워드 입력란 호버 출력</dd>
           <dd>정규식에 맞는 ID/PW 일치시 계정생성</dd>
-          <dd>메인 페이지 및 카테고리별, 상품별 페이지 구현</dd>
           <dd>장바구니에 상품 담기, 삭제, 수량 조절 구현</dd>
         </dl>
         <dl class="skill">
@@ -223,7 +221,6 @@ comments: true
           <dd>API 호출 최적화(Debounce)</dd>
           <dd>키보드로 추천 검색어들 이동 가능하도록 구현</dd>
           <dd>캐싱 기능을 제공하는 라이브러리(React-Query)등을 사용 하지 않고 API 호출별로 로컬 캐싱 구현</dd>
-          <dd>API를 호출할 때 마다 console.info('calling api') 출력을 통해 콘솔창에서 API 호출 횟수 확인이 가능하도록 설정</dd>
           <dd>API 호출을 위한 JSON Server를 Vercel 서버에 배포</dd>
         </dl>
         <dl class="skill">
@@ -335,12 +332,12 @@ comments: true
     <dl>
       <dt>
         <img src="/assets/img/logo-onboarding.png" alt="onboarding logo" />
-        <div class="title"><strong>B2C 차량대여 서비스 모바일 웹 제작</strong></div>
+        <div class="title"><strong>차량대여 서비스 모바일 웹 제작</strong></div>
         <div class="date">2022.11.01 ~ 2022.11.03</div>
       </dt>
       <dd>
         <a href="https://3rd-assignment.vercel.app/" target="_blank" class="img">
-          <img src="/assets/img/project-car.gif" alt="원티드 프론트엔드코스 기업협업 과제" />
+          <img src="/assets/img/project-car.png" alt="원티드 프론트엔드코스 기업협업 과제" />
         </a>
         <div class="link">
           <a href="https://3rd-assignment.vercel.app/" target="_blank">배포 링크</a>
@@ -368,12 +365,12 @@ comments: true
     <dl>
       <dt>
         <img src="/assets/img/logo-onboarding.png" alt="onboarding logo" />
-        <div class="title"><strong>B2C 투자 서비스 관리자 페이지 구현</strong></div>
+        <div class="title"><strong>B2C 투자서비스 관리자 패널 제작</strong></div>
         <div class="date">2022.11.12 ~ 2022.11.18</div>
       </dt>
       <dd>
         <a href="https://bitnaleeeee.github.io/investment-management/" target="_blank" class="img">
-          <img src="/assets/img/project-investment-management.gif" alt="B2C 투자 관리 서비스 영상" />
+          <img src="/assets/img/project-investment-management.png" alt="B2C 투자 관리 서비스 영상" />
         </a>
         <div class="link">
           <a href="https://bitnaleeeee.github.io/investment-management/" target="_blank" >배포 링크</a>
@@ -403,12 +400,12 @@ comments: true
     <dl>
       <dt>
         <img src="/assets/img/logo-onboarding.png" alt="onboarding logo" />
-        <div class="title"><strong>광고현황 대시보드 및 광고관리 서비스</strong></div>
+        <div class="title"><strong>광고현황 대시보드/관리 서비스</strong></div>
         <div class="date">2022.11.05 ~ 2022.11.06</div>
       </dt>
       <dd>
         <a href="https://frabjous-frangipane-831c63.netlify.app/" target="_blank" class="img">
-          <img src="/assets/img/project-adlist.gif" alt="광고현황 대시보드 영상" />
+          <img src="/assets/img/project-adlist.png" alt="광고현황 대시보드 영상" />
         </a>
         <div class="link">
           <a href="https://frabjous-frangipane-831c63.netlify.app/" target="_blank" >배포 링크</a>
