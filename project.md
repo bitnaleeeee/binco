@@ -203,7 +203,7 @@ comments: true
     <dl>
       <dt>
         <img src="/assets/img/logo-onboarding.png" alt="onboarding logo" />
-        <div class="title"><strong>실시간 검색창 구축 및 Vercel에 배포</strong></div>
+        <div class="title"><strong>실시간 검색창 구축 및 Vercel 배포</strong></div>
         <div class="date">2022.08.12 ~ 2022.8.26</div>
       </dt>
       <dd>
@@ -239,7 +239,7 @@ comments: true
     <dl>
       <dt>
         <img src="/assets/img/logo-naver.png" alt="github logo" />
-        <div class="title"><strong>네이버 모바일 메인 페이지 클론코딩</strong></div>
+        <div class="title"><strong>네이버 모바일 페이지 클론코딩</strong></div>
         <div class="date">2023.06.12 ~ 2023.06.17</div>
       </dt>
       <dd>
@@ -303,12 +303,12 @@ comments: true
     <dl>
       <dt>
         <img src="/assets/img/logo-github.png" alt="github logo" />
-        <div class="title"><strong>GitHub 이슈 리스트/상세 패널 구축</strong></div>
+        <div class="title"><strong>GitHub 이슈 페이지 구축</strong></div>
         <div class="date">2022.10.29 ~ 2022.10.30</div>
       </dt>
       <dd>
-        <a href="" target="_blank" class="img">
-          <img src="/assets/img/project-issue.gif" alt="원티드 프론트엔드코스 기업협업 과제" />
+        <a href="https://2nd-assignment.vercel.app/" target="_blank" class="img">
+          <img src="/assets/img/project-issue.png" alt="원티드 프론트엔드코스 기업협업 과제" />
         </a>
         <div class="link">
           <a href="https://2nd-assignment.vercel.app/" target="_blank">배포 링크</a>
