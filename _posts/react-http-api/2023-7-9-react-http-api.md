@@ -1,6 +1,6 @@
 ---
 layout: post
-title: http - API, GRAPHQL API 의 차이점
+title: http 통신(REST API, GRAPHQL)
 date: 2023-07-09 18:00:59
 modified: 2023-07-09 18:00:59
 tag: [React, CRUD, RESTAPI, GRAPHQLAPI, http, API]
