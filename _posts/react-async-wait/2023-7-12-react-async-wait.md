@@ -1,6 +1,6 @@
 ---
 layout: post
-title: async-await(비동기와 동기)
+title: [JavaScript] async-await
 date: 2023-07-12 18:00:59
 modified: 2023-07-12 18:00:59
 tag: [React, async, await, JavaScript]
