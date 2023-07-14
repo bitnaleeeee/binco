@@ -1,9 +1,9 @@
 ---
 layout: post
-title: REST API, GRAPHQ 차이
+title: REST API, GraphQL 차이
 date: 2023-07-09 18:00:59
 modified: 2023-07-09 18:00:59
-tag: [React, CRUD, RESTAPI, GRAPHQLAPI, http, API]
+tag: [React, CRUD, RESTAPI, GraphQL, http, API]
 ---
 
 ## http 통신
@@ -24,18 +24,18 @@ Client에서 요청을 할때 혹은 Server에서 응답을 보낼때 데이터�
 
 http 통신을 하는 방법으로는 REST API 와 GRAPHQL API이 있다. 기존에 넓게 사용되고 있는 것이 REST API이지만 페이스북에서 REST API 의 문제점을 보완하기 위해 GRAPHQL API을 만들었다. 현재 에어비앤비나 깃허브, 페이스북 등 글로벌 기업에서 GRAPHQL API을 사용하고 있다.
 
-## REST API의 단점과 GRAPHQL API 등장
+## REST API의 단점과 GraphQL API 등장
 
 REST API의 단점은 바로 데이터가 무겁다는 것이다. 데이터가 무겁다는 건 결국 그만큼 렌더링이 느려지고 비효율적이라는 뜻이다. 예를 들어 페이스북은 사용자가 수많은 클릭을 통해 시시각각 그에 맞는 데이터를 받아와 화면에 그려줘야 한다. 하지만 REST API의 경우 하나의 데이터만을 받아오도록 특정할 수 없기에, 만약 사용자가 상세페지이만을 보고싶다 하더라도 조회 API에 요청을 보내면, 상세 페이지 뿐 아니라 해당되는 전체 데이터를 응답받아야 했다. 이에 페이스북에서는 해당 데이터만을 특정할 수 있는 GRAPHQL API 를 만들었고 현재 글로벌 기업인 페이스북, 에어비앤비, 깃허브 등에서 사용 중이다.
 
-## REST API의 단점과 GRAPHQL API 차이점
+## REST API의 단점과 GraphQL API 차이점
 
 ### REST API
 
 `axios`를 설치하여 사용 가능하다
 `method`sms POST(등록) PUT(수정) DELETE(삭제) GET(조회)
 
-### GRAPHQL API
+### GraphQL API
 
 `appolo`를 설치하여 사용 가능하다.
 `MUTATION`(REST API의 POST, PUT, DELET)와 QUERY(조회)로 되어있다.
