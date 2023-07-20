@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript - 원사 타입과 객체타입의 차이
+title: JavaScript - 원시 타입과 객체타입의 차이
 date: 2023-07-18 18:00:59
 modified: 2023-07-18 18:00:59
 tag: [javascript, dataType]
