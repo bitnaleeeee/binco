@@ -68,11 +68,103 @@ comments: true
   padding-left: 0;
 }
 .project > dl .skill p {
-    margin: 0;
+  position: relative;
+  margin: 5px 0;
+  padding-left: 80px;
+  line-height: 24px;
+}
+/* .project > dl .skill p.back-end span {
+  opacity: 0.3;
+} */
+.project > dl .skill p strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
 }
 .project > dl .skill p span {
-    margin-right: 0.2rem;
-    font-weight: bold;
+  display: inline-block;
+  margin-right: 2px;
+  border-radius: 3px;
+  padding: 0 5px;
+  line-height: 20px;
+  font-size: 13px;
+}
+.project > dl .skill p span.javascript {
+  background-color: #fac651;
+  color: #fff;
+}
+.project > dl .skill p span.react {
+  background-color: #5fd3f3;
+  color: #fff;
+}
+.project > dl .skill p span.redux {
+  background-color: #7248b6;
+  color: #fff;
+}
+.project > dl .skill p span.node {
+  background-color: #7fc728;
+  color: #fff;
+}
+.project > dl .skill p span.express {
+  background-color: #7fc728;
+  color: #fff;
+}
+.project > dl .skill p span.mysql {
+  background-color: #dd8a00;
+  color: #fff;
+}
+.project > dl .skill p span.jest {
+  background-color: #944058;
+  color: #fff;
+}
+.project > dl .skill p span.aws {
+  background-color: #ff9900;
+  color: #fff;
+}
+.project > dl .skill p span.git {
+  background-color: #f05030;
+  color: #fff;
+}
+.project > dl .skill p span.notion {
+  background-color: #000;
+  color: #fff;
+}
+.project > dl .skill p span.slack {
+  background-color: #d91d57;
+  color: #fff;
+}
+.project > dl .skill p span.trello {
+  background-color: #2580f7;
+  color: #fff;
+}
+.project > dl .skill p span.sass {
+  background-color: #c76395;
+  color: #fff;
+}
+.project > dl .skill p span.react-router {
+  background-color: #5fd3f3;
+  color: #fff;
+}
+.project > dl .skill p span.vercel {
+  background-color: #000;
+  color: #fff;
+}
+.project > dl .skill p span.typescript {
+  background-color: #2f74c0;
+  color: #fff;
+}
+.project > dl .skill p span.styled-components {
+  background-color: #d3896e;
+  color: #fff;
+}
+.project > dl .skill p span.react-query {
+  background-color: #f73f51;
+  color: #fff;
+}
+.project > dl .skill p span.recharts {
+  background-color: #20afb9;
+  color: #fff;
 }
 .project > dl .link {
     margin-top: 0.5rem;
@@ -156,9 +248,27 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, Redux</p>
-            <p><span>Back-End</span> Node.js, Express, MySQL, JEST, AWS(EC2)</p>
-            <p><span>Tool</span> Git, Notion, Slack, Trello</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="redux">Redux</span>
+            </p>
+            <p class="back-end">
+              <strong>Back-End</strong> 
+              <span class="node">Node.js</span>
+              <span class="express">Express</span>
+              <span class="mysql">MySQL</span>
+              <span class="jest">JEST</span>
+              <span class="aws">AWS(EC2)</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+              <span class="notion">Notion</span>
+              <span class="slack">Slack</span>
+              <span class="trello">Trello</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -191,9 +301,27 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, Redux</p>
-            <p><span>Back-End</span> Node.js, Express, MySQL, JEST, AWS(EC2)</p>
-            <p><span>Tool</span> Git, Notion, Slack, Trello</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="redux">Redux</span>
+            </p>
+            <p class="back-end">
+              <strong>Back-End</strong> 
+              <span class="node">Node.js</span>
+              <span class="express">Express</span>
+              <span class="mysql">MySQL</span>
+              <span class="jest">JEST</span>
+              <span class="aws">AWS(EC2)</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+              <span class="notion">Notion</span>
+              <span class="slack">Slack</span>
+              <span class="trello">Trello</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -226,9 +354,17 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> avaScript, React, SASS, React Router</p>
-            <p><span>Back-End</span> Vercel</p>
-            <p><span>Tool</span> Git</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="sass">SASS</span>
+              <span class="react-router">React Router</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -258,9 +394,21 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, SASS, React Router</p>
-            <p><span>Back-End</span> Vercel</p>
-            <p><span>Tool</span> Git</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="sass">SASS</span>
+              <span class="react-router">React Router</span>
+            </p>
+            <p class="back-end">
+              <strong>Back-End</strong> 
+              <span class="vercel">Vercel</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -291,8 +439,17 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, JSX, React Router, Sass</p>
-            <p><span>Tool</span> Git</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="sass">SASS</span>
+              <span class="react-router">React Router</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -323,8 +480,18 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, TypeScript, JSX, React Router, Styled-component</p>
-            <p><span>Tool</span> Git</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="typescript">TypeScript</span>
+              <span class="styled-components">Styled-Component</span>
+              <span class="react-router">React Router</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -356,8 +523,18 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, TypeScript, JSX, React Query, Styled-Component</p>
-            <p><span>Tool</span> Git</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="typescript">TypeScript</span>
+              <span class="styled-components">Styled-Component</span>
+              <span class="react-query">React Query</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -391,8 +568,22 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, JSX, Sass, CRA</p>
-            <p><span>Back-End</span> Node.js, Express, aws(EC2)</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="sass">SASS</span>
+            </p>
+            <p class="back-end">
+              <strong>Back-End</strong> 
+              <span class="node">Node.js</span>
+              <span class="express">Express</span>
+              <span class="aws">AWS(EC2)</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
@@ -423,7 +614,17 @@ comments: true
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
           <dd>
-            <p><span>Front-End</span> JavaScript, React, Redux-Toolkit, Recharts, Styled-Components</p>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="styled-components">Styled-Component</span>
+              <span class="recharts">Recharts</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
           </dd>
         </dl>
       </dd>
