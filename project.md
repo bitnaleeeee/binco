@@ -328,28 +328,23 @@ comments: true
     </dl>
     <dl>
       <dt>
-        <img src="/assets/img/logo-onboarding.png" alt="onboarding logo" />
-        <div class="title"><strong>실시간 검색창 구축 및 Vercel 배포</strong></div>
-        <div class="date">2022.08.12 ~ 2022.8.26</div>
+        <img src="/assets/img/logo-house.png" alt="github logo" />
+        <div class="title"><strong>오늘의집 모바일 페이지 클론코딩</strong></div>
+        <div class="date">2023.07.20 ~ 2023.07.30</div>
       </dt>
       <dd>
-        <a href="https://bitnaleeeee.github.io/medical-search/" target="_blank" class="img">
-          <img src="/assets/img/project-search.png" alt="실시간 검색창 영상" />
+        <a href="https://clone-house.vercel.app/" target="_blank" class="img">
+          <img src="/assets/img/project-house.png" alt="오늘의집 모바일 메인 페이지 클론코딩" />
         </a>
         <div class="link">
-          <a href="https://bitnaleeeee.github.io/medical-search/" target="_blank" >배포 링크</a>
-          <a href="https://bitnaleeeee.github.io/back-end-build/" target="_blank">관련 포스팅</a>
-          <a href="https://github.com/bitnaleeeee/medical-search" target="_blank">GitHub</a>
+          <a href="https://clone-house.vercel.app/" target="_blank">배포 링크</a>
+          <a href="https://github.com/bitnaleeeee/clone-house" target="_blank">GitHub</a>
         </div>
-        <div class="info">프리온보딩 프로젝트중 하나로써 검색창에 질환명 검색시 실시간으로 API 호출 통해서 검색어를 추천해주는 UI를 구현하였습니다. 정규표현식/캐싱/리액트 최적화 등 여러가지 기술들을 경험 할 수 있었던 프로젝트입니다. 실시간으로 JSON Server를 동작하기 위해 Vercel에 직접 배포하는 과정도 기억에 남았습니다.</div>
+        <div class="info">오늘의집 사이트 모바일 버전을 클론코딩 하였습니다. 실제 서비스되는 화면과 최대한 비슷하게 작업하였습니다. 각 데이터 포멧에 맞게 UI 구성을 하였으며, 재활용성에 용이하도록 컴포넌트 구성을 하고 있습니다.(작업중)</div>
         <dl class="service">
           <dt><strong>주요 기능</strong></dt>
-          <dd>정규표현식을 사용하여 사용자가 검색한 텍스트와 일치하는 부분 볼드처리</dd>
-          <dd>검색어가 없을 시 '검색어 없음' 표출</dd>
-          <dd>API 호출 최적화(Debounce)</dd>
-          <dd>키보드로 추천 검색어들 이동 가능하도록 구현</dd>
-          <dd>캐싱 기능을 제공하는 라이브러리(React-Query)등을 사용 하지 않고 API 호출별로 로컬 캐싱 구현</dd>
-          <dd>API 호출을 위한 JSON Server를 Vercel 서버에 배포</dd>
+          <dd>첫 안내 모달팝업 24시간 뒤 재오픈 기능</dd>
+          <dd>슬라이드 배너(추가중)</dd>
         </dl>
         <dl class="skill">
           <dt><strong>기술 스택</strong></dt>
@@ -360,6 +355,10 @@ comments: true
               <span class="javascript">JavaScript</span>
               <span class="sass">SASS</span>
               <span class="react-router">React Router</span>
+            </p>
+            <p class="back-end">
+              <strong>Back-End</strong> 
+              <span class="vercel">Vercel</span>
             </p>
             <p class="tool">
               <strong>Tool</strong>
@@ -404,6 +403,49 @@ comments: true
             <p class="back-end">
               <strong>Back-End</strong> 
               <span class="vercel">Vercel</span>
+            </p>
+            <p class="tool">
+              <strong>Tool</strong>
+              <span class="git">Git</span>
+            </p>
+          </dd>
+        </dl>
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        <img src="/assets/img/logo-onboarding.png" alt="onboarding logo" />
+        <div class="title"><strong>실시간 검색창 구축 및 Vercel 배포</strong></div>
+        <div class="date">2022.08.12 ~ 2022.8.26</div>
+      </dt>
+      <dd>
+        <a href="https://bitnaleeeee.github.io/medical-search/" target="_blank" class="img">
+          <img src="/assets/img/project-search.png" alt="실시간 검색창 영상" />
+        </a>
+        <div class="link">
+          <a href="https://bitnaleeeee.github.io/medical-search/" target="_blank" >배포 링크</a>
+          <a href="https://bitnaleeeee.github.io/back-end-build/" target="_blank">관련 포스팅</a>
+          <a href="https://github.com/bitnaleeeee/medical-search" target="_blank">GitHub</a>
+        </div>
+        <div class="info">프리온보딩 프로젝트중 하나로써 검색창에 질환명 검색시 실시간으로 API 호출 통해서 검색어를 추천해주는 UI를 구현하였습니다. 정규표현식/캐싱/리액트 최적화 등 여러가지 기술들을 경험 할 수 있었던 프로젝트입니다. 실시간으로 JSON Server를 동작하기 위해 Vercel에 직접 배포하는 과정도 기억에 남았습니다.</div>
+        <dl class="service">
+          <dt><strong>주요 기능</strong></dt>
+          <dd>정규표현식을 사용하여 사용자가 검색한 텍스트와 일치하는 부분 볼드처리</dd>
+          <dd>검색어가 없을 시 '검색어 없음' 표출</dd>
+          <dd>API 호출 최적화(Debounce)</dd>
+          <dd>키보드로 추천 검색어들 이동 가능하도록 구현</dd>
+          <dd>캐싱 기능을 제공하는 라이브러리(React-Query)등을 사용 하지 않고 API 호출별로 로컬 캐싱 구현</dd>
+          <dd>API 호출을 위한 JSON Server를 Vercel 서버에 배포</dd>
+        </dl>
+        <dl class="skill">
+          <dt><strong>기술 스택</strong></dt>
+          <dd>
+            <p class="front-end">
+              <strong>Front-End</strong>
+              <span class="react">React</span>
+              <span class="javascript">JavaScript</span>
+              <span class="sass">SASS</span>
+              <span class="react-router">React Router</span>
             </p>
             <p class="tool">
               <strong>Tool</strong>
