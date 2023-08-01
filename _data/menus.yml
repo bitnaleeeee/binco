@@ -1,24 +1,24 @@
-- title: home
+- title: Home
   url: /
   external: false
 
-- title: about
+- title: About
   url: /about/
   external: false
 
-- title: skill
+- title: Skill
   url: /skill/
   external: false
 
-- title: timeline
+- title: Timeline
   url: /timeline/
   external: false
 
-- title: project
+- title: Project
   url: /project/
   external: false
 
-- title: post
+- title: Post
   url: /post/
   external: false
 
