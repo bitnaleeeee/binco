@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Select Box UI
+title: "[jQuery] Select Box UI"
 date: 2022-04-21 20:37:08
 modified: 2022-04-21 20:37:08
 tag: [javascript, jquery]

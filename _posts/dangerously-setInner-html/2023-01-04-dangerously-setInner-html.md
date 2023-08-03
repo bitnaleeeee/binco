@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - dangerouslySetInnerHTML
+title: "[React] dangerouslySetInnerHTML"
 date: 2023-1-3 15:00:59
 modified: 2022-1-3 15:00:59
 tag: [React, HTML, XSS]

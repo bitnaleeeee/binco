@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery modal window UI
+title: "[jQuery] Modal Popup UI"
 date: 2022-05-17 12:50:38
 modified: 2022-05-17 12:50:38
 tag: [javascript, jquery]

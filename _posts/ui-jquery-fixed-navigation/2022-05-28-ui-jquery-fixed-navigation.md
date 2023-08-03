@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Fixed Navigation UI
+title: "[jQuery] Fixed Navigation UI"
 date: 2022-05-28 12:50:38
 modified: 2022-05-28 12:50:38
 tag: [javascript, jquery]

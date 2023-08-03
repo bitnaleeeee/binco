@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - FontAwesome
+title: "[React] FontAwesome"
 date: 2023-1-25 18:00:59
 modified: 2023-1-25 18:00:59
 tag: [React]

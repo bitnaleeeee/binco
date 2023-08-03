@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 스코프(Scope)
+title: "[JavaScript] 스코프(Scope)"
 date: 2022-04-13 19:10:59
 modified: 2022-04-13 19:10:59
 tag: [javascript]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 깃 커밋 메시지 컨벤션(Git Commit Message Convention)
+title: "[Git] 깃 커밋 메시지 컨벤션(Git Commit Message Convention)"
 date: 2022-07-12 11:00:29
 modified: 2022-07-12 11:00:29
 tag: [git]

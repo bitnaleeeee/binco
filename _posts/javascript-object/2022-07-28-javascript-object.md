@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 객체(Object)
+title: "[JavaScript] 객체(Object)"
 date: 2022-07-28 12:00:59
 modified: 2022-07-28 12:00:59
 tag: [javascript]

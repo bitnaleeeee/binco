@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 비구조화 할당(Destructuring Assignment)
+title: "[JavaScript] 비구조화 할당(Destructuring Assignment)"
 date: 2022-08-04 20:51:12
 modified: 2022-08-04 20:51:12
 tag: [javascript, es6]

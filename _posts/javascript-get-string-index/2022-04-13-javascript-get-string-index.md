@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 특정 값의 수를 구하는 함수
+title: "[JavaScript] 특정 값의 수를 구하는 함수"
 date: 2022-04-13 20:03:59
 modified: 2022-04-13 20:03:59
 tag: [javascript]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 함수형 프로그래밍의 순수 함수
+title: "[JavaScript] 함수형 프로그래밍의 순수 함수"
 date: 2022-12-10 11:30:35
 modified: 2022-12-10 11:30:35
 tag: [javascript, pure function, functional programming]

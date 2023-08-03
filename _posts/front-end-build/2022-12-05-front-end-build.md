@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리액트 프로젝트를 gh-pages로 배포하는 방법
+title: "[GitHub] 리액트 프로젝트를 gh-pages로 배포하는 방법"
 date: 2022-12-05 18:00:59
 modified: 2022-12-05 18:00:59
 tag: [github]

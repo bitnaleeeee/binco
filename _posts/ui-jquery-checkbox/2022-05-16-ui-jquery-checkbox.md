@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Agree Checkbox UI
+title: "[jQuery] Agree Checkbox UI"
 date: 2022-05-16 20:08:38
 modified: 2022-05-16 20:08:38
 tag: [javascript, jquery]

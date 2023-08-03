@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 인터넷 네트워크
+title: "[Network] 인터넷 네트워크"
 date: 2022-12-11 18:00:59
 modified: 2022-12-11 18:00:59
 tag: [IP, TCP, UDP, PORT]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 깃 명령어
+title: "[Git] 깃 명령어"
 date: 2022-07-08 12:00:23
 modified: 2022-07-08 12:00:23
 tag: [git]

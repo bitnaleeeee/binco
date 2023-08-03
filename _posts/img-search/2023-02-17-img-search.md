@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 절대경로와 상대경로
+title: "[Etc] 절대경로와 상대경로"
 date: 2023-2-6 15:00:59
 modified: 2023-2-6 15:00:59
-tag: [css]
+tag: [etc]
 ---
 
 ## 경로

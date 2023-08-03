@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 우리가 보는 화면은 어떻게 만들어 졌을까?
+title: "[Browser] 우리가 보는 화면은 어떻게 만들어 졌을까?"
 date: 2022-07-08 14:00:08
 modified: 2022-07-08 14:00:08
 tag: [browser]

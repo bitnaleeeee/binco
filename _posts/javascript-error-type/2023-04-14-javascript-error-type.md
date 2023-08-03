@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "자바스크립트의 오류 유형"
+title: "[JavaScript] 자바스크립트의 오류 유형"
 date: 2023-04-09 10:08:01
 modified: 2023-04-09 10:08:01
 tag: [javascript, error]

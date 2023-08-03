@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML - 데이터 속성 (data attribute)
+title: "[HTML] 데이터 속성(Data Attribute)"
 date: 2023-06-13 10:00:59
 modified: 2023-06-13 10:00:59
 tag: [html, javascript, data attribute]

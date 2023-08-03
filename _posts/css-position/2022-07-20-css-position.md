@@ -1,9 +1,9 @@
 ---
 layout: post
-title: CSS3 layout display, position 정리
+title: "[CSS] Layout Display, Position 정리"
 date: 2022-07-20 10:00:59
 modified: 2022-07-20 10:00:59
-tag: [javascript]
+tag: [css]
 ---
 
 ## diplay

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2nd project WnB 
+title: "[Memoirs] 2ND Project WnB"
 date: 2022-09-08 19:00:00
 modified: 2022-09-08 19:00:00
 tag: [react, project]

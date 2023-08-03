@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript - async/await
+title: "[JavaScript] async/await"
 date: 2023-07-12 18:00:59
 modified: 2023-07-12 18:00:59
 tag: [React, async, await, JavaScript]

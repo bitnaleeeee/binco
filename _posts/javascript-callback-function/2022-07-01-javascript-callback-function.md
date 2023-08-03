@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 비동기처리와 콜백함수의 개념
+title: "[JavaScript] 비동기처리와 콜백함수의 개념"
 date: 2022-07-01 19:10:59
 modified: 2022-07-01 19:10:59
 tag: [javascript]

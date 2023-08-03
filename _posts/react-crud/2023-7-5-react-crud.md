@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - 전개연산자를 활용한 배열에 객체넣기
+title: "[React] 전개연산자를 활용한 배열에 객체넣기"
 date: 2023-07-05 18:00:59
 modified: 2023-07-05 18:00:59
 tag: [React, array, object, CRUD, useState, map]

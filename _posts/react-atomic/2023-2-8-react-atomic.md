@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React - 아토믹(Atomic)디자인 패턴
+title: "[React] 아토믹(Atomic)디자인 패턴"
 date: 2023-02-08 18:00:59
 modified: 2023-02-08 18:00:59
 tag: [React, Atomic, SPA]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.filter
+title: "[JavaScript] ES5 Array.filter"
 date: 2022-06-18 18:53:36
 modified: 2022-06-18 18:53:36
 tag: [javascript, es5]

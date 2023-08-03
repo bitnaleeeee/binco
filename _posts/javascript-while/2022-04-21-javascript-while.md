@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 while 반복문
+title: "[JavaScript] while 반복문"
 date: 2022-04-21 12:34:59
 modified: 2022-04-21 12:34:59
 tag: [javascript]

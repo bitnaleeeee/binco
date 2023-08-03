@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery 생년월일 Select Box UI
+title: "[jQuery] 생년월일 Select Box UI"
 date: 2022-06-02 16:00:08
 modified: 2022-06-02 16:00:08
 tag: [javascript, jquery]
