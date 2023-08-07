@@ -1,6 +1,6 @@
 ---
 layout: post
-title: try...catch를 이용한 에러 핸들링
+title: "[JavaScript] try...catch를 이용한 에러 핸들링"
 date: 2022-11-08 14:35:42
 modified: 2022-11-08 14:35:42
 tag: [javascript]

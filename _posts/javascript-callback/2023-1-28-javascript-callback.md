@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript - Callback 과 Promise
+title: "[JavaScript] Callback 과 Promise"
 date: 2023-1-28 18:00:59
 modified: 2023-1-28 18:00:59
 tag: [JavaScript, CallBack, Promise]

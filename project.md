@@ -195,7 +195,7 @@ comments: true
     position: relative;
     overflow: hidden;
     margin-top: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 .project > dl .img::after  {

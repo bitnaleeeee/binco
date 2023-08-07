@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Semantic web/tag 사용을 지향해야 하는 이유
+title: "[HTML] Semantic web/tag 사용을 지향해야 하는 이유"
 date: 2022-07-19 18:00:59
 modified: 2022-07-19 18:00:59
 tag: [html]

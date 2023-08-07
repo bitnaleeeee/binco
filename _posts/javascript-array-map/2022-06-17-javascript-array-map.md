@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.map
+title: "[JavaScript] ES5 Array.map"
 date: 2022-06-17 18:49:45
 modified: 2022-06-17 18:49:45
 tag: [javascript, es5]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CORS 에러와 개념, 해결방법
+title: "[Network] CORS 에러와 개념, 해결방법"
 date: 2023-07-13 18:00:59
 modified: 2023-07-13 18:00:59
 tag: [CORS, JavaScript, Browser, React]

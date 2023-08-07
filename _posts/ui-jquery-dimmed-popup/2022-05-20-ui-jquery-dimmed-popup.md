@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Dimmed popup UI
+title: "[jQuery] Dimmed Popup UI"
 date: 2022-05-20 10:41:08
 modified: 2022-05-20 10:41:08
 tag: [javascript, jquery]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.some
+title: "[JavaScript] ES5 Array.some"
 date: 2022-06-19 18:55:20
 modified: 2022-06-19 18:55:20
 tag: [javascript, es5]

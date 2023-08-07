@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 배열 메서드
+title: "[JavaScript] 배열 메서드"
 date: 2022-06-29 11:40:59
 modified: 2022-06-29 11:40:59
 tag: [javascript]

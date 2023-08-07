@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery todolist UI
+title: "[jQuery] Todolist UI"
 date: 2022-06-28 10:34:50
 modified: 2022-06-28 10:34:50
 tag: [javascript, jquery]

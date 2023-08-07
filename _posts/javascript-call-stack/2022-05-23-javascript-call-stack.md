@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 호출 스택(Call Stack)
+title: "[JavaScript] 호출 스택(Call Stack)"
 date: 2022-05-23 12:44:59
 modified: 2022-05-23 12:44:59
 tag: [javascript]

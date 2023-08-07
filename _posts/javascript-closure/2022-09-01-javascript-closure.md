@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 클로저
+title: "[JavaScript] 클로저"
 date: 2022-09-01 12:00:59
 modified: 2022-09-01 12:00:59
 tag: [javascript]

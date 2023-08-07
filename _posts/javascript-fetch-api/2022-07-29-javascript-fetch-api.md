@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fetch API
+title: "[JavaScript] Fetch API"
 date: 2022-07-29 17:10:56
 modified: 2022-07-29 17:10:56
 tag: [http, javascript]

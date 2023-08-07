@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.reduce
+title: "[JavaScript] ES5 Array.reduce"
 date: 2022-06-21 18:57:42
 modified: 2022-06-21 18:57:42
 tag: [javascript, es5]

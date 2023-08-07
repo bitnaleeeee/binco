@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 로그인/회원가입 유효성 검사 및 API 호출/투두리스트 체크박스 수정,삭제 기능 UI배포(React)
+title: "[React] 로그인/회원가입 유효성 검사 및 API 호출/투두리스트 체크박스 수정,삭제 기능 UI배포"
 date: 2022-10-13 16:31:00
 modified: 2022-10-13 16:31:00
 tag: [react, javascript]

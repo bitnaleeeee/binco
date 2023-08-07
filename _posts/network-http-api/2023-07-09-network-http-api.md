@@ -1,6 +1,6 @@
 ---
 layout: post
-title: REST API, GraphQL 차이
+title: "[Network] REST API, GraphQL 차이"
 date: 2023-07-09 18:00:59
 modified: 2023-07-09 18:00:59
 tag: [React, CRUD, RESTAPI, GraphQL, http, API]

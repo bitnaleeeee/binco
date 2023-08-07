@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SASS 중첩(Nesting), 변수(letiables), 가져오기(Import)
+title: "[SASS] 중첩(Nesting), 변수(letiables), 가져오기(Import)"
 date: 2022-08-09 15:08:04
 modified: 2022-08-09 15:08:04
 tag: [sass, css]

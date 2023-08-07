@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 문자열이 공백인지 체크
+title: "[JavaScript] 문자열이 공백인지 체크"
 date: 2022-11-29 18:21:25
 modified: 2022-11-29 18:21:25
 tag: [javascript]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 얕은 복사, 깊은 복사
+title: "[JavaScript] 얕은 복사, 깊은 복사"
 date: 2022-10-18 12:00:59
 modified: 2022-10-18 12:00:59
 tag: [javascript]

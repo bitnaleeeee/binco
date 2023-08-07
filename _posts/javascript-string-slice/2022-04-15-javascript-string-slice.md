@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 문자열 자르기
+title: "[JavaScript] 문자열 자르기"
 date: 2022-04-15 12:30:59
 modified: 2022-04-15 12:30:59
 tag: [javascript]

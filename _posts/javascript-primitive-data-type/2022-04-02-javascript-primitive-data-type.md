@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 자료형(원시 타입)
+title: "[JavaScript] 자료형(원시 타입)"
 date: 2022-04-02 18:24:59
 modified: 2022-04-02 18:24:59
 tag: [javascript]

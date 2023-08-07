@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 switch 조건문
+title: "[JavaScript] 자바스크립트 switch 조건문"
 date: 2022-04-20 14:30:59
 modified: 2022-04-20 14:30:59
 tag: [javascript]

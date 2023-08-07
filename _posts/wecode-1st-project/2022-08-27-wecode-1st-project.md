@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1st project woosop 
+title: "[Memoirs] 1ST Project Woosop"
 date: 2022-08-27 19:00:00
 modified: 2022-08-27 19:00:00
 tag: [react, project]

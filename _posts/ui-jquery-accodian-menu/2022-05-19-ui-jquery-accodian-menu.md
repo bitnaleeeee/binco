@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Accodian Menu UI
+title: "[jQuery] Accodian Menu UI"
 date: 2022-05-28 12:50:38
 modified: 2022-05-28 12:50:38
 tag: [javascript, jquery]

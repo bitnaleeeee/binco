@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 노드 생성 및 추가
+title: "[JavaScript] 자바스크립트 노드 생성 및 추가"
 date: 2022-04-18 14:30:59
 modified: 2022-04-18 14:30:59
 tag: [javascript]

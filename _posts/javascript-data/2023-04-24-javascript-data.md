@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 데이터타입
+title: "[JavaScript] 데이터 타입"
 date: 2022-06-24 14:30:59
 modified: 2022-04-24 14:30:59
 tag: [javascript]

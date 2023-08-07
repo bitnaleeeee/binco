@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 변수 선언과 호이스팅(Hoisting)
+title: "[JavaScript] 변수 선언과 호이스팅(Hoisting)"
 date: 2022-05-13 19:10:59
 modified: 2022-05-13 19:10:59
 tag: [javascript]

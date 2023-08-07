@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS EC2 생성하여 서버 배포하기
+title: "[AWS] AWS EC2 생성하여 서버 배포하기"
 date: 2022-12-06 18:00:59
 modified: 2022-12-06 18:00:59
 tag: [AWS, EC2]

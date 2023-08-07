@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 변수
+title: "[JavaScript] 자바스크립트 변수"
 date: 2022-04-01 19:10:59
 modified: 2022-04-01 19:10:59
 tag: [javascript]

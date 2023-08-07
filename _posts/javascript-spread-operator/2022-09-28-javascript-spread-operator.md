@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 전개연산자(Spread Operator)
+title: "[JavaScript] 전개연산자(Spread Operator)"
 date: 2022-09-28 12:00:59
 modified: 2022-09-28 12:00:59
 tag: [javascript]

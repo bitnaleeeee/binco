@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.forEach
+title: "[JavaScript] ES5 Array.forEach"
 date: 2022-06-16 18:46:41
 modified: 2022-06-16 18:46:41
 tag: [javascript, es5]
