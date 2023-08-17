@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[React]Slick arrow custom"
+title: "[React] Slick arrow custom"
 date: 2023-08-16 12:00:59
 modified: 2023-08-16 12:00:59
 tag: [react, slick, react-slick]
