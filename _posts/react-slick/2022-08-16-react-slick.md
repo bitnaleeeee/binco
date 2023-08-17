@@ -75,7 +75,7 @@ export default class SimpleSlider extends Component {
 
 위에 있는 기본 샘플을 가져다 사용하거나
 [여기](https://react-slick.neostack.com/docs/example/custom-arrows/)에 다른 샘플들도 있으므로 참고하면 좋다.
-추가로 `arrows`를 넣어줄 수도 있고 그에 맞게 스타일링할 수 있다.
+추가로 `arrows`를 넣어줄 수도 있고 원하는대로 스타일링 할 수 있다.
 
 ## References
 
