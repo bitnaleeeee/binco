@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "[React]slick arrow custom"
-date: 2023-06-16 12:00:59
-modified: 2023-06-16 12:00:59
+date: 2023-08-16 12:00:59
+modified: 2023-08-16 12:00:59
 tag: [react, slick, react-slick]
 ---
 
-### 설치
+## 설치
 
 ```javascript
 npm i react-slick
@@ -19,7 +19,7 @@ yarn add react-slick
 npm i slick-carousel
 ```
 
-### 사용방법
+## 사용방법
 
 위와 같이 사용하고자 하는 컴포넌트에 불러와준다
 
@@ -29,7 +29,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 ```
 
-기본 구조
+### 기본 구조
 
 ```javascript
 import React, { Component } from "react";
