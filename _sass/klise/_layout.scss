@@ -285,19 +285,27 @@ $subColor: #E07FD0;
   }
 
   .post-item-title {
+    position: relative;
     margin: 0;
     border: 0;
-    padding: 0;
+    padding: 0 100px 0 0;
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
-
+    width: 100%;
     a {
       color: $text-base-color;
 
       &:hover,
       &focus {
         color: $black;
+      }
+
+      .date {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.4;
       }
     }
   }
