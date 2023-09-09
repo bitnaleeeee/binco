@@ -20,7 +20,7 @@ npm i --save @fortawesome/free-brands-svg-icons
 npm i --save @fortawesome/vue-fontawesome@3
 ```
 
-## Vue3 적용
+## Vue.js3 적용
 
 ```javascript
 import { createApp } from "vue";
@@ -47,7 +47,7 @@ createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
 
 리액트와는 다르게 main.js에서 import 및 export를 해주어야 한다.
 
-## Vue3에 사용
+## Vue.js3에 사용
 
 ```javascript
 <template>
