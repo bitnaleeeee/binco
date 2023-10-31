@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[React] useNavigate로 뒤로가기 아이콘 구현하기"
-date: 2023-10-30 12:00:59
-modified: 2023-10-30 12:00:59
+date: 2023-10-12 12:00:59
+modified: 2023-10-12 12:00:59
 tag: [react, useNavigate, hook]
 ---
 
