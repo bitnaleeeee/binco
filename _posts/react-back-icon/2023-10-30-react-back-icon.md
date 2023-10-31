@@ -44,7 +44,6 @@ const Main = () => {
 ## 뒤로가기 기능
 
 ```javascript
-
 const Main = () => {
   const navigate = useNavigate();
 
@@ -59,7 +58,10 @@ const Main = () => {
           icon={faChevronLeft}
           onClick={goToUrl}
         />
-
+      </div>
+    </div>
+  );
+};
 ```
 
 바로 이전 페이지로 이동할 수 있도로 -1인덱스 형태로 넣어주면 이전에 클릭한 페이지로 돌아가는 뒤로가기 기능을 구현하였다.
