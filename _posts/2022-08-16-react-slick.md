@@ -6,7 +6,7 @@ modified: 2023-08-16 12:00:59
 tag: [react, slick, react-slick]
 ---
 
-**Slick arrow custom 설치**
+Slick arrow custom 설치방법은 아래와 같다.
 
 ```javascript
 npm i react-slick
