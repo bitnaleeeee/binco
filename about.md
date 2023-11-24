@@ -10,5 +10,5 @@ If you have any questions about me, please contact me below.
 
 ### Contact me ✨
 * [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
-* [GitHub](https://github.com/bitnaleeeee)
-* Phone: 010 4719 1607
+* [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
+* <a href="tel:01047191607">010 4719 1607</a>

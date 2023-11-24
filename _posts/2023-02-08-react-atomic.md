@@ -6,10 +6,7 @@ modified: 2023-02-08 18:00:59
 tag: [React, Atomic, SPA]
 ---
 
-# Atomic Design
-
-Atomic Design은 `Vue.js`, `React` 등 `SPA` 로 개발시 최근 떠오르고 있는 디자인 기법 중 하나이다.
-
+Atomic Design은 `Vue.js`, `React` 등 `SPA` 로 개발시 최근 떠오르고 있는 디자인 기법 중 하나이다.  
 Atomic Design은 아래와 같이 크게 5가지로 구성되어 있다.
 
 - Atom (원자)

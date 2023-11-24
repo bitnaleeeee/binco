@@ -6,8 +6,8 @@ modified: 2023-10-12 12:00:59
 tag: [react, useNavigate, hook]
 ---
 
-useNavigate는 `hook`으로 페이지를 이동할 수 있게 해주는 함수를 반환할때 사용한다
-이때 주의할 점은 `useNavigate`를 직접 호출하지 않고 변수를 선언하여 사용해야한다는 점이다
+useNavigate는 `hook`으로 페이지를 이동할 수 있게 해주는 함수를 반환할때 사용한다.  
+이때 주의할 점은 `useNavigate`를 직접 호출하지 않고 변수를 선언하여 사용해야한다는 점이다.
 
 ```javascript
 import { useNavigate } from "react-router-dom";

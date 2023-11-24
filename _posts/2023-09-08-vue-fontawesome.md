@@ -6,7 +6,8 @@ modified: 2023-09-08 12:00:59
 tag: [Vue3, fontawesome, javascript, library]
 ---
 
-fontawsome은 웹 아이콘 폰트를 모아놓은 라이브러리이다. Vue3에 설치 방법 및 사용법에 대해 알아보려 한다.
+fontawsome은 웹 아이콘 폰트를 모아놓은 라이브러리이다.  
+Vue3에 설치 방법 및 사용법에 대해 알아보려 한다.
 
 ## 설치
 
