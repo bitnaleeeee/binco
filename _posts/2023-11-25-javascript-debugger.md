@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[JavaScript] debugger 사용법"
-date: 2023-11-26 18:00:59
-modified: 2023-11-26 18:00:59
+date: 2023-11-25 18:00:59
+modified: 2023-11-25 18:00:59
 tag: [JavaScript, debugger, React]
 ---
 
