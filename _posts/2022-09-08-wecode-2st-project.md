@@ -6,7 +6,7 @@ modified: 2022-09-08 19:00:00
 tag: [react, project]
 ---
 
-## 2차 project 
+2차 Project 회고
 
 <style>
 p > img {

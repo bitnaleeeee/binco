@@ -6,8 +6,6 @@ modified: 2022-1-3 15:00:59
 tag: [React, HTML, XSS]
 ---
 
-## dangerouslySetInnerHTML
-
 `dangerouslySetInnerHTML`은 브라우저에 DOM에서 `innterHTML`을 사용하기 위한 React의 대체 방법이다. 일반적으로 코드에서 HTML을 설정하는 것은 XSS 공격에 쉽게 노출될 수 있기 때문에 위험하다는 것을 상기시키기 위해 `dangerouslySetInnerHTML`을 작성하고 `__html`키로 객체를 전달해주어야 한다.
 
 ### XSS 공격이란?

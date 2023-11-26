@@ -7,7 +7,7 @@ tag: [javascript, XML, json, html, data]
 ---
 
 **데이터 전달 방식 XML, JSON**  
-XML 과 JSON 모두 데이터를 저장하고 전달한다는 공통점이 있다.
+XML과 JSON 모두 데이터를 저장하고 전달한다는 공통점이 있다.
 
 # XML(EXtensible Markup Language)
 
