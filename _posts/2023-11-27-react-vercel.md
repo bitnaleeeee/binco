@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[React]프론트엔드 Vercel로 손쉽게 배포하기"
+title: "[React] 프론트엔드 Vercel로 손쉽게 배포하기"
 date: 2023-11-27 19:10:59
 modified: 2023-11-27 19:10:59
 tag: [React, JavaScript, Vercel, Deploy]
