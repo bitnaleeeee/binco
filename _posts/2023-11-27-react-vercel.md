@@ -10,8 +10,8 @@ tag: [React, JavaScript, Vercel, Deploy]
 
 ### Vercel 회원가입
 
-우선 Vercel 홈페이지(https://vercel.com)에 접속 후 회원가입을 해야 한다.
-회원가입을 하고 로그인하여 작업한 레포가 있는 git 계정과 연결 시켜 준다.
+우선 `Vercel` 홈페이지(https://vercel.com)에 접속 후 회원가입을 해야 한다.
+회원가입을 하고 로그인하여 작업한 레포가 있는 `git` 계정과 연결 시켜 준다.
 
 ### Configure Project
 
