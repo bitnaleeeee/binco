@@ -13,7 +13,7 @@ tag: [React, JavaScript, TIL]
 보통 프론트엔드에서 백엔드를 따로 구현하지 않고 프론트단에서 데이터를 처리하는 방법으로 흔히 `LocalStorage`를 사용하곤 하는데
 이때 데이터를 저장하거나 함수를 불러오고자 할때 데이터가 한박자씩 늦게 들어오게 된다.
 
-```javaScript
+```javascript
 import React, { useState } from "react";
 import App from "../Lexical/App";
 import "./Main.scss";
