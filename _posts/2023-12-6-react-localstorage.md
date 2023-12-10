@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[React] TLI 리액트 비동기처리로 인한 오류 해결하기"
+title: "[React] 리액트 비동기처리로 인한 오류 해결하기(TIL)"
 date: 2023-12-6 19:10:59
 modified: 2023-12-6 19:10:59
 tag: [React, JavaScript, TIL]
