@@ -46,8 +46,8 @@ const Main = () => {
 
 자바스크립트에서 비동기 동작을 다룰 때는 `localStorage.getItem`의 콜백 함수를 사용하거나, `async/await` 를 활용하여 처리할 수 있다. 예를 들어
 
-```javaScript
-import React, { useEffect, useState } from 'react';
+```javascript
+import React, { useEffect, useState } from "react";
 
 const MyComponent = () => {
   const [data, setData] = useState(null);
@@ -55,23 +55,19 @@ const MyComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const localStorageData = await localStorage.getItem('yourKey');
+        const localStorageData = await localStorage.getItem("yourKey");
         setData(localStorageData);
         console.log(localStorageData);
         // 이 시점에서는 data가 업데이트된 후에 실행
       } catch (error) {
-        console.error('Error fetching data from localStorage:', error);
+        console.error("Error fetching data from localStorage:", error);
       }
     };
 
     fetchData();
   }, []); // 빈 배열을 넣어 최초 한 번만 실행되도록 설정
 
-  return (
-    <div>
-      {/* data를 사용하여 렌더링 또는 다른 작업 수행 */}
-    </div>
-  );
+  return <div>{/* data를 사용하여 렌더링 또는 다른 작업 수행 */}</div>;
 };
 
 export default MyComponent;
@@ -79,7 +75,7 @@ export default MyComponent;
 
 또는 간단하게 함수를 호출하는 시작점을 변경해줘도 해결은 가능하다.
 
-```javaScript
+```javascript
 import React, { useState } from "react";
 import App from "../Lexical/App";
 import "./Main.scss";
