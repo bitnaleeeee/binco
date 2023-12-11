@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "weekly memoirs"
-date: 2023-12-6 19:10:59
-modified: 2023-12-6 19:10:59
+title: "[weekly memoirs]  2023.12.10"
+date: 2023-12-10 12:10:59
+modified: 2023-12-10 12:10:59
 tag: [weekly]
 ---
 
