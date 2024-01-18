@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "유용한 VSCODE 플러그인 추천"
+title: "유용한 VScode플러그인 추천"
 date: 2024-01-10 12:10:59
 modified: 2024-01-10 12:10:59
 tag: [VScode]
@@ -41,5 +41,4 @@ tag: [VScode]
 [One Dark Pro 다운로드 링크 ](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
 제가 사용중인 에디터 테마입니다. VScode는 아니고 Atom이라는 다른 에디터에서 사용하는 테마이지만 저는 이것을 선호하여 사용하고 있습니다.
-
 이외에도 다양한 테마들이 있으니 검색하셔서 선호하시는 테마로 사용하시면 될 것 같습니다.
