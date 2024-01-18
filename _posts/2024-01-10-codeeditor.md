@@ -28,7 +28,7 @@ tag: [VScode]
 
 ![plugin04](/images/post/plugin-rainbow.jpeg)
 
-## 5. Bracket Pair Colorizer : 여는 괄호와 닫느 괄호 짝 지어줌
+## 5. Bracket Pair Colorizer : 여는 괄호와 닫는 괄호 짝 지어줌
 
 ![plugin05](/images/post/plugin-bracket.jpeg)
 
