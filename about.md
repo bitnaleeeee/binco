@@ -6,9 +6,9 @@ permalink: /about/
 
 Thank you for visiting my site.  
 I am a front-end developer who is interested in user experience.  
-If you have any questions about me, please contact me below.  
+If you have any questions about me, please contact me below.
 
 ### Contact me ✨
-* [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
-* [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
-* <a href="tel:01047191607">010 4719 1607</a>
+
+- [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
+- [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
