@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Bitna Lee
+name: bitnaleeeee
 
 # Short bio or description (displayed in the header)
-description: Front-End Developer
+description: Front - end Developer
 
 #
 # Flags below are optional
@@ -14,7 +14,6 @@ description: Front-End Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/avatar.png
-
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
@@ -88,7 +87,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
