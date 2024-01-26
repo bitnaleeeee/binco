@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Bitna Lee.
 permalink: /about/
 ---
 
@@ -10,5 +10,5 @@ If you have any questions about me, please contact me below.
 
 ### Contact me ✨
 
-- [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
-- [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
+- GtiHub: [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
+- E-mail: [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
