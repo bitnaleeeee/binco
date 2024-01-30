@@ -10,5 +10,5 @@ If you have any questions about me, please contact me below.
 
 ### Contact me ✨
 
-- E-mail: [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
-- GitHub: [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
+- **E-mail**: [bitnaleeeee@gmail.com](mailto:bitnaleeeee@gmail.com)
+- **GitHub**: [github.com/bitnaleeeee](https://github.com/bitnaleeeee)
