@@ -7,6 +7,8 @@ tag: [JavaScript, Algorithm]
 ---
 
 문자열 `my_string`, `overwrite_string`과 정수 `s`가 주어집니다. 문자열 `my_string`의 인덱스 `s`부터 `overwrite_string`의 길이만큼을 문자열 `overwrite_string`으로 바꾼 문자열을 `return` 하는 `solution` 함수를 작성해 주세요.
+<br>
+<br>
 
 ```javascript
 function solution(my_string, overwrite_string, s) {
@@ -16,7 +18,7 @@ function solution(my_string, overwrite_string, s) {
 }
 ```
 
-# 문제설명
+## 문제풀이
 
 이 문제는 전개연산자와, splice함수, join함수를 이용하여 풀어보았다.
 
