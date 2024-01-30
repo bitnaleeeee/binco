@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "return과 console.log의 차이"
+title: "[JavaScript]return과 console.log의 차이"
 date: 2022-04-10 12:10:59
 modified: 2022-04-10 12:10:59
 tag: [JavaScript]
