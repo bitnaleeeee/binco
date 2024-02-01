@@ -3,7 +3,7 @@ layout: post
 title: "[JavaScript]배열은 객체다"
 date: 2024-01-31 12:10:59
 modified: 2024-01-31 12:10:59
-tag: [JavaScript, Array, Ojbect]
+tag: [JavaScript, Array, Object]
 ---
 
 배열이란 여러 개의 값을 순차적으로 나열한 가장 기본적인 자료구조이다.
