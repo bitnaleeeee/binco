@@ -17,7 +17,6 @@ let pre = 0;
 let current = 1;
 
 for (i = 1; i <= 50; i++) {
-  console.log(current);
   let temp = pre; // 0할당, 1할당, 1할당, 2할당,3할당,5할당,
   pre = current; //1할당, 1할당, 2할당, 3할당,5할당,8할당
 
