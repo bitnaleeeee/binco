@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Algorithm] 알고리즘 문제풀이"
+title: "[Algorithm]알고리즘 문제풀이"
 date: 2024-02-02 12:10:59
 modified: 2024-02-02 12:10:59
 tag: [JavaScript, Algorithm]
