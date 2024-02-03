@@ -18,11 +18,6 @@ function factorial(n) {
     result = result * num;
   }
   return result;
-
-  console.log(factorial(12)); //479001600
-  console.log(factorial(6)); //720
-  console.log(factorial(3)); //6
-  console.log(factorial(0)); //1
 }
 ```
 
