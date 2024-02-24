@@ -27,7 +27,7 @@ tag: [JavaScript, Array, Object]
 ```javascript
 let arr = [1, 2, 3];
 
-let result = arr.push[4];
+let result = arr.push(4);
 
 console.log(result); // 4
 console.log(arr); // 1,2,3,4
