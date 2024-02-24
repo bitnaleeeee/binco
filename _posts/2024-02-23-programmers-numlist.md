@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "피보나치 수열(Fibonacci Sequence)"
+title: "[Algorithm]프로그래머스 알고리즘 문제풀이"
 date: 2024-02-23 12:10:59
 modified: 2024-02-23 12:10:59
 tag: [JavaScript, Algorithm]
