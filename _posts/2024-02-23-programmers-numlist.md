@@ -39,13 +39,13 @@ console.log(reversedArray); //  [5, 4, 3, 2, 1]
 
 비주조화할당은 배열이나 객체에서 값을 추출하여 할당하는 방법이다. 배열이나 객체의 요소를 간편하게 분리하고 사용할 수 있다
 
-```javasciprt
+```javascript
 const numbers = [1, 2, 3, 4, 5];
 
 const [a, b, ...rest] = numbers;
 
-console.log(a);    // 1
-console.log(b);    // 2
+console.log(a); // 1
+console.log(b); // 2
 console.log(rest); // [3, 4, 5]
 ```
 
