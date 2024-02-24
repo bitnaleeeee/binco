@@ -20,9 +20,9 @@ function solution(num_list) {
 }
 ```
 
-### `reverse()`
+### 1. `reverse()`
 
-`reverse()`함수는 배열의 메서드 중 하나로, 배열의 순서를 역순으로 뒤집는다.
+자바스크립트 배열의 메서드 중 하나로, 배열의 순서를 역순으로 뒤집는다.
 
 ```javascript
 const originalArray = [1, 2, 3, 4, 5];
@@ -31,11 +31,11 @@ const reversedArray = originalArray.reverse();
 console.log(reversedArray); //  [5, 4, 3, 2, 1]
 ```
 
-### 전개연산자(`Spread Operator`)
+### 2. 전개연산자(`Spread Operator`)
 
 전개연산자는 배열이나 객체를 펼쳐서 새로운 배열 혹은 객체를 생성하는 문법으로, 주로 배열 혹은 객체를 복사하거나 다른 배열이나 객체와 결합할때 사용한다. 주어진 `num_list`를 복사하여 `reverse`로 역순으로 정렬한 후 새로운 배열을 만들었다.
 
-### 비구조화할당(`Destructuring Assignment`)
+### 3. 비구조화할당(`Destructuring Assignment`)
 
 비주조화할당은 배열이나 객체에서 값을 추출하여 할당하는 방법이다. 배열이나 객체의 요소를 간편하게 분리하고 사용할 수 있다
 
