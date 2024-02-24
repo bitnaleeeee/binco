@@ -13,8 +13,6 @@ tag: [JavaScript, Algorithm]
 - 2 ≤ num_list의 길이 ≤ 10
 - 1 ≤ num_list의 원소 ≤ 9
 
-## 풀이
-
 ```javascript
 function solution(num_list) {
   const [a, b] = [...num_list].reverse();
