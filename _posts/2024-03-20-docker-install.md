@@ -18,7 +18,7 @@ tag: [docker, vscode]
 
 ### Docker 설치하기
 
-![도커다운로드](/assets/img/posts/docker01.png)
+![도커다운로드](/img/posts/docker01.png)
 <br>
 <br>
 
