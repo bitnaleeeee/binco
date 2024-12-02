@@ -19,7 +19,7 @@ img 태그는 HTML 페이지에 이미지를 삽입하는 데 사용되는 태�
    HTML5 new tag: header, nav, aside, section, article, footer
    상기 태그 모두 content의 의미를 명확히 설명하고 있는 시맨틱 요소라 할 수 있다.
 
-![시맨틱웹](/images/post/html-Semantic-img01.png)
+![시맨틱웹](/binco/images/post/html-Semantic-img01.png)
 
 ## 시맨틱 태그(Semantic Tag)
 
@@ -29,7 +29,7 @@ img 태그는 HTML 페이지에 이미지를 삽입하는 데 사용되는 태�
 
 검색엔진 최적화란 네이버 구글 등 검색 엔진에서 검색을 할때 가시성을 높이기 위해 사이트를 개선하는 프로세스를 말한다.
 
-![검색엔진최적화](/images/post/html-Semantic-img02.png)
+![검색엔진최적화](/binco/images/post/html-Semantic-img02.png)
 
 1. 크롤링(crawling): 키워드를 검색하였을때 검색 엔진에서 제일 먼저 거치는 작업으로 웹 크롤러를 이용하여 웹 페이지의 데이터를 가지고 온다. 크롤러는 DOM 형식의 웹 페이지를 볼 수 있어 그 안에 텍스트를 읽을 수는 있으나 이미지는 읽을 수 없다. 그러므로
    SEO를 위해 이미지를 인식시키기 위하여 img 태그 삽입시 alt txt 태그를 달아주는 것이 좋다. 크롤러는 여러 링크를 넘나들며 웹 페이지에 관한 데이터를 검색 엔진 서버로 가져온다.

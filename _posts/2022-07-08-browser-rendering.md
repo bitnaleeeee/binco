@@ -14,7 +14,7 @@ tag: [browser]
 
 ### 브라우저의 기본 구조
 
-![브라우저이미지](/images/post/browser-rendering-img01.png)
+![브라우저이미지](/binco/images/post/browser-rendering-img01.png)
 
 1. 사용자 인터페이스 - 주소 표시줄, 이전/다음 버튼, 북마크 메뉴 등 요청한 페이지를 보여주는 창을 제외한 나머지 모든 부분이다.
 2. 브라우저 엔진 - 사용자 인터페이스와 <-> 렌더링 엔진 사이의 동작을 제어한다.
@@ -44,7 +44,7 @@ chrome은 blink 엔진을 사용하며, 모든 렌더링 엔진은 기본적으�
 
 ## critical rendering path(CRP)
 
-![브우저렌더링프로세스](/images/post/browser-rendering-img02.png)
+![브우저렌더링프로세스](/binco/images/post/browser-rendering-img02.png)
 
 1. html - dom 트리(위에서 아래로)
 2. css - cssom 트리(위에서 아래로) ex. body태그에 text-align을 정해준다면, 자식 요소에도 동일하게 적용됨
@@ -60,7 +60,7 @@ chrome은 blink 엔진을 사용하며, 모든 렌더링 엔진은 기본적으�
 
 사용자 동작으로 css가 변경되거나 애니메이션 재생이 일어났을땐?
 
-![렌더링최적화](/images/post/browser-rendering-img03.jpeg)
+![렌더링최적화](/binco/images/post/browser-rendering-img03.jpeg)
 
 브라우저 렌더링의 프로세스는 아래와 같다.
 

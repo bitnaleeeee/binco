@@ -28,7 +28,7 @@ package.json 파일에 아래와 같이 코드와 배포할 홈페이지 주소�
 "deploy": "gh-pages -d build"
 ```
 
-![packagejson파일](/images/post/front-end-build-img01.png)
+![packagejson파일](/binco/images/post/front-end-build-img01.png)
 ### 배포하기
 ```
 npm run deploy
@@ -36,7 +36,7 @@ npm run deploy
 
 배포 명령어를 입력 후 해당 github - settings - pages를 들어가면 gh-pages 브랜치가 새로 생긴다. 
 
-![packagejson파일](/images/post/front-end-build-img02.png)
+![packagejson파일](/binco/images/post/front-end-build-img02.png)
 
 
 위와 같이 Source 의 branch를 gh-pages로 위와 같이 설정해주면 무료로 웹 호스팅을 할 수 있다.
