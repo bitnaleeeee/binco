@@ -16,7 +16,7 @@ tag: [docker, vscode]
 - 환경 격리:각각의 도커 컨테이너는 독립적으로 실행되므로, 다른 컨테이너에 영향을 주지 않고 작업이 가능하다. 
 
 ### Docker 설치하기
-![도커다운로드](/images/post/docker01.png)
+![도커다운로드](/binco/images/post/docker01.png)
 <br>
 <br>
 
@@ -32,6 +32,6 @@ docker --version
 ```
 <br>
 
-![도커다운로드](imes/post/docker02.png)
+![도커다운로드](/binco/images/post/docker02.png)
 
 아래 보이는 프로젝트에서 해당 되는 실행하고자 하는 프로젝트의 Actions을 클릭하여 프로젝트를 구동시킨 후, vscode에서 코드를 작성하게되면 화면에 시시각각 반영되기 때문에 리액트의 경우 따로 `npm start`를 매번 하지 않아도 되어 편리하게 개발할 수 있다. 
