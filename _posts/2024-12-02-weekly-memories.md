@@ -12,3 +12,5 @@ tag: [회고록]
 - 웹표준, 웹 접근성
 - JS
 - React 
+
+* HTML, CSS, JavsScript - Scope, Execution Context  => React 
