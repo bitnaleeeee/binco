@@ -45,14 +45,18 @@ Done.
 
 ### 해결방법
 1. `nvm`설치
+<p>
 `curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash`
 
 
 2. 환경변수 로드
+<p>
 `export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 `
+
 3. 최신 LTS 버전의 Node.js 설치
+<p>
 `nvm install --lts
 nvm use --lts
 `
