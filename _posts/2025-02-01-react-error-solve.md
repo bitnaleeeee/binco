@@ -12,7 +12,8 @@ tag: [React]
 
 `npx crate-react-app cra-test` 를 터미널에 작성했을때 아래와 같은 에러가 발생하였다.
 
-`nstalling packages. This might take a couple of minutes.
+```javasciprt 
+nstalling packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...
 
 npm ERR! code EACCES
@@ -34,7 +35,8 @@ Aborting installation.
 
 Deleting generated file... package.json
 Deleting cra-test/ from /Users/bitnalee
-Done.`
+Done.
+```
 
 ### 원인
  해당 에러는 EACCES (Permission denied) 오류로, npm이 특정 폴더(~/.npm/ 캐시 폴더)에 대한 쓰기 권한이 없어서 발생한다.
@@ -42,15 +44,15 @@ Done.`
 나의 경우 nvm(Node Version Manager)을 사용하여 Node.js를 설치하여 문제를 해결하였다.
 
 ### 해결방법
-#### 1. `nvm`설치
+1. `nvm`설치
 `curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash`
 
 
-#### 2. 환경변수 로드
+2. 환경변수 로드
 `export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 `
-#### 3. 최신 LTS 버전의 Node.js 설치
+3. 최신 LTS 버전의 Node.js 설치
 `nvm install --lts
 nvm use --lts
 `
