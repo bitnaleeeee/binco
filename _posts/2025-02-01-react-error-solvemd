@@ -7,7 +7,7 @@ tag: [React]
 
 ---
 
-# 에러 발생
+## 에러 발생
 `create-react-app`을 사용하여 웹 애플리케이션을 만드려고 할때 발생한 에러와 해결방법에 대해 정리하고자 한다.
 
 `npx crate-react-app cra-test` 를 터미널에 작성했을때 아래와 같은 에러가 발생하였다.
@@ -36,22 +36,22 @@ Deleting generated file... package.json
 Deleting cra-test/ from /Users/bitnalee
 Done.`
 
-## 원인
+### 원인
  해당 에러는 EACCES (Permission denied) 오류로, npm이 특정 폴더(~/.npm/ 캐시 폴더)에 대한 쓰기 권한이 없어서 발생한다.
 따라서 설치 과정에서 권한 문제가 발생할 수 있으므로 
 나의 경우 nvm(Node Version Manager)을 사용하여 Node.js를 설치하여 문제를 해결하였다.
 
-## 해결방법
-1. `nvm`설치
+### 해결방법
+#### 1. `nvm`설치
 `curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash`
 
 
-2. 환경변수 로드
+#### 2. 환경변수 로드
 `export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 `
-3. 최신 LTS 버전의 Node.js 설치
+#### 3. 최신 LTS 버전의 Node.js 설치
 `nvm install --lts
 nvm use --lts
 `
-후에 다시 create-react-app 을 사용하면 정상 작동된다. 
+후에 다시 create-react-app 을 사용하면 정상적으롷 웹 애플리케이션이 만들어지는 것을 확인할 수 있다. 
