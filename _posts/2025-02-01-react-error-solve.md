@@ -47,17 +47,20 @@ Done.
 1. `nvm`설치
 <p>
 `curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash`
-
+<p>
 
 2. 환경변수 로드
 <p>
 `export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 `
+<p>
 
 3. 최신 LTS 버전의 Node.js 설치
 <p>
 `nvm install --lts
 nvm use --lts
 `
+<p>
+
 후에 다시 create-react-app 을 사용하면 정상적으롷 웹 애플리케이션이 만들어지는 것을 확인할 수 있다. 
