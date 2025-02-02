@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리액트 전역 설치시 발생하는 에러"
+title: "[React]EACCES (Permission denied) 오류해결"
 date: 2025-02-01 11:00:59
 modified: 2025-02-01 11:00:59
 tag: [React]
@@ -41,7 +41,7 @@ Done.
 ### 원인
  해당 에러는 EACCES (Permission denied) 오류로, npm이 특정 폴더(~/.npm/ 캐시 폴더)에 대한 쓰기 권한이 없어서 발생한다.
 따라서 설치 과정에서 권한 문제가 발생할 수 있으므로 
-나의 경우 nvm(Node Version Manager)을 사용하여 Node.js를 설치하여 문제를 해결하였다.
+nvm(Node Version Manager)을 사용하여 Node.js를 설치하여 문제를 해결하였다.
 
 ### 해결방법
 1. `nvm`설치
