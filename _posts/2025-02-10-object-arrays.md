@@ -3,7 +3,7 @@ layout: post
 title: "[React]객체와 배열의 사용성 개선"
 date: 2025-02-10 11:00:59
 modified: 2025-02-10 11:00:59
-tag: [React][JavaScript]
+tag: [React, JavaScript]
 
 ---
 
