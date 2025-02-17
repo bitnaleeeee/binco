@@ -42,7 +42,7 @@ const array2 = [...array1, 4, 5, 6];
 console.log(array2); // [1, 2, 3, 4, 5, 6]
 ```
 
-### 3. 비구조화할당(`Destructuring Assignment`)
+### 3. 구조분해할당(`Destructuring Assignment`)
 
 비주조화할당은 배열이나 객체에서 값을 추출하여 할당하는 방법이다. 배열이나 객체의 요소를 간편하게 분리하고 사용할 수 있다
 
