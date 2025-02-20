@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JavaScript]Callback, Promise, async await 차이점"
+title: "[JavaScript]Callback, Promise, async-await 차이점"
 date: 2025-02-16 11:00:59
 modified: 2025-02-16 11:00:59
 tag: [JavaScript]
