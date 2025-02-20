@@ -55,8 +55,8 @@ function asyncTask3(prevResult) {
 
 ## 2. Promise
 콜백 헬로인해 ES6에서 비동기처리를 위한 또 다른 패턴으로 도입되었다. 비동기 처리 시점을 명확하게 표현할 수 있는 장점이 있다.
-Promise는 세가지의 상태를가질 수 있고 비동기 작업의 성공 또는 실패를 처리하기 위한 then(), catch() 매서드를 제공한다.
-프로미스는 비동기 상태를 값으로 다룰 수 있기 때문에 async await 보다 큰 개념이다. 
+`Promise`는 세가지의 상태를가질 수 있고 비동기 작업의 성공 또는 실패를 처리하기 위한 `then()`, `catch()` 매서드를 제공한다.
+프로미스는 비동기 상태를 값으로 다룰 수 있기 때문에 `async await` 보다 큰 개념이다. 
 
 
 ```javascript
@@ -69,7 +69,7 @@ asyncTask1()
 ```
 
 ## 3. async-await
-promise가 자바스크립트 표준이된 2년 후에 async await도 자바스크립트의 표준이 되었다. async await을 이용하여 비동기 코드를 작성하면 프로미스의 then 매서드를 체인 형식으로 호출하는 것보다 가독성이 좋아진다. async 함수는 비동기 작업을 수행하고 await 키워드를 사용하여 promise 완료를 기다린다. 그렇다고 async await가 promise를 완전히 대체 할 수 있는 것은 아니다. promise는 비동기 상태를 값으로 다룰 수 있기에 async await보다 큰 개념이다.
+`promise`가 자바스크립트 표준이된 2년 후에 `async await`도 자바스크립트의 표준이 되었다. `async await`을 이용하여 비동기 코드를 작성하면 프로미스의 `then()` 매서드를 체인 형식으로 호출하는 것보다 가독성이 좋아진다. `async` 함수는 비동기 작업을 수행하고 `await` 키워드를 사용하여 `promise` 완료를 기다린다. 그렇다고 `async await`가 `promise`를 완전히 대체 할 수 있는 것은 아니다. `promise`는 비동기 상태를 값으로 다룰 수 있기에 `async await`보다 큰 개념이다.
 
 
 ```javascript
